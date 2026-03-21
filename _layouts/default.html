@@ -8,52 +8,69 @@
     <style>
       html { scroll-behavior: smooth; }
       
-      /* PCB Color Palette */
-      /* Dark Soldermask: #0a2e2a | Copper/Gold: #d4af37 | Silk Screen: #ffffff */
-      
-      body { background-color: #061a18; color: #cfd8dc; margin: 0; font-family: 'Courier New', monospace; }
-      
-      /* The Header - Deep PCB Green Gradient */
-      .page-header { 
-        padding: 8rem 1rem 4rem 1rem; 
-        background: linear-gradient(135deg, #0a2e2a 0%, #061a18 100%); 
-        color: #ffffff; 
-        text-align: center; 
-        border-bottom: 3px solid #d4af37; /* Copper Trace Line */
+      /* PCB Theme Colors */
+      :root {
+        --pcb-green: #061a18;
+        --soldermask: #0a2e2a;
+        --copper: #d4af37;
+        --silkscreen: #ffffff;
+        --trace-lowkey: rgba(212, 175, 55, 0.05);
       }
 
-      /* Sticky Nav - The "Bus Route" */
+      body { 
+        background-color: var(--pcb-green); 
+        color: #cfd8dc; 
+        margin: 0; 
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        /* Subtle Circuit Background Pattern */
+        background-image: 
+          radial-gradient(var(--trace-lowkey) 1px, transparent 0),
+          linear-gradient(to right, var(--trace-lowkey) 1px, transparent 1px),
+          linear-gradient(to bottom, var(--trace-lowkey) 1px, transparent 1px);
+        background-size: 40px 40px, 80px 80px, 80px 80px;
+      }
+      
       .nav-menu { 
         position: fixed; top: 0; width: 100%; 
-        background: rgba(10, 46, 42, 0.95); 
+        background: rgba(10, 46, 42, 0.98); 
         z-index: 9999; text-align: center; padding: 18px 0; 
-        border-bottom: 1px solid #d4af37; 
+        border-bottom: 1px solid var(--copper); 
       }
       .nav-menu a { 
-        color: #d4af37; /* Copper Gold */
-        text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.85rem; 
+        color: var(--copper); 
+        text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.8rem; 
         letter-spacing: 2px; transition: 0.3s; 
       }
-      .nav-menu a:hover { color: #ffffff; text-shadow: 0 0 8px #d4af37; }
+      .nav-menu a:hover { color: var(--silkscreen); text-shadow: 0 0 8px var(--copper); }
 
-      .project-name { font-size: 2.8rem; color: #d4af37; text-transform: uppercase; }
-      
-      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
-      
-      /* Headings look like Silk Screen Printing */
-      .main-content h1, .main-content h2 { 
-        color: #ffffff; 
-        border-left: 5px solid #d4af37; 
-        padding-left: 15px; 
-        margin-top: 3rem; 
-        text-transform: uppercase;
+      .page-header { 
+        padding: 8rem 1rem 4rem 1rem; 
+        background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); 
+        color: var(--silkscreen); 
+        text-align: center; 
+        border-bottom: 3px solid var(--copper); 
       }
 
-      /* Links look like highlighted traces */
-      .main-content a { color: #00ffcc; text-decoration: none; border-bottom: 1px solid #00ffcc; }
+      .project-name { font-size: 2.8rem; color: var(--copper); text-transform: uppercase; font-family: 'Courier New', monospace; }
       
-      section { padding-top: 110px; }
-      footer { text-align: center; padding: 3rem; color: #455a64; font-size: 0.7rem; }
+      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; background: rgba(6, 26, 24, 0.7); border-radius: 8px; }
+      
+      .main-content h1, .main-content h2 { 
+        color: var(--silkscreen); 
+        border-left: 4px solid var(--copper); 
+        padding-left: 15px; 
+        margin-top: 3.5rem; 
+        font-family: 'Courier New', monospace;
+      }
+
+      .main-content a { color: #00ffcc; text-decoration: none; border-bottom: 1px solid rgba(0, 255, 204, 0.3); }
+      .main-content a:hover { border-bottom: 1px solid #00ffcc; }
+      
+      section { padding-top: 110px; margin-top: -60px; }
+      footer { text-align: center; padding: 4rem; color: #455a64; font-size: 0.7rem; font-family: monospace; }
+      
+      /* Subtle Divider like a PCB Trace */
+      hr { border: 0; height: 1px; background-image: linear-gradient(to right, transparent, var(--copper), transparent); margin: 3rem 0; }
     </style>
   </head>
   <body>
@@ -67,11 +84,11 @@
     </nav>
     <header class="page-header">
       <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">SYSTEMS_ENGINEER // {{ site.description }}</h2>
+      <h2 class="project-tagline">REV_1.0 // {{ site.description }}</h2>
     </header>
     <main class="main-content">
       {{ content }}
-      <footer>&copy; 2026 ADITYA_MANIVEL | HARDWARE_REVISION_1.0</footer>
+      <footer>&copy; 2026 ADITYA_MANIVEL // STATUS: OPTIMAL</footer>
     </main>
   </body>
 </html>
