@@ -87,5 +87,128 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Information Management Intern | Remote</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Maintained a database of 100+ patient records by transferring patient medical data from forms into Salesforce with a focus on data integrity and systems organization.</li>
-    <li>Performed manual data verification and
+    <li>Maintained a database of 100+ patient records by transferring medical data into Salesforce.</li>
+    <li>Focused on data integrity and systems organization for sensitive patient information.</li>
+    <li>Performed manual data verification and quality control to ensure interactions were logged without errors.</li>
+  </ul>
+
+  <div class="card-stats">
+    <div class="stat-item"><span class="stat-value">Salesforce</span><span class="stat-label">CRM Platform</span></div>
+    <div class="stat-item"><span class="stat-value">100+</span><span class="stat-label">Verified Records</span></div>
+    <div class="stat-item"><span class="stat-value">Zero-Error</span><span class="stat-label">Data Logging</span></div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Salesforce</span>
+    <span class="tag">Data Management</span>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">ROBOTICS / MECHATRONICS</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">SEP 2024 — JUNE 2025</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Human Powered Submarine</h3>
+  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
+    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
+    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing seal failure risk.</li>
+  </ul>
+
+  <div style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 15px; justify-content: center;">
+    <img src="hpsub1.png" alt="Human Powered Submarine Assembly" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
+    <img src="hpsub.png" alt="Electronics and Inductive Coil Detail" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
+  </div>
+
+  <div class="card-stats">
+    <div class="stat-item"><span class="stat-value">Qi-Standard</span><span class="stat-label">Wireless Power</span></div>
+    <div class="stat-item"><span class="stat-value">12,000 mAh</span><span class="stat-label">Battery Capacity</span></div>
+    <div class="stat-item"><span class="stat-value">100%</span><span class="stat-label">Waterproof Seal</span></div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Mechatronics</span><span class="tag">Embedded Systems</span><span class="tag">Systems Engineering</span>
+  </div>
+</div>
+
+---
+
+<section id="projects"></section>
+
+# <i class="fa-solid fa-microchip"></i> Projects
+
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">WEARABLE TECH / EMBEDDED</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">NOV 2025 — JAN 2026</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">SwingTrack</h3>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board along with GPS and IMU sensors for real-time motion tracking and data acquisition, providing athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
+    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for ergonomics and reliable mobile power delivery for 4+ hours on a single charge.</li>
+  </ul>
+
+  <div class="card-stats">
+    <div class="stat-item"><span class="stat-value">ESP32</span><span class="stat-label">Dev Board</span></div>
+    <div class="stat-item"><span class="stat-value">±0.2m/s</span><span class="stat-label">Swing Accuracy</span></div>
+    <div class="stat-item"><span class="stat-value">4+ Hours</span><span class="stat-label">Battery Life</span></div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">GPS/IMU</span><span class="tag">Hardware Iteration</span><span class="tag">Data Acquisition</span>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">ROBOTICS / PCB DESIGN</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">NOV 2025 — DEC 2025</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Line-Following Robot</h3>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% line-following accuracy.</li>
+    <li>Independently engineered a custom KiCAD PCB with a 20+ component array of potentiometers, resistors, photoresistors and LEDs to accurately measure light reflectance values.</li>
+    <li>Soldered through-hole components to a custom PCB and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
+  </ul>
+
+  <div class="card-stats">
+    <div class="stat-item"><span class="stat-value">>90%</span><span class="stat-label">Accuracy</span></div>
+    <div class="stat-item"><span class="stat-value">20+</span><span class="stat-label">Components</span></div>
+    <div class="stat-item"><span class="stat-value">KiCAD</span><span class="stat-label">PCB Design</span></div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Arduino</span><span class="tag">Through-Hole Soldering</span><span class="tag">Optoelectronics</span>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">HARDWARE DESIGN</span>
+    <a href="https://github.com/AdityaManivel" style="color: var(--copper); text-decoration: none; font-size: 0.8rem;"><i class="fa-brands fa-github"></i> REPO</a>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Wireless Power Module</h3>
+  <p>Designed and assembled a custom module for robotics, focusing on high-efficiency power transfer.</p>
+  <div class="card-stats">
+    <div class="stat-item"><span class="stat-value">Altium </span><span class="stat-label">EDA</span></div>
+    <div class="stat-item"><span class="stat-value">92%</span><span class="stat-label">Efficiency</span></div>
+    <div class="stat-item"><span class="stat-value">REV A</span><span class="stat-label">Status</span></div>
+  </div>
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">PCB Design</span><span class="tag">Power Electronics</span><span class="tag">Hardware Testing</span>
+  </div>
+</div>
+
+---
+
+<section id="timeline"></section>
+
+# <i class="fa-solid fa-clock-rotate-left"></i> Timeline
+* **2026:** Launching Professional Portfolio.
+* **2025:** Junior Standing at UW.
+* **2024:** Successfully fabricated first custom dual-layer PCB.
