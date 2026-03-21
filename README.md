@@ -6,7 +6,7 @@
 
 I am a **Bachelor of Science, Electrical & Computer Engineering** student at the **University of Washington** specializing in integrated hardware and embedded firmware. I bridge the gap between physical sensors and software applications through:
 
-* **Hardware Design:** End-to-end PCB development (Schematic to Assembly) using **Altium** and **KiCad**.
+* **Hardware Design:** End-to-end PCB development (Schematic to Assembly) using **Altium** and **KiCAD**.
 * **Systems Integration:** Developing low-latency communication networks and wireless power modules for robotics.
 * **Firmware & Debugging:** Leveraging a strong foundation in technical computing to ensure signal integrity and system reliability in demanding environments.
 
