@@ -7,26 +7,53 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
       html { scroll-behavior: smooth; }
-      body { background-color: #0b132b; color: #ced4da; margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
       
-      /* Sticky Navigation */
-      .nav-menu { position: fixed; top: 0; width: 100%; background: #1c2541; z-index: 9999; text-align: center; padding: 18px 0; border-bottom: 2px solid #5bc0be; box-shadow: 0 2px 10px rgba(0,0,0,0.5); }
-      .nav-menu a { color: #ffffff; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.85rem; letter-spacing: 1px; transition: 0.3s; border-bottom: 2px solid transparent; padding-bottom: 5px; }
-      .nav-menu a:hover { color: #5bc0be; border-bottom: 2px solid #5bc0be; }
-
-      /* Header Section */
-      .page-header { padding: 8rem 1rem 4rem 1rem; background: linear-gradient(135deg, #1c2541 0%, #0b132b 100%); color: #fff; text-align: center; border-bottom: 1px solid #3a506b; }
-      .project-name { font-size: 2.8rem; margin-bottom: 0.5rem; color: #6fffe9; text-transform: uppercase; letter-spacing: 2px; }
-      .project-tagline { font-size: 1.2rem; opacity: 0.8; font-weight: 300; }
-
-      /* Main Content */
-      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; line-height: 1.7; }
-      .main-content h1, .main-content h2 { color: #5bc0be; border-bottom: 1px solid #3a506b; padding-bottom: 0.5rem; margin-top: 3rem; display: flex; align-items: center; gap: 15px; }
-      .main-content a { color: #6fffe9; text-decoration: none; border-bottom: 1px dashed #6fffe9; }
-      .main-content a:hover { color: #5bc0be; border-bottom: 1px solid #5bc0be; }
+      /* PCB Color Palette */
+      /* Dark Soldermask: #0a2e2a | Copper/Gold: #d4af37 | Silk Screen: #ffffff */
       
-      section { padding-top: 100px; margin-top: -50px; } /* Anchor offset */
-      footer { text-align: center; padding: 3rem; font-size: 0.8rem; color: #5c677d; border-top: 1px solid #1c2541; margin-top: 4rem; }
+      body { background-color: #061a18; color: #cfd8dc; margin: 0; font-family: 'Courier New', monospace; }
+      
+      /* The Header - Deep PCB Green Gradient */
+      .page-header { 
+        padding: 8rem 1rem 4rem 1rem; 
+        background: linear-gradient(135deg, #0a2e2a 0%, #061a18 100%); 
+        color: #ffffff; 
+        text-align: center; 
+        border-bottom: 3px solid #d4af37; /* Copper Trace Line */
+      }
+
+      /* Sticky Nav - The "Bus Route" */
+      .nav-menu { 
+        position: fixed; top: 0; width: 100%; 
+        background: rgba(10, 46, 42, 0.95); 
+        z-index: 9999; text-align: center; padding: 18px 0; 
+        border-bottom: 1px solid #d4af37; 
+      }
+      .nav-menu a { 
+        color: #d4af37; /* Copper Gold */
+        text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.85rem; 
+        letter-spacing: 2px; transition: 0.3s; 
+      }
+      .nav-menu a:hover { color: #ffffff; text-shadow: 0 0 8px #d4af37; }
+
+      .project-name { font-size: 2.8rem; color: #d4af37; text-transform: uppercase; }
+      
+      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
+      
+      /* Headings look like Silk Screen Printing */
+      .main-content h1, .main-content h2 { 
+        color: #ffffff; 
+        border-left: 5px solid #d4af37; 
+        padding-left: 15px; 
+        margin-top: 3rem; 
+        text-transform: uppercase;
+      }
+
+      /* Links look like highlighted traces */
+      .main-content a { color: #00ffcc; text-decoration: none; border-bottom: 1px solid #00ffcc; }
+      
+      section { padding-top: 110px; }
+      footer { text-align: center; padding: 3rem; color: #455a64; font-size: 0.7rem; }
     </style>
   </head>
   <body>
@@ -40,11 +67,11 @@
     </nav>
     <header class="page-header">
       <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">{{ site.description }}</h2>
+      <h2 class="project-tagline">SYSTEMS_ENGINEER // {{ site.description }}</h2>
     </header>
     <main class="main-content">
       {{ content }}
-      <footer>&copy; 2026 Aditya Manivel | Electrical & Computer Engineering</footer>
+      <footer>&copy; 2026 ADITYA_MANIVEL | HARDWARE_REVISION_1.0</footer>
     </main>
   </body>
 </html>
