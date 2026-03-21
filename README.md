@@ -1,12 +1,12 @@
 <section id="about"></section>
 
 # <i class="fa-solid fa-address-card"></i> About
-  
-  > **Actively seeking Summer 2026 Internship opportunities in Embedded Systems, Hardware Engineering, or Robotics.**
-  
-  I am an **Electrical & Computer Engineering** student at the **University of Washington** focused on building integrated hardware systems and embedded solutions for specialized environments. My background spans from designing **Altium** and **KiCAD** based PCBs for robotics to assembling wireless power modules and creating low-latency communication networks. I specialize in the end-to-end development cycle, including schematic capture, board assembly, and system-level debugging to ensure reliability in demanding applications. 
-  
-  Beyond hardware, I leverage a strong foundation in firmware development and technical computing to bridge the gap between physical sensors and software applications. Having worked in multidisciplinary teams for research and college clubs, I prioritize design reliability, signal integrity, and cost-effective integration.
+
+> **Actively seeking Summer 2026 Internship opportunities in Embedded Systems, Hardware Engineering, or Robotics.**
+
+I am an **Electrical & Computer Engineering** student at the **University of Washington** focused on building integrated hardware systems and embedded solutions for specialized environments. My background spans from designing **Altium** and **KiCad** based PCBs for robotics to assembling wireless power modules and creating low-latency communication networks. I specialize in the end-to-end development cycle, including schematic capture, board assembly, and system-level debugging to ensure reliability in demanding applications.
+
+Beyond hardware, I leverage a strong foundation in firmware development and technical computing to bridge the gap between physical sensors and software applications. Having worked in multidisciplinary teams for research and college clubs, I prioritize design reliability, signal integrity, and cost-effective integration.
 
 ---
 
@@ -16,22 +16,83 @@
 
 <div class="project-card">
   <div class="card-header">
-    <span class="card-category">R&D / ACADEMIA</span>
+    <span class="card-category">RESEARCH / EMBEDDED SYSTEMS</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">JAN 2026 — PRESENT</span>
   </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Engineering Lab Assistant</h3>
-  <p>Leading hardware validation and testing for low-power IoT sensor nodes.</p>
-  <ul>
-    <li>Debugged SPI and I2C signal timing using logic analyzers.</li>
-    <li>Optimized power consumption via firmware sleep-state management.</li>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Programmable Matter Lab</h3>
+  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Undergraduate Researcher | Seattle, WA</p>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values.</li>
+    <li>Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication.</li>
+    <li>Analyzed datasheets to develop electronics system including ESP32-C3 MCU, FDC2214 capacitance-to-digital converters, and multiplexers.</li>
+    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain stable operating range (3.0V–3.6V).</li>
+    <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized readings to **reduce noise by 20%**.</li>
   </ul>
+
+  <div class="card-stats">
+    <div class="stat-item">
+      <span class="stat-value">ESP32-C3</span>
+      <span class="stat-label">MCU Stack</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">-20%</span>
+      <span class="stat-label">Signal Noise</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">LiFePO4</span>
+      <span class="stat-label">Power</span>
+    </div>
+  </div>
+
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Logic Analyzers</span>
-    <span class="tag">Firmware (C)</span>
+    <span class="tag">Embedded C</span>
+    <span class="tag">BLE</span>
+    <span class="tag">Mixed-Signal</span>
     <span class="tag">Signal Integrity</span>
   </div>
 </div>
 
-<hr>
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">ROBOTICS / HARDWARE DESIGN</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">SEPT 2024 — PRESENT</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Husky Robotics Club</h3>
+  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
+    <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a BLDC motor board.</li>
+    <li>Replaced commercial motor controllers with custom PCB solution, **reducing system cost by 30%**.</li>
+    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 integration.</li>
+    <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors via through-hole and reflow soldering.</li>
+  </ul>
+
+  <div class="card-stats">
+    <div class="stat-item">
+      <span class="stat-value">20A / 24V</span>
+      <span class="stat-label">Power Rating</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">-30%</span>
+      <span class="stat-label">System Cost</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">Altium</span>
+      <span class="stat-label">EDA Tool</span>
+    </div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">PCB Layout</span>
+    <span class="tag">Motor Control</span>
+    <span class="tag">PSoC</span>
+    <span class="tag">Soldering</span>
+  </div>
+</div>
+
+---
 
 <section id="projects"></section>
 
@@ -65,7 +126,7 @@
   </div>
 </div>
 
-<hr>
+---
 
 <section id="timeline"></section>
 
@@ -73,10 +134,3 @@
 * **2026:** Launching Professional Portfolio.
 * **2025:** Junior Standing at UW.
 * **2024:** Successfully fabricated first custom dual-layer PCB.
-
-<hr>
-
-<section id="contact"></section>
-
-# <i class="fa-solid fa-envelope"></i> Contact
-* [LinkedIn](https://linkedin.com) | [GitHub](https://github.com/AdityaManivel)
