@@ -93,7 +93,77 @@ I am a **Bachelor of Science, Electrical & Computer Engineering** student at the
     <span class="tag">Soldering</span>
   </div>
 </div>
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">ROBOTICS / MECHATRONICS</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">OCT 2024 — PRESENT</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">UW Human Powered Submarine</h3>
+  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Developed a <strong>low-latency safety system</strong> for an underwater vehicle, ensuring rapid response to critical sensor data.</li>
+    <li>Designed custom enclosures and wiring harnesses to maintain signal integrity in high-pressure, underwater environments.</li>
+    <li>Collaborated with the controls team to integrate sensor feedback for real-time propulsion monitoring.</li>
+  </ul>
 
+  <div class="card-stats">
+    <div class="stat-item">
+      <span class="stat-value">Low-Latency</span>
+      <span class="stat-label">Safety Sys</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">IP68</span>
+      <span class="stat-label">Design Std</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">Sensors</span>
+      <span class="stat-label">Integration</span>
+    </div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Mechatronics</span>
+    <span class="tag">Embedded Systems</span>
+    <span class="tag">Systems Engineering</span>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">DATA / VOLUNTEER</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">JUNE 2023 — AUG 2023</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Blood Cancer UK</h3>
+  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Volunteer Data Analyst | Remote</p>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Cleaned and organized donor datasets to improve outreach efficiency and database accuracy.</li>
+    <li>Utilized <strong>Excel and Python</strong> scripts to automate data entry tasks, reducing manual processing time.</li>
+    <li>Synthesized campaign results into actionable reports for the fundraising team.</li>
+  </ul>
+
+  <div class="card-stats">
+    <div class="stat-item">
+      <span class="stat-value">Python</span>
+      <span class="stat-label">Automation</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">Data</span>
+      <span class="stat-label">Integrity</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">Analysis</span>
+      <span class="stat-label">Reporting</span>
+    </div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Python</span>
+    <span class="tag">Data Management</span>
+    <span class="tag">Analytical Thinking</span>
+  </div>
+</div>
 ---
 
 <section id="projects"></section>
