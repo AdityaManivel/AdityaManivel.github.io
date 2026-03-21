@@ -14,96 +14,111 @@
         --copper: #d4af37;
         --silkscreen: #ffffff;
         --neon-cyan: #00ffcc;
+        --trace-opacity: 0.06;
       }
       
       body { 
         background-color: var(--pcb-green); 
-        color: #cfd8dc; 
-        margin: 0; 
-        font-family: 'Inter', sans-serif;
-        line-height: 1.6;
-        overflow-x: hidden;
-        /* Low-key Circuit Board Background */
-        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.06'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Ccircle cx='90' cy='60' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3Cpath d='M50 0v20h20v20h10v40'/%3E%3Ccircle cx='80' cy='80' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        color: #cfd8dc; margin: 0; font-family: 'Inter', sans-serif; line-height: 1.6; overflow-x: hidden;
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.06'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
       }
 
       .nav-menu { 
         position: fixed; top: 0; width: 100%; background: rgba(10, 46, 42, 0.95); 
-        backdrop-filter: blur(8px);
-        z-index: 9999; text-align: center; padding: 18px 0; border-bottom: 1px solid var(--copper); 
+        backdrop-filter: blur(8px); z-index: 9999; text-align: center; padding: 18px 0; border-bottom: 1px solid var(--copper); 
       }
-      .nav-menu a { 
-        color: var(--copper); text-decoration: none; margin: 0 15px; 
-        font-weight: 600; font-size: 0.75rem; letter-spacing: 1.5px; 
+      .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
+
+      .page-header { padding: 10rem 1rem 6rem 1rem; background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); text-align: center; border-bottom: 3px solid var(--copper); }
+      .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; color: var(--copper); margin: 0; }
+
+      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
+      .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 4rem; text-transform: uppercase; }
+
+      /* --- SPLIT GRID TIMELINE --- */
+      .timeline-grid {
+        display: grid;
+        grid-template-columns: 140px 2px 1fr; /* Left: Year | Middle: Trace | Right: Content */
+        gap: 30px;
+        margin-top: 3rem;
+      }
+
+      .tm-year {
+        text-align: right;
         font-family: 'JetBrains Mono', monospace;
+        font-size: 0.85rem;
+        color: var(--copper);
+        padding-top: 5px;
+        font-weight: 700;
       }
 
-      .page-header { 
-        padding: 10rem 1rem 6rem 1rem; 
-        background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); 
-        color: var(--silkscreen); text-align: center; border-bottom: 3px solid var(--copper); 
-      }
-      .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; font-weight: 700; color: var(--copper); margin: 0; }
-      .project-tagline { font-weight: 300; font-size: 1.2rem; opacity: 0.9; margin-top: 10px; }
-
-      .main-content { max-width: 850px; padding: 2rem; margin: 0 auto; position: relative; }
-      
-      .main-content h1 { 
-        font-family: 'JetBrains Mono', monospace;
-        color: var(--silkscreen); border-left: 4px solid var(--copper); 
-        padding-left: 15px; margin-top: 5rem; display: flex; align-items: center; gap: 12px;
-        font-size: 1.6rem; text-transform: uppercase;
-      }
-
-      /* --- ACTUAL VERTICAL TIMELINE --- */
-      .timeline-section { margin-top: 4rem; }
-      .timeline-container {
-        position: relative;
-        padding: 20px 0;
-        margin-left: 20px;
-      }
-      /* The actual vertical line (PCB Trace) */
-      .timeline-container::before {
-        content: '';
-        position: absolute;
-        left: 7px;
-        top: 0;
-        width: 2px;
-        height: 100%;
+      .tm-trace {
         background: rgba(212, 175, 55, 0.2);
+        position: relative;
       }
 
-      .v-item {
-        position: relative;
-        padding-left: 40px;
-        margin-bottom: 50px;
-      }
-      /* Dots that sit on the line */
-      .v-dot {
+      .tm-dot {
         position: absolute;
-        left: 0;
-        top: 6px;
-        width: 16px;
-        height: 16px;
+        left: 50%;
+        top: 10px;
+        transform: translateX(-50%);
+        width: 12px;
+        height: 12px;
         background: var(--neon-cyan);
         border-radius: 50%;
         box-shadow: 0 0 10px var(--neon-cyan);
-        z-index: 2;
-        transition: 0.3s;
       }
-      .v-item:hover .v-dot {
-        box-shadow: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan);
-        transform: scale(1.2);
+
+      .tm-content {
+        padding-bottom: 60px;
       }
-      
-      .v-content { text-decoration: none; display: block; transition: transform 0.3s ease; }
-      .v-content:hover { transform: translateX(10px); }
-      .v-date { font-family: 'JetBrains Mono', monospace; color: var(--copper); font-size: 0.8rem; font-weight: 700; display: block; }
-      .v-title { color: var(--silkscreen); font-weight: 600; font-size: 1.15rem; margin: 5px 0 0 0; }
-      .v-desc { color: #cfd8dc; font-size: 0.9rem; opacity: 0.7; margin-top: 5px; }
+
+      .tm-card {
+        background: rgba(10, 46, 42, 0.6);
+        border: 1px solid rgba(212, 175, 55, 0.15);
+        border-radius: 8px;
+        padding: 1.5rem;
+        transition: 0.3s ease;
+        text-decoration: none;
+        display: block;
+        color: inherit;
+      }
+
+      .tm-card:hover {
+        border-color: var(--neon-cyan);
+        transform: translateX(10px);
+        background: rgba(10, 46, 42, 0.9);
+      }
+
+      .tm-title {
+        color: var(--silkscreen);
+        font-weight: 600;
+        font-size: 1.1rem;
+        margin: 0 0 8px 0;
+      }
+
+      /* The visual duration block */
+      .tm-duration-block {
+        display: inline-block;
+        background: rgba(0, 255, 204, 0.1);
+        border: 1px solid var(--neon-cyan);
+        color: var(--neon-cyan);
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.7rem;
+        padding: 2px 8px;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+      }
+
+      .tm-desc {
+        font-size: 0.9rem;
+        opacity: 0.8;
+        margin: 0;
+      }
 
       footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
-      hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.3; margin: 5rem 0; }
+      hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.3; margin: 4rem 0; }
     </style>
   </head>
   <body>
@@ -118,69 +133,75 @@
 
     <header class="page-header">
       <h1 class="project-name">{{ site.title | default: "Aditya Manivel" }}</h1>
-      <h2 class="project-tagline">{{ site.description | default: "B.S. ECE | University of Washington" }}</h2>
+      <h2 style="color:white; opacity:0.8;">{{ site.description }}</h2>
     </header>
 
     <main class="main-content">
       {{ content }}
-      
       <hr>
 
-      <section id="timeline" class="timeline-section">
+      <section id="timeline">
         <h1><i class="fa-solid fa-microchip"></i> Timeline</h1>
-        <div class="timeline-container">
+        
+        <div class="timeline-grid">
           
-          <div class="v-item">
-            <div class="v-dot"></div>
-            <a href="#experience" class="v-content">
-              <span class="v-date">JAN 2026 — PRESENT</span>
-              <p class="v-title">Programmable Matter Lab</p>
-              <p class="v-desc">Undergraduate Researcher | Embedded Systems & BLE</p>
+          <div class="tm-year">2026 — PRES</div>
+          <div class="tm-trace"><div class="tm-dot"></div></div>
+          <div class="tm-content">
+            <a href="#experience" class="tm-card">
+              <div class="tm-duration-block">Current Role</div>
+              <h3 class="tm-title">Programmable Matter Lab</h3>
+              <p class="tm-desc">Undergraduate Researcher | Embedded Systems & BLE</p>
             </a>
           </div>
 
-          <div class="v-item">
-            <div class="v-dot"></div>
-            <a href="#projects" class="v-content">
-              <span class="v-date">NOV 2025 — JAN 2026</span>
-              <p class="v-title">SwingTrack</p>
-              <p class="v-desc">Wearable Tennis Tracker | ESP32, GPS, & IMU</p>
+          <div class="tm-year">2025 — 2026</div>
+          <div class="tm-trace"><div class="tm-dot"></div></div>
+          <div class="tm-content">
+            <a href="#projects" class="tm-card">
+              <div class="tm-duration-block">3 Months</div>
+              <h3 class="tm-title">SwingTrack</h3>
+              <p class="tm-desc">Wearable Tennis Tracker | ESP32 & IMU Integration</p>
             </a>
           </div>
 
-          <div class="v-item">
-            <div class="v-dot"></div>
-            <a href="#projects" class="v-content">
-              <span class="v-date">NOV 2025 — DEC 2025</span>
-              <p class="v-title">Line-Following Robot</p>
-              <p class="v-desc">Hardware Lead | Custom KiCAD PCB Design</p>
+          <div class="tm-year">2025</div>
+          <div class="tm-trace"><div class="tm-dot"></div></div>
+          <div class="tm-content">
+            <a href="#projects" class="tm-card">
+              <div class="tm-duration-block">Design Cycle</div>
+              <h3 class="tm-title">Line-Following Robot</h3>
+              <p class="tm-desc">Hardware Lead | Custom KiCAD PCB Fabrication</p>
             </a>
           </div>
 
-          <div class="v-item">
-            <div class="v-dot"></div>
-            <a href="#experience" class="v-content">
-              <span class="v-date">JULY 2025 — OCT 2025</span>
-              <p class="v-title">Blood Cancer United</p>
-              <p class="v-desc">Information Management Intern | Salesforce CRM</p>
+          <div class="tm-year">2025</div>
+          <div class="tm-trace"><div class="tm-dot"></div></div>
+          <div class="tm-content">
+            <a href="#experience" class="tm-card">
+              <div class="tm-duration-block">Summer Intern</div>
+              <h3 class="tm-title">Blood Cancer United</h3>
+              <p class="tm-desc">Information Management | Salesforce CRM</p>
             </a>
           </div>
 
-          <div class="v-item">
-            <div class="v-dot"></div>
-            <a href="#experience" class="v-content">
-              <span class="v-date">SEPT 2024 — PRESENT</span>
-              <p class="v-title">Husky Robotics</p>
-              <p class="v-desc">Electronics Engineer | Motor Controller PCB Design</p>
+          <div class="tm-year">2024 — PRES</div>
+          <div class="tm-trace"><div class="tm-dot"></div></div>
+          <div class="tm-content">
+            <a href="#experience" class="tm-card">
+              <div class="tm-duration-block">Active Member</div>
+              <h3 class="tm-title">Husky Robotics</h3>
+              <p class="tm-desc">Electronics Engineer | Motor Controller Design</p>
             </a>
           </div>
 
-          <div class="v-item">
-            <div class="v-dot"></div>
-            <a href="#experience" class="v-content">
-              <span class="v-date">SEPT 2024 — JUNE 2025</span>
-              <p class="v-title">Human Powered Submarine (UWHPS)</p>
-              <p class="v-desc">Electronics Engineer | Wireless Power Systems</p>
+          <div class="tm-year">2024 — 2025</div>
+          <div class="tm-trace"><div class="tm-dot"></div></div>
+          <div class="tm-content">
+            <a href="#experience" class="tm-card">
+              <div class="tm-duration-block">Academic Year</div>
+              <h3 class="tm-title">Human Powered Submarine</h3>
+              <p class="tm-desc">Electronics Engineer | Wireless Power Systems</p>
             </a>
           </div>
 
