@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
       html { scroll-behavior: smooth; }
-      
       :root {
         --pcb-green: #061a18;
         --soldermask: #0a2e2a;
@@ -15,56 +14,31 @@
         --silkscreen: #ffffff;
         --trace-lowkey: rgba(212, 175, 55, 0.05);
       }
-
       body { 
-        background-color: var(--pcb-green); 
-        color: #cfd8dc; 
-        margin: 0; 
+        background-color: var(--pcb-green); color: #cfd8dc; margin: 0; 
         font-family: 'Segoe UI', Arial, sans-serif;
-        /* Subtle Grid Pattern */
-        background-image: 
-          radial-gradient(var(--trace-lowkey) 1px, transparent 0),
-          linear-gradient(to right, var(--trace-lowkey) 1px, transparent 1px),
-          linear-gradient(to bottom, var(--trace-lowkey) 1px, transparent 1px);
-        background-size: 40px 40px, 80px 80px, 80px 80px;
+        background-image: radial-gradient(var(--trace-lowkey) 1px, transparent 0);
+        background-size: 40px 40px;
       }
-      
       .nav-menu { 
-        position: fixed; top: 0; width: 100%; 
-        background: rgba(10, 46, 42, 0.98); 
-        z-index: 9999; text-align: center; padding: 18px 0; 
-        border-bottom: 1px solid var(--copper); 
+        position: fixed; top: 0; width: 100%; background: rgba(10, 46, 42, 0.98); 
+        z-index: 9999; text-align: center; padding: 18px 0; border-bottom: 1px solid var(--copper); 
       }
-      .nav-menu a { 
-        color: var(--copper); 
-        text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.8rem; 
-        letter-spacing: 1px; transition: 0.3s; 
-      }
+      .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.8rem; letter-spacing: 1px; }
       .nav-menu a:hover { color: var(--silkscreen); }
-
-      .page-header { 
-        padding: 8rem 1rem 4rem 1rem; 
-        background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); 
-        color: var(--silkscreen); 
-        text-align: center; 
-        border-bottom: 3px solid var(--copper); 
-      }
-
-      .project-name { font-size: 2.8rem; color: var(--copper); }
-      
+      .page-header { padding: 8rem 1rem 4rem 1rem; background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); color: var(--silkscreen); text-align: center; border-bottom: 3px solid var(--copper); }
+      .project-name { font-size: 2.8rem; color: var(--copper); margin: 0; }
       .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
       
-      .main-content h1, .main-content h2 { 
-        color: var(--silkscreen); 
-        border-left: 4px solid var(--copper); 
-        padding-left: 15px; 
-        margin-top: 3.5rem; 
+      /* Icon Styling in Titles */
+      .main-content h1 { 
+        color: var(--silkscreen); border-left: 4px solid var(--copper); 
+        padding-left: 15px; margin-top: 3.5rem; display: flex; align-items: center; gap: 12px;
+        font-size: 1.8rem;
       }
-
-      .main-content a { color: #00ffcc; text-decoration: none; border-bottom: 1px solid rgba(0, 255, 204, 0.2); }
+      .main-content h1 i { color: var(--copper); font-size: 1.4rem; }
       
       section { padding-top: 110px; margin-top: -60px; }
-      footer { text-align: center; padding: 4rem; color: #455a64; font-size: 0.8rem; }
       hr { border: 0; height: 1px; background: var(--copper); opacity: 0.3; margin: 3rem 0; }
     </style>
   </head>
@@ -83,7 +57,9 @@
     </header>
     <main class="main-content">
       {{ content }}
-      <footer>&copy; 2026 Aditya Manivel | Electrical & Computer Engineering</footer>
+      <footer style="text-align: center; padding: 4rem; color: #455a64; font-size: 0.8rem;">
+        &copy; 2026 Aditya Manivel | Electrical & Computer Engineering
+      </footer>
     </main>
   </body>
 </html>
