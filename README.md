@@ -80,43 +80,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 <div class="project-card">
   <div class="card-header">
-    <span class="card-category">ROBOTICS / MECHATRONICS</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">SEP 2024 — JUNE 2025</span>
-  </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Human Powered Submarine</h3>
-  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
-  
-  <ul style="font-size: 0.9rem;">
-    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
-    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
-    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing seal failure risk.</li>
-  </ul>
-
-  <div class="card-stats">
-    <div class="stat-item">
-      <span class="stat-value">Qi-Standard</span>
-      <span class="stat-label">Wireless Power</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">12,000 mAh</span>
-      <span class="stat-label">Battery Capacity</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">100%</span>
-      <span class="stat-label">Waterproof Seal</span>
-    </div>
-  </div>
-
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Mechatronics</span>
-    <span class="tag">Embedded Systems</span>
-    <span class="tag">Systems Engineering</span>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="card-header">
-    <span class="card-category">DATA / VOLUNTEER</span>
+    <span class="card-category">INFORMATION SYSTEMS / CRM MANAGEMENT</span>
     <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">JULY 2025 — OCT 2025</span>
   </div>
   <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Blood Cancer United</h3>
@@ -150,6 +114,41 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
 </div>
 
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">ROBOTICS / MECHATRONICS</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">SEP 2024 — JUNE 2025</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Human Powered Submarine</h3>
+  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
+    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
+    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing seal failure risk.</li>
+  </ul>
+
+  <div class="card-stats">
+    <div class="stat-item">
+      <span class="stat-value">Qi-Standard</span>
+      <span class="stat-label">Wireless Power</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">12,000 mAh</span>
+      <span class="stat-label">Battery Capacity</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">100%</span>
+      <span class="stat-label">Waterproof Seal</span>
+    </div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Mechatronics</span>
+    <span class="tag">Embedded Systems</span>
+    <span class="tag">Systems Engineering</span>
+  </div>
+</div>
 ---
 
 <section id="projects"></section>
