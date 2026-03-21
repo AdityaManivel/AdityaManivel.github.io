@@ -176,9 +176,9 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <li>Soldered through-hole components to a custom PCB and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
   </ul>
 
-  <div style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 15px; justify-content: center;">
-    <img src="Robot.png" alt="Line-Following Robot" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
-    <img src="PCBLineFollow.png" alt="Custom KiCAD PCB Layout" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
+  <div style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 15px; justify-content: center; align-items: start;">
+    <img src="Robot.png" alt="Line-Following Robot" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3);">
+    <img src="PCBLineFollow.png" alt="Custom KiCAD PCB Layout" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: contain; background: #1a1a1a;">
   </div>
 
   <div class="card-stats">
