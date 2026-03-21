@@ -8,7 +8,6 @@
     <style>
       html { scroll-behavior: smooth; }
       
-      /* PCB Theme Colors */
       :root {
         --pcb-green: #061a18;
         --soldermask: #0a2e2a;
@@ -21,8 +20,8 @@
         background-color: var(--pcb-green); 
         color: #cfd8dc; 
         margin: 0; 
-        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-        /* Subtle Circuit Background Pattern */
+        font-family: 'Segoe UI', Arial, sans-serif;
+        /* Subtle Grid Pattern */
         background-image: 
           radial-gradient(var(--trace-lowkey) 1px, transparent 0),
           linear-gradient(to right, var(--trace-lowkey) 1px, transparent 1px),
@@ -39,9 +38,9 @@
       .nav-menu a { 
         color: var(--copper); 
         text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 0.8rem; 
-        letter-spacing: 2px; transition: 0.3s; 
+        letter-spacing: 1px; transition: 0.3s; 
       }
-      .nav-menu a:hover { color: var(--silkscreen); text-shadow: 0 0 8px var(--copper); }
+      .nav-menu a:hover { color: var(--silkscreen); }
 
       .page-header { 
         padding: 8rem 1rem 4rem 1rem; 
@@ -51,26 +50,22 @@
         border-bottom: 3px solid var(--copper); 
       }
 
-      .project-name { font-size: 2.8rem; color: var(--copper); text-transform: uppercase; font-family: 'Courier New', monospace; }
+      .project-name { font-size: 2.8rem; color: var(--copper); }
       
-      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; background: rgba(6, 26, 24, 0.7); border-radius: 8px; }
+      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
       
       .main-content h1, .main-content h2 { 
         color: var(--silkscreen); 
         border-left: 4px solid var(--copper); 
         padding-left: 15px; 
         margin-top: 3.5rem; 
-        font-family: 'Courier New', monospace;
       }
 
-      .main-content a { color: #00ffcc; text-decoration: none; border-bottom: 1px solid rgba(0, 255, 204, 0.3); }
-      .main-content a:hover { border-bottom: 1px solid #00ffcc; }
+      .main-content a { color: #00ffcc; text-decoration: none; border-bottom: 1px solid rgba(0, 255, 204, 0.2); }
       
       section { padding-top: 110px; margin-top: -60px; }
-      footer { text-align: center; padding: 4rem; color: #455a64; font-size: 0.7rem; font-family: monospace; }
-      
-      /* Subtle Divider like a PCB Trace */
-      hr { border: 0; height: 1px; background-image: linear-gradient(to right, transparent, var(--copper), transparent); margin: 3rem 0; }
+      footer { text-align: center; padding: 4rem; color: #455a64; font-size: 0.8rem; }
+      hr { border: 0; height: 1px; background: var(--copper); opacity: 0.3; margin: 3rem 0; }
     </style>
   </head>
   <body>
@@ -84,11 +79,11 @@
     </nav>
     <header class="page-header">
       <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">REV_1.0 // {{ site.description }}</h2>
+      <h2 class="project-tagline">{{ site.description }}</h2>
     </header>
     <main class="main-content">
       {{ content }}
-      <footer>&copy; 2026 ADITYA_MANIVEL // STATUS: OPTIMAL</footer>
+      <footer>&copy; 2026 Aditya Manivel | Electrical & Computer Engineering</footer>
     </main>
   </body>
 </html>
