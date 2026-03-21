@@ -66,9 +66,9 @@ Beyond hardware, I leverage a strong foundation in firmware development and tech
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">20A / 24V</span><span class="stat-label">Power Rating</span></div>
-    <div class="stat-item"><span class="stat-value">-30%</span><span class="stat-label">System Cost</span></div>
-    <div class="stat-item"><span class="stat-value">Altium</span><span class="stat-label">EDA Tool</span></div>
+    <div class="stat-item"><span class="stat-value">20A / 24V </span><span class="stat-label">Power Rating</span></div>
+    <div class="stat-item"><span class="stat-value">-30% </span><span class="stat-label">System Cost</span></div>
+    <div class="stat-item"><span class="stat-value">Altium </span><span class="stat-label">EDA Tool</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
@@ -142,9 +142,9 @@ Beyond hardware, I leverage a strong foundation in firmware development and tech
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Python</span>
+    <span class="tag">Salesforce</span>
     <span class="tag">Data Management</span>
-    <span class="tag">Analytical Thinking</span>
+  </div>
   </div>
 </div>
 
@@ -162,7 +162,7 @@ Beyond hardware, I leverage a strong foundation in firmware development and tech
   <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Wireless Power Module</h3>
   <p>Designed and assembled a custom module for robotics, focusing on high-efficiency power transfer.</p>
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Altium</span><span class="stat-label">EDA</span></div>
+    <div class="stat-item"><span class="stat-value">Altium </span><span class="stat-label">EDA</span></div>
     <div class="stat-item"><span class="stat-value">92%</span><span class="stat-label">Efficiency</span></div>
     <div class="stat-item"><span class="stat-value">REV A</span><span class="stat-label">Status</span></div>
   </div>
