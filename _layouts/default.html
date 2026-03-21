@@ -19,7 +19,7 @@
       body { 
         background-color: var(--pcb-green); 
         color: #cfd8dc; margin: 0; font-family: 'Inter', sans-serif; line-height: 1.6; overflow-x: hidden;
-        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.06'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.05'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
       }
 
       .nav-menu { 
@@ -31,78 +31,99 @@
       .page-header { padding: 10rem 1rem 6rem 1rem; background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); text-align: center; border-bottom: 3px solid var(--copper); }
       .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; color: var(--copper); margin: 0; }
 
-      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
+      .main-content { max-width: 1000px; padding: 2rem; margin: 0 auto; }
       .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 4rem; text-transform: uppercase; }
 
-      /* --- CLEAN SPLIT TIMELINE --- */
-      .timeline-grid {
-        display: grid;
-        grid-template-columns: 180px 2px 1fr; 
-        gap: 40px;
-        margin-top: 3rem;
+      /* --- PARALLEL TIMELINE SYSTEM --- */
+      .timeline-container { margin-top: 3rem; position: relative; }
+      
+      .timeline-row {
+        display: flex;
+        align-items: stretch;
+        margin-bottom: 20px;
+        min-height: 80px;
       }
 
-      .tm-year {
+      .tm-date-side {
+        width: 220px;
+        flex-shrink: 0;
         text-align: right;
+        padding-right: 30px;
         font-family: 'JetBrains Mono', monospace;
-        font-size: 0.8rem;
+        font-size: 0.75rem;
         color: var(--copper);
-        padding-top: 12px;
         font-weight: 700;
-        line-height: 1.2;
-      }
-
-      .tm-trace {
-        background: rgba(212, 175, 55, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        border-right: 2px solid rgba(212, 175, 55, 0.2);
         position: relative;
       }
 
-      .tm-dot {
+      /* Connection Dot */
+      .tm-date-side::after {
+        content: '';
         position: absolute;
-        left: 50%;
-        top: 15px;
-        transform: translateX(-50%);
-        width: 10px;
-        height: 10px;
+        right: -7px;
+        width: 12px;
+        height: 12px;
         background: var(--neon-cyan);
         border-radius: 50%;
         box-shadow: 0 0 10px var(--neon-cyan);
       }
 
-      .tm-content { padding-bottom: 50px; }
-
-      .tm-card {
-        background: rgba(10, 46, 42, 0.4);
-        border: 1px solid rgba(212, 175, 55, 0.1);
-        border-radius: 6px;
-        padding: 1rem 1.5rem;
-        text-decoration: none;
-        display: block;
-        transition: 0.3s ease;
+      .tm-content-side {
+        flex-grow: 1;
+        padding-left: 30px;
+        display: flex;
+        gap: 15px; /* Spacing between parallel blocks */
+        align-items: center;
       }
 
-      .tm-card:hover {
+      .tm-block {
+        flex: 1;
+        background: rgba(10, 46, 42, 0.5);
+        border: 1px solid rgba(212, 175, 55, 0.15);
+        border-radius: 4px;
+        padding: 12px 20px;
+        text-decoration: none;
+        transition: 0.3s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+      }
+
+      .tm-block:hover {
         border-color: var(--neon-cyan);
-        background: rgba(10, 46, 42, 0.8);
+        background: rgba(10, 46, 42, 0.85);
+        transform: translateY(-2px);
       }
 
       .tm-role {
         color: var(--neon-cyan);
         font-family: 'JetBrains Mono', monospace;
-        font-size: 0.75rem;
-        margin-bottom: 4px;
+        font-size: 0.65rem;
         text-transform: uppercase;
+        margin-bottom: 2px;
+        letter-spacing: 1px;
       }
 
       .tm-title {
         color: var(--silkscreen);
         font-weight: 600;
-        font-size: 1.1rem;
+        font-size: 1rem;
         margin: 0;
       }
 
       footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
       hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.3; margin: 4rem 0; }
+
+      /* Mobile Adjustment */
+      @media (max-width: 768px) {
+        .tm-content-side { flex-direction: column; }
+        .tm-date-side { width: 120px; font-size: 0.65rem; }
+      }
     </style>
   </head>
   <body>
@@ -117,7 +138,7 @@
 
     <header class="page-header">
       <h1 class="project-name">{{ site.title | default: "Aditya Manivel" }}</h1>
-      <h2 style="color:white; opacity:0.8;">{{ site.description }}</h2>
+      <h2 style="color:white; opacity:0.8; font-weight: 300;">{{ site.description }}</h2>
     </header>
 
     <main class="main-content">
@@ -127,60 +148,54 @@
       <section id="timeline">
         <h1><i class="fa-solid fa-microchip"></i> Timeline</h1>
         
-        <div class="timeline-grid">
+        <div class="timeline-container">
           
-          <div class="tm-year">JANUARY 2026 — PRESENT</div>
-          <div class="tm-trace"><div class="tm-dot"></div></div>
-          <div class="tm-content">
-            <a href="#experience" class="tm-card">
-              <div class="tm-role">Undergraduate Researcher</div>
-              <h3 class="tm-title">Programmable Matter Lab</h3>
-            </a>
+          <div class="timeline-row">
+            <div class="tm-date-side">JANUARY 2026 — PRESENT</div>
+            <div class="tm-content-side">
+              <a href="#experience" class="tm-block">
+                <div class="tm-role">Undergraduate Researcher</div>
+                <h3 class="tm-title">Programmable Matter Lab</h3>
+              </a>
+            </div>
           </div>
 
-          <div class="tm-year">NOVEMBER 2025 — JANUARY 2026</div>
-          <div class="tm-trace"><div class="tm-dot"></div></div>
-          <div class="tm-content">
-            <a href="#projects" class="tm-card">
-              <div class="tm-role">Project Lead</div>
-              <h3 class="tm-title">SwingTrack</h3>
-            </a>
+          <div class="timeline-row">
+            <div class="tm-date-side">NOVEMBER 2025 — JANUARY 2026</div>
+            <div class="tm-content-side">
+              <a href="#projects" class="tm-block">
+                <div class="tm-role">Project Lead</div>
+                <h3 class="tm-title">SwingTrack</h3>
+              </a>
+              <a href="#projects" class="tm-block">
+                <div class="tm-role">Hardware Lead</div>
+                <h3 class="tm-title">Line-Following Robot</h3>
+              </a>
+            </div>
           </div>
 
-          <div class="tm-year">NOVEMBER 2025 — DECEMBER 2025</div>
-          <div class="tm-trace"><div class="tm-dot"></div></div>
-          <div class="tm-content">
-            <a href="#projects" class="tm-card">
-              <div class="tm-role">Hardware Lead</div>
-              <h3 class="tm-title">Line-Following Robot</h3>
-            </a>
+          <div class="timeline-row">
+            <div class="tm-date-side">JULY 2025 — OCTOBER 2025</div>
+            <div class="tm-content-side">
+              <a href="#experience" class="tm-block">
+                <div class="tm-role">Information Management Intern</div>
+                <h3 class="tm-title">Blood Cancer United</h3>
+              </a>
+            </div>
           </div>
 
-          <div class="tm-year">JULY 2025 — OCTOBER 2025</div>
-          <div class="tm-trace"><div class="tm-dot"></div></div>
-          <div class="tm-content">
-            <a href="#experience" class="tm-card">
-              <div class="tm-role">Information Management Intern</div>
-              <h3 class="tm-title">Blood Cancer United</h3>
-            </a>
-          </div>
-
-          <div class="tm-year">SEPTEMBER 2024 — PRESENT</div>
-          <div class="tm-trace"><div class="tm-dot"></div></div>
-          <div class="tm-content">
-            <a href="#experience" class="tm-card">
-              <div class="tm-role">Electronics Engineer</div>
-              <h3 class="tm-title">Husky Robotics Club</h3>
-            </a>
-          </div>
-
-          <div class="tm-year">SEPTEMBER 2024 — JUNE 2025</div>
-          <div class="tm-trace"><div class="tm-dot"></div></div>
-          <div class="tm-content">
-            <a href="#experience" class="tm-card">
-              <div class="tm-role">Inductive Charging Project Engineer</div>
-              <h3 class="tm-title">Human Powered Submarine Team</h3>
-            </a>
+          <div class="timeline-row">
+            <div class="tm-date-side">SEPTEMBER 2024 — PRESENT</div>
+            <div class="tm-content-side">
+              <a href="#experience" class="tm-block">
+                <div class="tm-role">Electronics Engineer</div>
+                <h3 class="tm-title">Husky Robotics Club</h3>
+              </a>
+              <a href="#experience" class="tm-block">
+                <div class="tm-role">Project Engineer</div>
+                <h3 class="tm-title">Human Powered Submarine</h3>
+              </a>
+            </div>
           </div>
 
         </div>
