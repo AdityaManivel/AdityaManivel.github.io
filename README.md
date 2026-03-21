@@ -148,8 +148,9 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">SwingTrack</h3>
   
   <ul style="font-size: 0.9rem;">
-    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board along with GPS and IMU sensors for real-time motion tracking and data acquisition, providing athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
-    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for ergonomics and reliable mobile power delivery for 4+ hours on a single charge.</li>
+    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board along with GPS and IMU sensors for real-time motion tracking and data acquisition.</li>
+    <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
+    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for ergonomics and reliable mobile power delivery for 4+ hours.</li>
   </ul>
 
   <div class="card-stats">
@@ -172,7 +173,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   
   <ul style="font-size: 0.9rem;">
     <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% line-following accuracy.</li>
-    <li>Independently engineered a custom KiCAD PCB with a 20+ component array of potentiometers, resistors, photoresistors and LEDs to accurately measure light reflectance values.</li>
+    <li>Independently engineered a custom KiCAD PCB with a 20+ component array to measure light reflectance values.</li>
     <li>Soldered through-hole components to a custom PCB and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
   </ul>
 
@@ -188,16 +189,24 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Arduino</span><span class="tag">Through-Hole Soldering</span>
+    <span class="tag">Arduino</span><span class="tag">Through-Hole Soldering</span><span class="tag">Optoelectronics</span>
   </div>
 </div>
-
 
 ---
 
 <section id="timeline"></section>
 
-# <i class="fa-solid fa-clock-rotate-left"></i> Timeline
-* **2026:** Launching Professional Portfolio.
-* **2025:** Junior Standing at UW.
-* **2024:** Successfully fabricated first custom dual-layer PCB.
+# <i class="fa-solid fa-clock-rotate-left"></i> Interactive Timeline
+
+* **Jan 2026 — Present:** [**Programmable Matter Lab**](#experience) — Undergraduate Researcher
+* **Nov 2025 — Jan 2026:** [**SwingTrack**](#projects) — Wearable Tennis Tracker
+* **Nov 2025 — Dec 2025:** [**Line-Following Robot**](#projects) — Custom PCB & Robotics
+* **July 2025 — Oct 2025:** [**Blood Cancer United**](#experience) — Information Management Intern
+* **Sept 2024 — June 2025:** [**Human Powered Submarine**](#experience) — Electronics Engineer
+* **Sept 2024 — Present:** [**Husky Robotics Club**](#experience) — Electronics Engineer
+
+### Key Technical Milestones
+* **2026:** Launching Professional Portfolio and Research at UW
+* **2025:** Junior Standing at the University of Washington
+* **2024:** Successfully fabricated and routed first custom dual-layer PCB
