@@ -4,7 +4,7 @@
 
 <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid #00ffcc; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
   <h4 style="margin: 0; color: #00ffcc; font-family: 'JetBrains Mono', monospace;">
-    🚀 Actively seeking Summer 2026 Internships
+    Actively seeking Summer 2026 Internships
   </h4>
   <p style="margin: 5px 0 0 0; font-size: 0.9rem; opacity: 0.8;">
     Focus: Embedded Systems | Hardware Engineering | Robotics
@@ -40,9 +40,9 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">ESP32-C3</span><span class="stat-label">MCU Stack</span></div>
-    <div class="stat-item"><span class="stat-value">-20%</span><span class="stat-label">Signal Noise</span></div>
-    <div class="stat-item"><span class="stat-value">LiFePO4</span><span class="stat-label">Power</span></div>
+    <div class="stat-item"><span class="stat-value">ESP32-C3 </span><span class="stat-label">MCU Stack</span></div>
+    <div class="stat-item"><span class="stat-value">-20% </span><span class="stat-label">Signal Noise</span></div>
+    <div class="stat-item"><span class="stat-value">LiFePO4 </span><span class="stat-label">Power</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
@@ -60,17 +60,17 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   
   <ul style="font-size: 0.9rem;">
     <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
-    <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a BLDC motor board.</li>
-    <li>Replaced commercial motor controllers with a custom PCB solution, reducing system cost by 30%.</li>
-    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 integration.</li>
+    <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
+    <li>Replaced commercial motor controllers with a custom PCB solution for rover, reducing system cost by 30%.</li>
+    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 microcontroller integration.</li>
     <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors.</li>
     <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">20A / 24V</span><span class="stat-label">Power Rating</span></div>
-    <div class="stat-item"><span class="stat-value">-30%</span><span class="stat-label">System Cost</span></div>
-    <div class="stat-item"><span class="stat-value">Altium</span><span class="stat-label">EDA Tool</span></div>
+    <div class="stat-item"><span class="stat-value">20A / 24V </span><span class="stat-label">Power Rating</span></div>
+    <div class="stat-item"><span class="stat-value">-30% </span><span class="stat-label">System Cost</span></div>
+    <div class="stat-item"><span class="stat-value">Altium </span><span class="stat-label">EDA Tool</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
@@ -93,13 +93,23 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Salesforce</span><span class="stat-label">CRM Platform</span></div>
-    <div class="stat-item"><span class="stat-value">100+</span><span class="stat-label">Verified Records</span></div>
-    <div class="stat-item"><span class="stat-value">Zero-Error</span><span class="stat-label">Data Logging</span></div>
+    <div class="stat-item">
+      <span class="stat-value">Salesforce</span>
+      <span class="stat-label">CRM Platform</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">100+</span>
+      <span class="stat-label">Verified Records</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">Zero-Error</span>
+      <span class="stat-label">Data Logging</span>
+    </div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Salesforce</span><span class="tag">Data Management</span>
+    <span class="tag">Salesforce</span>
+    <span class="tag">Data Management</span>
   </div>
 </div>
 
@@ -118,13 +128,24 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Qi-Standard</span><span class="stat-label">Wireless Power</span></div>
-    <div class="stat-item"><span class="stat-value">12,000 mAh</span><span class="stat-label">Battery Capacity</span></div>
-    <div class="stat-item"><span class="stat-value">100%</span><span class="stat-label">Waterproof Seal</span></div>
+    <div class="stat-item">
+      <span class="stat-value">Qi-Standard</span>
+      <span class="stat-label">Wireless Power</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">12,000 mAh</span>
+      <span class="stat-label">Battery Capacity</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">100%</span>
+      <span class="stat-label">Waterproof Seal</span>
+    </div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Mechatronics</span><span class="tag">Embedded Systems</span><span class="tag">Systems Engineering</span>
+    <span class="tag">Mechatronics</span>
+    <span class="tag">Embedded Systems</span>
+    <span class="tag">Systems Engineering</span>
   </div>
 </div>
 
@@ -142,7 +163,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Wireless Power Module</h3>
   <p>Designed and assembled a custom module for robotics, focusing on high-efficiency power transfer.</p>
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Altium</span><span class="stat-label">EDA</span></div>
+    <div class="stat-item"><span class="stat-value">Altium </span><span class="stat-label">EDA</span></div>
     <div class="stat-item"><span class="stat-value">92%</span><span class="stat-label">Efficiency</span></div>
     <div class="stat-item"><span class="stat-value">REV A</span><span class="stat-label">Status</span></div>
   </div>
