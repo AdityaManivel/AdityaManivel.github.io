@@ -16,10 +16,8 @@
         --trace-lowkey: rgba(212, 175, 55, 0.05);
       }
       body { 
-        background-color: var(--pcb-green); 
-        color: #cfd8dc; 
-        margin: 0; 
-        font-family: 'Inter', sans-serif; /* Clean readable font */
+        background-color: var(--pcb-green); color: #cfd8dc; margin: 0; 
+        font-family: 'Inter', sans-serif;
         background-image: radial-gradient(var(--trace-lowkey) 1px, transparent 0);
         background-size: 40px 40px;
         line-height: 1.6;
@@ -34,49 +32,33 @@
         font-family: 'JetBrains Mono', monospace;
       }
       .nav-menu a:hover { color: var(--silkscreen); }
-
       .page-header { 
         padding: 9rem 1rem 5rem 1rem; 
         background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); 
         color: var(--silkscreen); text-align: center; border-bottom: 3px solid var(--copper); 
       }
-      .project-name { 
-        font-family: 'JetBrains Mono', monospace; 
-        font-size: 3rem; font-weight: 700; color: var(--copper); margin: 0; 
-      }
-      .project-tagline { 
-        font-weight: 300; font-size: 1.1rem; opacity: 0.9; letter-spacing: 0.5px; 
-      }
-
+      .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3rem; font-weight: 700; color: var(--copper); margin: 0; }
+      .project-tagline { font-weight: 300; font-size: 1.1rem; opacity: 0.9; letter-spacing: 0.5px; }
       .main-content { max-width: 850px; padding: 2rem; margin: 0 auto; }
-      
       .main-content h1 { 
         font-family: 'JetBrains Mono', monospace;
         color: var(--silkscreen); border-left: 4px solid var(--copper); 
         padding-left: 15px; margin-top: 4rem; display: flex; align-items: center; gap: 12px;
         font-size: 1.6rem; text-transform: uppercase;
       }
-      
-      /* Card Styling */
       .project-card {
         background: rgba(10, 46, 42, 0.4); border: 1px solid rgba(212, 175, 55, 0.3);
         border-radius: 12px; padding: 1.8rem; margin-bottom: 2.5rem;
-        transition: transform 0.2s ease, border 0.2s ease;
       }
-      .project-card:hover { transform: translateY(-3px); border-color: var(--copper); }
-      
       .card-category { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #00ffcc; letter-spacing: 2px; }
-      .card-stats { display: flex; gap: 25px; background: rgba(0,0,0,0.25); padding: 12px; border-radius: 6px; margin: 1.2rem 0; border: 1px solid rgba(212, 175, 55, 0.1); }
+      .card-stats { display: flex; gap: 25px; background: rgba(0,0,0,0.25); padding: 12px; border-radius: 6px; margin: 1.2rem 0; }
       .stat-value { font-family: 'JetBrains Mono', monospace; color: #00ffcc; font-size: 1.1rem; }
       .stat-label { font-size: 0.6rem; font-family: 'Inter', sans-serif; font-weight: 600; color: var(--copper); text-transform: uppercase; }
-      
       .tag { 
         background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.4); 
         color: var(--copper); padding: 3px 10px; font-size: 0.7rem; border-radius: 4px; 
-        font-family: 'JetBrains Mono', monospace; font-weight: 500;
+        font-family: 'JetBrains Mono', monospace;
       }
-      
-      section { padding-top: 100px; }
       hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.4; margin: 4rem 0; }
     </style>
   </head>
