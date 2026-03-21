@@ -14,7 +14,6 @@
         --copper: #d4af37;
         --silkscreen: #ffffff;
         --neon-cyan: #00ffcc;
-        --trace-opacity: 0.06;
       }
       
       body { 
@@ -35,21 +34,22 @@
       .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
       .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 4rem; text-transform: uppercase; }
 
-      /* --- SPLIT GRID TIMELINE --- */
+      /* --- CLEAN SPLIT TIMELINE --- */
       .timeline-grid {
         display: grid;
-        grid-template-columns: 140px 2px 1fr; /* Left: Year | Middle: Trace | Right: Content */
-        gap: 30px;
+        grid-template-columns: 180px 2px 1fr; 
+        gap: 40px;
         margin-top: 3rem;
       }
 
       .tm-year {
         text-align: right;
         font-family: 'JetBrains Mono', monospace;
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         color: var(--copper);
-        padding-top: 5px;
+        padding-top: 12px;
         font-weight: 700;
+        line-height: 1.2;
       }
 
       .tm-trace {
@@ -60,60 +60,44 @@
       .tm-dot {
         position: absolute;
         left: 50%;
-        top: 10px;
+        top: 15px;
         transform: translateX(-50%);
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         background: var(--neon-cyan);
         border-radius: 50%;
         box-shadow: 0 0 10px var(--neon-cyan);
       }
 
-      .tm-content {
-        padding-bottom: 60px;
-      }
+      .tm-content { padding-bottom: 50px; }
 
       .tm-card {
-        background: rgba(10, 46, 42, 0.6);
-        border: 1px solid rgba(212, 175, 55, 0.15);
-        border-radius: 8px;
-        padding: 1.5rem;
-        transition: 0.3s ease;
+        background: rgba(10, 46, 42, 0.4);
+        border: 1px solid rgba(212, 175, 55, 0.1);
+        border-radius: 6px;
+        padding: 1rem 1.5rem;
         text-decoration: none;
         display: block;
-        color: inherit;
+        transition: 0.3s ease;
       }
 
       .tm-card:hover {
         border-color: var(--neon-cyan);
-        transform: translateX(10px);
-        background: rgba(10, 46, 42, 0.9);
+        background: rgba(10, 46, 42, 0.8);
+      }
+
+      .tm-role {
+        color: var(--neon-cyan);
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.75rem;
+        margin-bottom: 4px;
+        text-transform: uppercase;
       }
 
       .tm-title {
         color: var(--silkscreen);
         font-weight: 600;
         font-size: 1.1rem;
-        margin: 0 0 8px 0;
-      }
-
-      /* The visual duration block */
-      .tm-duration-block {
-        display: inline-block;
-        background: rgba(0, 255, 204, 0.1);
-        border: 1px solid var(--neon-cyan);
-        color: var(--neon-cyan);
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.7rem;
-        padding: 2px 8px;
-        border-radius: 4px;
-        margin-bottom: 10px;
-        text-transform: uppercase;
-      }
-
-      .tm-desc {
-        font-size: 0.9rem;
-        opacity: 0.8;
         margin: 0;
       }
 
@@ -145,63 +129,57 @@
         
         <div class="timeline-grid">
           
-          <div class="tm-year">2026 — PRES</div>
+          <div class="tm-year">JANUARY 2026 — PRESENT</div>
           <div class="tm-trace"><div class="tm-dot"></div></div>
           <div class="tm-content">
             <a href="#experience" class="tm-card">
-              <div class="tm-duration-block">Current Role</div>
+              <div class="tm-role">Undergraduate Researcher</div>
               <h3 class="tm-title">Programmable Matter Lab</h3>
-              <p class="tm-desc">Undergraduate Researcher | Embedded Systems & BLE</p>
             </a>
           </div>
 
-          <div class="tm-year">2025 — 2026</div>
+          <div class="tm-year">NOVEMBER 2025 — JANUARY 2026</div>
           <div class="tm-trace"><div class="tm-dot"></div></div>
           <div class="tm-content">
             <a href="#projects" class="tm-card">
-              <div class="tm-duration-block">3 Months</div>
+              <div class="tm-role">Project Lead</div>
               <h3 class="tm-title">SwingTrack</h3>
-              <p class="tm-desc">Wearable Tennis Tracker | ESP32 & IMU Integration</p>
             </a>
           </div>
 
-          <div class="tm-year">2025</div>
+          <div class="tm-year">NOVEMBER 2025 — DECEMBER 2025</div>
           <div class="tm-trace"><div class="tm-dot"></div></div>
           <div class="tm-content">
             <a href="#projects" class="tm-card">
-              <div class="tm-duration-block">Design Cycle</div>
+              <div class="tm-role">Hardware Lead</div>
               <h3 class="tm-title">Line-Following Robot</h3>
-              <p class="tm-desc">Hardware Lead | Custom KiCAD PCB Fabrication</p>
             </a>
           </div>
 
-          <div class="tm-year">2025</div>
+          <div class="tm-year">JULY 2025 — OCTOBER 2025</div>
           <div class="tm-trace"><div class="tm-dot"></div></div>
           <div class="tm-content">
             <a href="#experience" class="tm-card">
-              <div class="tm-duration-block">Summer Intern</div>
+              <div class="tm-role">Information Management Intern</div>
               <h3 class="tm-title">Blood Cancer United</h3>
-              <p class="tm-desc">Information Management | Salesforce CRM</p>
             </a>
           </div>
 
-          <div class="tm-year">2024 — PRES</div>
+          <div class="tm-year">SEPTEMBER 2024 — PRESENT</div>
           <div class="tm-trace"><div class="tm-dot"></div></div>
           <div class="tm-content">
             <a href="#experience" class="tm-card">
-              <div class="tm-duration-block">Active Member</div>
-              <h3 class="tm-title">Husky Robotics</h3>
-              <p class="tm-desc">Electronics Engineer | Motor Controller Design</p>
+              <div class="tm-role">Electronics Engineer</div>
+              <h3 class="tm-title">Husky Robotics Club</h3>
             </a>
           </div>
 
-          <div class="tm-year">2024 — 2025</div>
+          <div class="tm-year">SEPTEMBER 2024 — JUNE 2025</div>
           <div class="tm-trace"><div class="tm-dot"></div></div>
           <div class="tm-content">
             <a href="#experience" class="tm-card">
-              <div class="tm-duration-block">Academic Year</div>
-              <h3 class="tm-title">Human Powered Submarine</h3>
-              <p class="tm-desc">Electronics Engineer | Wireless Power Systems</p>
+              <div class="tm-role">Inductive Charging Project Engineer</div>
+              <h3 class="tm-title">Human Powered Submarine Team</h3>
             </a>
           </div>
 
