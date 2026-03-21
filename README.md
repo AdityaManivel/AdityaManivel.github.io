@@ -34,8 +34,8 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <ul style="font-size: 0.9rem;">
     <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values.</li>
     <li>Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication.</li>
-    <li>Analyzed datasheets to develop electronics system including ESP32-C3 microcontroller, FDC2214 capacitance-to-digital converters, batteries, and multiplexers.</li>
-    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable operating range (3.0V–3.6V) without the need for active regulation.</li>
+    <li>Analyzed datasheets to develop electronics system including ESP32-C3 microcontroller, FDC2214 capacitance-to-digital converters, and multiplexers.</li>
+    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable operating range (3.0V–3.6V).</li>
     <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized capacitance readings to reduce noise by 20%.</li>
   </ul>
 
@@ -61,8 +61,8 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <ul style="font-size: 0.9rem;">
     <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
     <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
-    <li>Replaced commercial motor controllers with a custom PCB solution for rover, reducing system cost by 30%.</li>
-    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 microcontroller integration.</li>
+    <li>Replaced commercial motor controllers with a custom PCB solution, reducing system cost by 30%.</li>
+    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 integration.</li>
     <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors.</li>
     <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
   </ul>
@@ -89,27 +89,17 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <ul style="font-size: 0.9rem;">
     <li>Maintained a database of 100+ patient records by transferring medical data into Salesforce.</li>
     <li>Focused on data integrity and systems organization for sensitive patient information.</li>
-    <li>Performed manual data verification and quality control to ensure interactions were logged without errors.</li>
+    <li>Performed manual data verification and quality control to ensure interaction logs were error-free.</li>
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item">
-      <span class="stat-value">Salesforce</span>
-      <span class="stat-label">CRM Platform</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">100+</span>
-      <span class="stat-label">Verified Records</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">Zero-Error</span>
-      <span class="stat-label">Data Logging</span>
-    </div>
+    <div class="stat-item"><span class="stat-value">Salesforce</span><span class="stat-label">CRM Platform</span></div>
+    <div class="stat-item"><span class="stat-value">100+</span><span class="stat-label">Verified Records</span></div>
+    <div class="stat-item"><span class="stat-value">Zero-Error</span><span class="stat-label">Data Logging</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Salesforce</span>
-    <span class="tag">Data Management</span>
+    <span class="tag">Salesforce</span><span class="tag">Data Management</span>
   </div>
 </div>
 
@@ -127,25 +117,19 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <li>Improved longevity by reducing mechanical wear on internal connectors and reducing seal failure risk.</li>
   </ul>
 
+  <div style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 15px; justify-content: center;">
+    <img src="hpsub1.png" alt="Human Powered Submarine Assembly" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
+    <img src="hpsub.png" alt="Electronics and Inductive Coil Detail" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
+  </div>
+
   <div class="card-stats">
-    <div class="stat-item">
-      <span class="stat-value">Qi-Standard</span>
-      <span class="stat-label">Wireless Power</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">12,000 mAh</span>
-      <span class="stat-label">Battery Capacity</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">100%</span>
-      <span class="stat-label">Waterproof Seal</span>
-    </div>
+    <div class="stat-item"><span class="stat-value">Qi-Standard</span><span class="stat-label">Wireless Power</span></div>
+    <div class="stat-item"><span class="stat-value">12,000 mAh</span><span class="stat-label">Battery Capacity</span></div>
+    <div class="stat-item"><span class="stat-value">100%</span><span class="stat-label">Waterproof Seal</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Mechatronics</span>
-    <span class="tag">Embedded Systems</span>
-    <span class="tag">Systems Engineering</span>
+    <span class="tag">Mechatronics</span><span class="tag">Embedded Systems</span><span class="tag">Systems Engineering</span>
   </div>
 </div>
 
