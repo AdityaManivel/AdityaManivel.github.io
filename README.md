@@ -87,30 +87,5 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Information Management Intern | Remote</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Maintained a database of 100+ patient records by transferring medical data into Salesforce.</li>
-    <li>Focused on data integrity and systems organization for sensitive patient information.</li>
-    <li>Performed manual data verification and quality control to ensure interactions were logged without errors.</li>
-  </ul>
-
-  <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Salesforce</span><span class="stat-label">CRM Platform</span></div>
-    <div class="stat-item"><span class="stat-value">100+</span><span class="stat-label">Verified Records</span></div>
-    <div class="stat-item"><span class="stat-value">Zero-Error</span><span class="stat-label">Data Logging</span></div>
-  </div>
-
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Salesforce</span>
-    <span class="tag">Data Management</span>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="card-header">
-    <span class="card-category">ROBOTICS / MECHATRONICS</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">SEP 2024 — JUNE 2025</span>
-  </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Human Powered Submarine</h3>
-  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
-  
-  <ul style="font-size: 0.9rem;">
-    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain
+    <li>Maintained a database of 100+ patient records by transferring patient medical data from forms into Salesforce with a focus on data integrity and systems organization.</li>
+    <li>Performed manual data verification and
