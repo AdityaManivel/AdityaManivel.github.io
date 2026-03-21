@@ -1,24 +1,23 @@
 <section id="about"></section>
 
-# <i class="fa-solid fa-microchip"></i> About_Me
-I am an **Electrical & Computer Engineering** student. My work focuses on embedded systems architecture, high-speed digital design, and hardware-software co-design.
+# About
+I am an **Electrical & Computer Engineering** student focusing on hardware design and embedded systems.
 
 ---
 
 <section id="experience"></section>
 
-# <i class="fa-solid fa-network-wired"></i> Experience
-**Undergraduate Researcher** | University Lab | *2025 - Present*
-* Developing firmware for low-power sensor networks.
-* Implementing SPI/I2C protocols for peripheral communication.
+# Experience
+**Engineering Lab Assistant** | [Location] | *2025 - Present*
+* Developing and testing embedded firmware.
+* Troubleshooting PCB signal integrity issues.
 
 <hr>
 
 <section id="projects"></section>
 
-# <i class="fa-solid fa-diagram-project"></i> Projects
-
-### ⚡ Custom ARM-Based Controller
+# Projects
+### Custom ARM-Based Controller
 A 4-layer PCB design focused on signal integrity and power distribution.
 * **Keywords:** Altium Designer, C++, RTOS.
 * [View Repository](https://github.com/AdityaManivel)
@@ -27,16 +26,16 @@ A 4-layer PCB design focused on signal integrity and power distribution.
 
 <section id="timeline"></section>
 
-# <i class="fa-solid fa-timeline"></i> System_Log
-* **2026:** Portfolio v1.0 Live.
-* **2025:** Specialized in Embedded RTOS.
+# Timeline
+* **2026:** Portfolio Launch.
+* **2025:** Specialized in Embedded Systems.
 * **2024:** First custom PCB fabrication.
 
 <hr>
 
 <section id="contact"></section>
 
-# <i class="fa-solid fa-terminal"></i> Terminal_Contact
+# Contact
 * [LinkedIn](your-link)
 * [GitHub](https://github.com/AdityaManivel)
-* [Email](mailto:aditya@example.com)
+* [Email](mailto:your-email@example.com)
