@@ -85,19 +85,30 @@ Beyond hardware, I leverage a strong foundation in firmware development and tech
   <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal, eliminating the need for manual cable management.</li>
-    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells), ensuring reliable power delivery for submarine electronics.</li>
-    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing the risk of seal failure during frequent charging cycles.</li>
+    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
+    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
+    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing seal failure risk.</li>
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Low-Latency</span><span class="stat-label">Safety Sys</span></div>
-    <div class="stat-item"><span class="stat-value">IP68</span><span class="stat-label">Design Std</span></div>
-    <div class="stat-item"><span class="stat-value">Sensors</span><span class="stat-label">Integration</span></div>
+    <div class="stat-item">
+      <span class="stat-value">Qi-Standard</span>
+      <span class="stat-label">Wireless Power</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">12,000 mAh</span>
+      <span class="stat-label">Battery Capacity</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">100%</span>
+      <span class="stat-label">Waterproof Seal</span>
+    </div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Mechatronics</span><span class="tag">Embedded Systems</span><span class="tag">Systems Engineering</span>
+    <span class="tag">Mechatronics</span>
+    <span class="tag">Embedded Systems</span>
+    <span class="tag">Systems Engineering</span>
   </div>
 </div>
 
@@ -110,18 +121,30 @@ Beyond hardware, I leverage a strong foundation in firmware development and tech
   <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Information Management Intern | Remote</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Maintained a database of 100+ patient records by transferring patient medical data from forms into Salesforce with a focus on data integrity and systems organization.</li>
-    <li>Performed manual data verification and quality control to ensure cancer types and patient interactions were logged without errors.</li>
+    <li>Maintained a database of 100+ patient records by transferring medical data into Salesforce.</li>
+    <li>Focused on data integrity and systems organization for sensitive patient information.</li>
+    <li>Performed manual data verification and quality control to ensure interactions were logged without errors.</li>
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Python</span><span class="stat-label">Automation</span></div>
-    <div class="stat-item"><span class="stat-value">Data</span><span class="stat-label">Integrity</span></div>
-    <div class="stat-item"><span class="stat-value">Analysis</span><span class="stat-label">Reporting</span></div>
+    <div class="stat-item">
+      <span class="stat-value">Salesforce</span>
+      <span class="stat-label">CRM Platform</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">100+</span>
+      <span class="stat-label">Verified Records</span>
+    </div>
+    <div class="stat-item">
+      <span class="stat-value">Zero-Error</span>
+      <span class="stat-label">Data Logging</span>
+    </div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Python</span><span class="tag">Data Management</span><span class="tag">Analytical Thinking</span>
+    <span class="tag">Python</span>
+    <span class="tag">Data Management</span>
+    <span class="tag">Analytical Thinking</span>
   </div>
 </div>
 
