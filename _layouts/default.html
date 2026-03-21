@@ -13,19 +13,25 @@
         --soldermask: #0a2e2a;
         --copper: #d4af37;
         --silkscreen: #ffffff;
-        --trace-lowkey: rgba(212, 175, 55, 0.05);
         --neon-cyan: #00ffcc;
       }
+      
       body { 
-        background-color: var(--pcb-green); color: #cfd8dc; margin: 0; 
+        background-color: var(--pcb-green); 
+        color: #cfd8dc; 
+        margin: 0; 
         font-family: 'Inter', sans-serif;
-        background-image: radial-gradient(var(--trace-lowkey) 1px, transparent 0);
-        background-size: 40px 40px;
         line-height: 1.6;
         overflow-x: hidden;
+        
+        /* Low-key Circuit Board Background Pattern */
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.06'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Ccircle cx='90' cy='60' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3Cpath d='M50 0v20h20v20h10v40'/%3E%3Ccircle cx='80' cy='80' r='1.5'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
       }
+
+      /* Navigation Menu */
       .nav-menu { 
-        position: fixed; top: 0; width: 100%; background: rgba(10, 46, 42, 0.98); 
+        position: fixed; top: 0; width: 100%; background: rgba(10, 46, 42, 0.95); 
+        backdrop-filter: blur(8px);
         z-index: 9999; text-align: center; padding: 18px 0; border-bottom: 1px solid var(--copper); 
       }
       .nav-menu a { 
@@ -33,89 +39,61 @@
         font-weight: 600; font-size: 0.75rem; letter-spacing: 1.5px; 
         font-family: 'JetBrains Mono', monospace;
       }
-      .nav-menu a:hover { color: var(--silkscreen); }
+      .nav-menu a:hover { color: var(--silkscreen); text-shadow: 0 0 8px var(--copper); }
+
+      /* Header Section */
       .page-header { 
-        padding: 9rem 1rem 5rem 1rem; 
+        padding: 10rem 1rem 6rem 1rem; 
         background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); 
         color: var(--silkscreen); text-align: center; border-bottom: 3px solid var(--copper); 
-      }
-      .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3rem; font-weight: 700; color: var(--copper); margin: 0; }
-      .project-tagline { font-weight: 300; font-size: 1.1rem; opacity: 0.9; letter-spacing: 0.5px; }
-      .main-content { max-width: 850px; padding: 2rem; margin: 0 auto; }
-
-      /* --- VERTICAL NATURAL TIMELINE --- */
-      .vertical-timeline {
-        margin: 4rem 0 2rem 20px;
-        border-left: 2px solid rgba(212, 175, 55, 0.2);
-        padding-left: 30px;
-      }
-      .v-item {
         position: relative;
-        margin-bottom: 50px;
       }
-      .v-dot {
-        position: absolute;
-        left: -38px;
-        top: 5px;
-        width: 14px;
-        height: 14px;
-        background: var(--neon-cyan);
-        border-radius: 50%;
-        box-shadow: 0 0 10px var(--neon-cyan);
-        transition: 0.3s;
-      }
-      .v-item:hover .v-dot {
-        box-shadow: 0 0 20px var(--neon-cyan), 0 0 35px var(--neon-cyan);
-        transform: scale(1.2);
-      }
-      .v-content {
-        text-decoration: none;
-        display: block;
-        transition: transform 0.3s ease;
-      }
-      .v-content:hover { transform: translateX(10px); }
-      .v-date {
-        font-family: 'JetBrains Mono', monospace;
-        color: var(--copper);
-        font-size: 0.75rem;
-        font-weight: 700;
-        display: block;
-        margin-bottom: 5px;
-      }
-      .v-title {
-        color: var(--silkscreen);
-        font-weight: 600;
-        font-size: 1.1rem;
-        margin: 0;
-      }
-      .v-desc {
-        color: #cfd8dc;
-        font-size: 0.85rem;
-        opacity: 0.7;
-        margin-top: 5px;
-      }
+      .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; font-weight: 700; color: var(--copper); margin: 0; }
+      .project-tagline { font-weight: 300; font-size: 1.2rem; opacity: 0.9; letter-spacing: 0.5px; margin-top: 10px; }
 
-      /* Base Content Styles */
+      /* Main Content Layout */
+      .main-content { max-width: 850px; padding: 2rem; margin: 0 auto; position: relative; }
+      
       .main-content h1 { 
         font-family: 'JetBrains Mono', monospace;
         color: var(--silkscreen); border-left: 4px solid var(--copper); 
-        padding-left: 15px; margin-top: 4rem; display: flex; align-items: center; gap: 12px;
+        padding-left: 15px; margin-top: 5rem; display: flex; align-items: center; gap: 12px;
         font-size: 1.6rem; text-transform: uppercase;
       }
+
+      /* Project Cards */
       .project-card {
-        background: rgba(10, 46, 42, 0.4); border: 1px solid rgba(212, 175, 55, 0.3);
-        border-radius: 12px; padding: 1.8rem; margin-bottom: 2.5rem;
+        background: rgba(10, 46, 42, 0.7); 
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(212, 175, 55, 0.2);
+        border-radius: 12px; padding: 2rem; margin-bottom: 3rem;
+        transition: border 0.3s ease;
       }
-      .card-category { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: #00ffcc; letter-spacing: 2px; }
-      .card-stats { display: flex; gap: 25px; background: rgba(0,0,0,0.25); padding: 12px; border-radius: 6px; margin: 1.2rem 0; }
-      .stat-value { font-family: 'JetBrains Mono', monospace; color: #00ffcc; font-size: 1.1rem; }
-      .stat-label { font-size: 0.6rem; font-family: 'Inter', sans-serif; font-weight: 600; color: var(--copper); text-transform: uppercase; }
-      .tag { 
-        background: rgba(212, 175, 55, 0.08); border: 1px solid rgba(212, 175, 55, 0.4); 
-        color: var(--copper); padding: 3px 10px; font-size: 0.7rem; border-radius: 4px; 
-        font-family: 'JetBrains Mono', monospace;
+      .project-card:hover { border: 1px solid var(--copper); }
+      .card-category { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--neon-cyan); letter-spacing: 2px; }
+      
+      /* Vertical Timeline */
+      .vertical-timeline {
+        margin: 4rem 0 4rem 20px;
+        border-left: 2px solid rgba(212, 175, 55, 0.15);
+        padding-left: 30px;
       }
-      hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.4; margin: 4rem 0; }
+      .v-item { position: relative; margin-bottom: 60px; }
+      .v-dot {
+        position: absolute; left: -38px; top: 6px; width: 14px; height: 14px;
+        background: var(--neon-cyan); border-radius: 50%;
+        box-shadow: 0 0 10px var(--neon-cyan); transition: 0.3s;
+      }
+      .v-item:hover .v-dot { box-shadow: 0 0 20px var(--neon-cyan), 0 0 40px var(--neon-cyan); transform: scale(1.3); }
+      .v-content { text-decoration: none; display: block; transition: transform 0.3s ease; }
+      .v-content:hover { transform: translateX(12px); }
+      .v-date { font-family: 'JetBrains Mono', monospace; color: var(--copper); font-size: 0.75rem; font-weight: 700; display: block; margin-bottom: 6px; }
+      .v-title { color: var(--silkscreen); font-weight: 600; font-size: 1.15rem; margin: 0; }
+      .v-desc { color: #cfd8dc; font-size: 0.85rem; opacity: 0.7; margin-top: 6px; }
+
+      /* Footer */
+      footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; letter-spacing: 1px; }
+      hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.3; margin: 5rem 0; }
     </style>
   </head>
   <body>
@@ -127,13 +105,15 @@
       <a href="./Resume.pdf" target="_blank">RESUME</a>
       <a href="#contact">CONTACT</a>
     </nav>
+
     <header class="page-header">
-      <h1 class="project-name">{{ site.title }}</h1>
-      <h2 class="project-tagline">{{ site.description }}</h2>
+      <h1 class="project-name">{{ site.title | default: "Aditya Manivel" }}</h1>
+      <h2 class="project-tagline">{{ site.description | default: "B.S. ECE | University of Washington" }}</h2>
     </header>
 
     <main class="main-content">
       {{ content }}
+
       <hr>
 
       <section id="timeline">
@@ -154,7 +134,7 @@
             <a href="#projects" class="v-content">
               <span class="v-date">NOV 2025 — JAN 2026</span>
               <p class="v-title">SwingTrack</p>
-              <p class="v-desc">Wearable Tennis Tracker | ESP32, GPS, & IMU</p>
+              <p class="v-desc">Wearable Tennis Tracker | ESP32, GPS, & IMU Integration</p>
             </a>
           </div>
 
@@ -163,7 +143,7 @@
             <a href="#projects" class="v-content">
               <span class="v-date">NOV 2025 — DEC 2025</span>
               <p class="v-title">Line-Following Robot</p>
-              <p class="v-desc">Hardware Design | Custom KiCAD PCB Fabrication</p>
+              <p class="v-desc">Hardware Lead | Custom KiCAD PCB Design & Fabrication</p>
             </a>
           </div>
 
@@ -172,7 +152,7 @@
             <a href="#experience" class="v-content">
               <span class="v-date">JULY 2025 — OCT 2025</span>
               <p class="v-title">Blood Cancer United</p>
-              <p class="v-desc">Information Management Intern | Salesforce CRM</p>
+              <p class="v-desc">Information Management Intern | Salesforce CRM Systems</p>
             </a>
           </div>
 
@@ -181,7 +161,7 @@
             <a href="#experience" class="v-content">
               <span class="v-date">SEPT 2024 — JUNE 2025</span>
               <p class="v-title">Human Powered Submarine (UWHPS)</p>
-              <p class="v-desc">Electronics Engineer | Wireless Power Systems</p>
+              <p class="v-desc">Electronics Engineer | Wireless Power & Acoustic Comms</p>
             </a>
           </div>
 
@@ -190,14 +170,14 @@
             <a href="#experience" class="v-content">
               <span class="v-date">SEPT 2024 — PRESENT</span>
               <p class="v-title">Husky Robotics</p>
-              <p class="v-desc">Electronics Engineer | Motor Controller PCB Design</p>
+              <p class="v-desc">Electronics Engineer | Motor Controller & Power Dist. PCB</p>
             </a>
           </div>
 
         </div>
       </section>
 
-      <footer style="text-align: center; padding: 5rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace;">
+      <footer>
         &copy; 2026 ADITYA MANIVEL // STATUS: ACTIVE
       </footer>
     </main>
