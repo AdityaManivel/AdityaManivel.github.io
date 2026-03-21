@@ -1,7 +1,9 @@
 <section id="about"></section>
 
 # <i class="fa-solid fa-address-card"></i> About
-I am an **Electrical & Computer Engineering** student (Class of 2028) with Junior Standing. My work is focused on high-speed digital design, embedded firmware development, and PCB architecture. I am passionate about optimizing hardware-software interfaces for real-time applications.
+I am a **B.S. ECE** student at the **University of Washington** (Junior Standing, Class of 2028) focused on building integrated hardware systems and embedded solutions for specialized environments. My background spans from designing **Altium** and **KiCad** based PCBs for robotics to assembling wireless power modules and creating low-latency communication networks. 
+
+I specialize in the end-to-end development cycle, including schematic capture, board assembly, and system-level debugging to ensure reliability in demanding applications. Beyond hardware, I leverage a strong foundation in firmware development and technical computing to bridge the gap between physical sensors and software applications. Having worked in multidisciplinary teams for research and college clubs, I prioritize design reliability, signal integrity, and cost-effective integration.
 
 ---
 
@@ -11,13 +13,13 @@ I am an **Electrical & Computer Engineering** student (Class of 2028) with Junio
 
 <div class="project-card">
   <div class="card-header">
-    <span class="card-category">RESEARCH & DEVELOPMENT</span>
+    <span class="card-category">R&D / ACADEMIA</span>
   </div>
   <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Engineering Lab Assistant</h3>
   <p>Leading hardware validation and testing for low-power IoT sensor nodes.</p>
-  <ul style="font-size: 0.95rem;">
-    <li>Debugged complex SPI and I2C signal timing using logic analyzers.</li>
-    <li>Optimized power consumption by 15% through firmware sleep-state management.</li>
+  <ul>
+    <li>Debugged SPI and I2C signal timing using logic analyzers.</li>
+    <li>Optimized power consumption via firmware sleep-state management.</li>
   </ul>
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
     <span class="tag">Logic Analyzers</span>
@@ -37,26 +39,26 @@ I am an **Electrical & Computer Engineering** student (Class of 2028) with Junio
     <span class="card-category">HARDWARE DESIGN</span>
     <a href="https://github.com/AdityaManivel" style="color: var(--copper); text-decoration: none; font-size: 0.8rem;"><i class="fa-brands fa-github"></i> REPO</a>
   </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Custom ARM-Based Controller</h3>
-  <p>A multi-layer PCB design featuring an STM32 microcontroller for high-performance motor control.</p>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Wireless Power Module</h3>
+  <p>Designed and assembled a custom module for robotics, focusing on high-efficiency power transfer.</p>
   <div class="card-stats">
     <div class="stat-item">
-      <span class="stat-value">4-Layer</span>
-      <span class="stat-label">Stackup</span>
+      <span class="stat-value">Altium</span>
+      <span class="stat-label">EDA</span>
     </div>
     <div class="stat-item">
-      <span class="stat-value">72MHz</span>
-      <span class="stat-label">Clock</span>
+      <span class="stat-value">92%</span>
+      <span class="stat-label">Efficiency</span>
     </div>
     <div class="stat-item">
-      <span class="stat-value">98%</span>
-      <span class="stat-label">Stability</span>
+      <span class="stat-value">REV A</span>
+      <span class="stat-label">Status</span>
     </div>
   </div>
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Altium Designer</span>
-    <span class="tag">STM32F4</span>
-    <span class="tag">FreeRTOS</span>
+    <span class="tag">PCB Design</span>
+    <span class="tag">Power Electronics</span>
+    <span class="tag">Hardware Testing</span>
   </div>
 </div>
 
@@ -65,9 +67,9 @@ I am an **Electrical & Computer Engineering** student (Class of 2028) with Junio
 <section id="timeline"></section>
 
 # <i class="fa-solid fa-clock-rotate-left"></i> Timeline
-* **2026:** Launching official Engineering Portfolio.
-* **2025:** Achieved Junior Standing in ECE.
-* **2024:** Successfully fabricated first dual-layer PCB.
+* **2026:** Launching Professional Portfolio.
+* **2025:** Junior Standing at UW.
+* **2024:** Successfully fabricated first custom dual-layer PCB.
 
 <hr>
 
