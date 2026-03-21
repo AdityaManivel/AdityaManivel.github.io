@@ -177,32 +177,16 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">>90%</span><span class="stat-label">Accuracy</span></div>
-    <div class="stat-item"><span class="stat-value">20+</span><span class="stat-label">Components</span></div>
-    <div class="stat-item"><span class="stat-value">KiCAD</span><span class="stat-label">PCB Design</span></div>
+    <div class="stat-item"><span class="stat-value">>90% </span><span class="stat-label">Accuracy</span></div>
+    <div class="stat-item"><span class="stat-value">20+ </span><span class="stat-label">Components</span></div>
+    <div class="stat-item"><span class="stat-value">KiCAD </span><span class="stat-label">PCB Design</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Arduino</span><span class="tag">Through-Hole Soldering</span><span class="tag">Optoelectronics</span>
+    <span class="tag">Arduino</span><span class="tag">Through-Hole Soldering</span>
   </div>
 </div>
 
-<div class="project-card">
-  <div class="card-header">
-    <span class="card-category">HARDWARE DESIGN</span>
-    <a href="https://github.com/AdityaManivel" style="color: var(--copper); text-decoration: none; font-size: 0.8rem;"><i class="fa-brands fa-github"></i> REPO</a>
-  </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Wireless Power Module</h3>
-  <p>Designed and assembled a custom module for robotics, focusing on high-efficiency power transfer.</p>
-  <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Altium </span><span class="stat-label">EDA</span></div>
-    <div class="stat-item"><span class="stat-value">92%</span><span class="stat-label">Efficiency</span></div>
-    <div class="stat-item"><span class="stat-value">REV A</span><span class="stat-label">Status</span></div>
-  </div>
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">PCB Design</span><span class="tag">Power Electronics</span><span class="tag">Hardware Testing</span>
-  </div>
-</div>
 
 ---
 
