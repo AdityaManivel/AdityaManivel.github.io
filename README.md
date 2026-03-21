@@ -79,15 +79,15 @@ Beyond hardware, I leverage a strong foundation in firmware development and tech
 <div class="project-card">
   <div class="card-header">
     <span class="card-category">ROBOTICS / MECHATRONICS</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">OCT 2024 — PRESENT</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">SEP 2024 — JUNE 2025</span>
   </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">UW Human Powered Submarine</h3>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Human Powered Submarine</h3>
   <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Developed a low-latency safety system for an underwater vehicle, ensuring rapid response to critical sensor data.</li>
-    <li>Designed custom enclosures and wiring harnesses to maintain signal integrity in high-pressure, underwater environments.</li>
-    <li>Collaborated with the controls team to integrate sensor feedback for real-time propulsion monitoring.</li>
+    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal, eliminating the need for manual cable management.</li>
+    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells), ensuring reliable power delivery for submarine electronics.</li>
+    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing the risk of seal failure during frequent charging cycles.</li>
   </ul>
 
   <div class="card-stats">
@@ -104,15 +104,14 @@ Beyond hardware, I leverage a strong foundation in firmware development and tech
 <div class="project-card">
   <div class="card-header">
     <span class="card-category">DATA / VOLUNTEER</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">JUNE 2023 — AUG 2023</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">JULY 2025 — OCT 2025</span>
   </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Blood Cancer UK</h3>
-  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Volunteer Data Analyst | Remote</p>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Blood Cancer United</h3>
+  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Information Management Intern | Remote</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Cleaned and organized donor datasets to improve outreach efficiency and database accuracy.</li>
-    <li>Utilized Excel and Python scripts to automate data entry tasks, reducing manual processing time.</li>
-    <li>Synthesized campaign results into actionable reports for the fundraising team.</li>
+    <li>Maintained a database of 100+ patient records by transferring patient medical data from forms into Salesforce with a focus on data integrity and systems organization.</li>
+    <li>Performed manual data verification and quality control to ensure cancer types and patient interactions were logged without errors.</li>
   </ul>
 
   <div class="card-stats">
