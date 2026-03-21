@@ -1,7 +1,7 @@
 <section id="about"></section>
 
 # <i class="fa-solid fa-address-card"></i> About
-I am an **Electrical & Computer Engineering** student specializing in hardware design and embedded systems. I focus on bridging the gap between low-level firmware and robust circuit architecture.
+I am an **Electrical & Computer Engineering** student (Class of 2028) with Junior Standing. My work is focused on high-speed digital design, embedded firmware development, and PCB architecture. I am passionate about optimizing hardware-software interfaces for real-time applications.
 
 ---
 
@@ -11,18 +11,18 @@ I am an **Electrical & Computer Engineering** student specializing in hardware d
 
 <div class="project-card">
   <div class="card-header">
-    <span class="card-category">RESEARCH / ACADEMIA</span>
+    <span class="card-category">RESEARCH & DEVELOPMENT</span>
   </div>
-  <h3>Engineering Lab Assistant</h3>
-  <p>Assisting in the development of low-power sensor nodes and performing signal integrity tests.</p>
-  <ul>
-    <li>Debugging SPI/I2C communication protocols.</li>
-    <li>Performing hardware-in-the-loop testing.</li>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Engineering Lab Assistant</h3>
+  <p>Leading hardware validation and testing for low-power IoT sensor nodes.</p>
+  <ul style="font-size: 0.95rem;">
+    <li>Debugged complex SPI and I2C signal timing using logic analyzers.</li>
+    <li>Optimized power consumption by 15% through firmware sleep-state management.</li>
   </ul>
-  <div class="tag-container">
-    <span class="tag">Oscilloscopes</span>
-    <span class="tag">C++</span>
-    <span class="tag">KiCad</span>
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Logic Analyzers</span>
+    <span class="tag">Firmware (C)</span>
+    <span class="tag">Signal Integrity</span>
   </div>
 </div>
 
@@ -34,28 +34,28 @@ I am an **Electrical & Computer Engineering** student specializing in hardware d
 
 <div class="project-card">
   <div class="card-header">
-    <span class="card-category">EMBEDDED SYSTEMS</span>
-    <a href="https://github.com/AdityaManivel"><i class="fa-brands fa-github"></i> Source</a>
+    <span class="card-category">HARDWARE DESIGN</span>
+    <a href="https://github.com/AdityaManivel" style="color: var(--copper); text-decoration: none; font-size: 0.8rem;"><i class="fa-brands fa-github"></i> REPO</a>
   </div>
-  <h3>Custom ARM-Based Controller</h3>
-  <p>A 4-layer PCB design focused on high-speed signal integrity and efficient power delivery.</p>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Custom ARM-Based Controller</h3>
+  <p>A multi-layer PCB design featuring an STM32 microcontroller for high-performance motor control.</p>
   <div class="card-stats">
     <div class="stat-item">
       <span class="stat-value">4-Layer</span>
-      <span class="stat-label">STACKUP</span>
+      <span class="stat-label">Stackup</span>
     </div>
     <div class="stat-item">
-      <span class="stat-value">< 1ms</span>
-      <span class="stat-label">LATENCY</span>
+      <span class="stat-value">72MHz</span>
+      <span class="stat-label">Clock</span>
     </div>
     <div class="stat-item">
       <span class="stat-value">98%</span>
-      <span class="stat-label">EFFICIENCY</span>
+      <span class="stat-label">Stability</span>
     </div>
   </div>
-  <div class="tag-container">
-    <span class="tag">Altium</span>
-    <span class="tag">STM32</span>
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Altium Designer</span>
+    <span class="tag">STM32F4</span>
     <span class="tag">FreeRTOS</span>
   </div>
 </div>
@@ -65,14 +65,13 @@ I am an **Electrical & Computer Engineering** student specializing in hardware d
 <section id="timeline"></section>
 
 # <i class="fa-solid fa-clock-rotate-left"></i> Timeline
-* **2026:** Launching Professional ECE Portfolio.
-* **2025:** Specialized in Embedded Systems & PCB Design.
-* **2024:** Completed first custom fabrication project.
+* **2026:** Launching official Engineering Portfolio.
+* **2025:** Achieved Junior Standing in ECE.
+* **2024:** Successfully fabricated first dual-layer PCB.
 
 <hr>
 
 <section id="contact"></section>
 
 # <i class="fa-solid fa-envelope"></i> Contact
-* [LinkedIn](https://linkedin.com)
-* [GitHub](https://github.com/AdityaManivel)
+* [LinkedIn](https://linkedin.com) | [GitHub](https://github.com/AdityaManivel)
