@@ -2,13 +2,18 @@
 
 # <i class="fa-solid fa-address-card"></i> About
 
-> **Actively seeking Summer 2026 Internship opportunities in Embedded Systems, Hardware Engineering, or Robotics.**
+<div style="background: rgba(0, 255, 204, 0.1); border: 1px solid #00ffcc; padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
+  <h4 style="margin: 0; color: #00ffcc; font-family: 'JetBrains Mono', monospace;">
+    🚀 STATUS: Actively seeking Summer 2026 Internships
+  </h4>
+  <p style="margin: 5px 0 0 0; font-size: 0.9rem; opacity: 0.8;">
+    Focus: Embedded Systems | Hardware Engineering | Robotics
+  </p>
+</div>
 
-I am a **Bachelor of Science, Electrical & Computer Engineering** student at the **University of Washington** specializing in integrated hardware and embedded firmware. I bridge the gap between physical sensors and software applications through:
+I am an **Electrical & Computer Engineering** student at the **University of Washington** focused on building integrated hardware systems and embedded solutions for specialized environments. My background spans from designing **Altium** and **KiCad** based PCBs for robotics to assembling wireless power modules and creating low-latency communication networks. I specialize in the end-to-end development cycle, including schematic capture, board assembly, and system-level debugging to ensure reliability in demanding applications. 
 
-* **Hardware Design:** End-to-end PCB development (Schematic to Assembly) using **Altium** and **KiCAD**.
-* **Systems Integration:** Developing low-latency communication networks and wireless power modules for robotics.
-* **Firmware & Debugging:** Leveraging a strong foundation in technical computing to ensure signal integrity and system reliability in demanding environments.
+Beyond hardware, I leverage a strong foundation in firmware development and technical computing to bridge the gap between physical sensors and software applications. Having worked in multidisciplinary teams for research and college clubs, I prioritize design reliability, signal integrity, and cost-effective integration.
 
 ---
 
@@ -27,31 +32,19 @@ I am a **Bachelor of Science, Electrical & Computer Engineering** student at the
   <ul style="font-size: 0.9rem;">
     <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values.</li>
     <li>Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication.</li>
-    <li>Analyzed datasheets to develop electronics system including ESP32-C3 MCU, FDC2214 capacitance-to-digital converters, and multiplexers.</li>
-    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain stable operating range (3.0V–3.6V).</li>
-    <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized readings to **reduce noise by 20%**.</li>
+    <li>Analyzed datasheets to develop electronics system including ESP32-C3 microcontroller, FDC2214 capacitance-to-digital converters, batteries, and multiplexers.</li>
+    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable operating range (3.0V–3.6V) without the need for active regulation.</li>
+    <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized capacitance readings to reduce noise by 20%.</li>
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item">
-      <span class="stat-value">ESP32-C3</span>
-      <span class="stat-label">MCU Stack</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">-20%</span>
-      <span class="stat-label">Signal Noise</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">LiFePO4</span>
-      <span class="stat-label">Power</span>
-    </div>
+    <div class="stat-item"><span class="stat-value">ESP32-C3</span><span class="stat-label">MCU Stack</span></div>
+    <div class="stat-item"><span class="stat-value">-20%</span><span class="stat-label">Signal Noise</span></div>
+    <div class="stat-item"><span class="stat-value">LiFePO4</span><span class="stat-label">Power</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Embedded C</span>
-    <span class="tag">BLE</span>
-    <span class="tag">Mixed-Signal</span>
-    <span class="tag">Signal Integrity</span>
+    <span class="tag">Embedded C</span><span class="tag">BLE</span><span class="tag">Mixed-Signal</span><span class="tag">Signal Integrity</span>
   </div>
 </div>
 
@@ -65,34 +58,24 @@ I am a **Bachelor of Science, Electrical & Computer Engineering** student at the
   
   <ul style="font-size: 0.9rem;">
     <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
-    <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a BLDC motor board.</li>
-    <li>Replaced commercial motor controllers with custom PCB solution, **reducing system cost by 30%**.</li>
-    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 integration.</li>
-    <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors via through-hole and reflow soldering.</li>
+    <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
+    <li>Replaced commercial motor controllers with a custom PCB solution for rover, reducing system cost by 30%.</li>
+    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 microcontroller integration.</li>
+    <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors.</li>
+    <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item">
-      <span class="stat-value">20A / 24V</span>
-      <span class="stat-label">Power Rating</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">-30%</span>
-      <span class="stat-label">System Cost</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">Altium</span>
-      <span class="stat-label">EDA Tool</span>
-    </div>
+    <div class="stat-item"><span class="stat-value">20A / 24V</span><span class="stat-label">Power Rating</span></div>
+    <div class="stat-item"><span class="stat-value">-30%</span><span class="stat-label">System Cost</span></div>
+    <div class="stat-item"><span class="stat-value">Altium</span><span class="stat-label">EDA Tool</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">PCB Layout</span>
-    <span class="tag">Motor Control</span>
-    <span class="tag">PSoC</span>
-    <span class="tag">Soldering</span>
+    <span class="tag">PCB Layout</span><span class="tag">Motor Control</span><span class="tag">PSoC</span><span class="tag">Soldering</span>
   </div>
 </div>
+
 <div class="project-card">
   <div class="card-header">
     <span class="card-category">ROBOTICS / MECHATRONICS</span>
@@ -102,30 +85,19 @@ I am a **Bachelor of Science, Electrical & Computer Engineering** student at the
   <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Developed a <strong>low-latency safety system</strong> for an underwater vehicle, ensuring rapid response to critical sensor data.</li>
+    <li>Developed a low-latency safety system for an underwater vehicle, ensuring rapid response to critical sensor data.</li>
     <li>Designed custom enclosures and wiring harnesses to maintain signal integrity in high-pressure, underwater environments.</li>
     <li>Collaborated with the controls team to integrate sensor feedback for real-time propulsion monitoring.</li>
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item">
-      <span class="stat-value">Low-Latency</span>
-      <span class="stat-label">Safety Sys</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">IP68</span>
-      <span class="stat-label">Design Std</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">Sensors</span>
-      <span class="stat-label">Integration</span>
-    </div>
+    <div class="stat-item"><span class="stat-value">Low-Latency</span><span class="stat-label">Safety Sys</span></div>
+    <div class="stat-item"><span class="stat-value">IP68</span><span class="stat-label">Design Std</span></div>
+    <div class="stat-item"><span class="stat-value">Sensors</span><span class="stat-label">Integration</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Mechatronics</span>
-    <span class="tag">Embedded Systems</span>
-    <span class="tag">Systems Engineering</span>
+    <span class="tag">Mechatronics</span><span class="tag">Embedded Systems</span><span class="tag">Systems Engineering</span>
   </div>
 </div>
 
@@ -139,31 +111,21 @@ I am a **Bachelor of Science, Electrical & Computer Engineering** student at the
   
   <ul style="font-size: 0.9rem;">
     <li>Cleaned and organized donor datasets to improve outreach efficiency and database accuracy.</li>
-    <li>Utilized <strong>Excel and Python</strong> scripts to automate data entry tasks, reducing manual processing time.</li>
+    <li>Utilized Excel and Python scripts to automate data entry tasks, reducing manual processing time.</li>
     <li>Synthesized campaign results into actionable reports for the fundraising team.</li>
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item">
-      <span class="stat-value">Python</span>
-      <span class="stat-label">Automation</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">Data</span>
-      <span class="stat-label">Integrity</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">Analysis</span>
-      <span class="stat-label">Reporting</span>
-    </div>
+    <div class="stat-item"><span class="stat-value">Python</span><span class="stat-label">Automation</span></div>
+    <div class="stat-item"><span class="stat-value">Data</span><span class="stat-label">Integrity</span></div>
+    <div class="stat-item"><span class="stat-value">Analysis</span><span class="stat-label">Reporting</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Python</span>
-    <span class="tag">Data Management</span>
-    <span class="tag">Analytical Thinking</span>
+    <span class="tag">Python</span><span class="tag">Data Management</span><span class="tag">Analytical Thinking</span>
   </div>
 </div>
+
 ---
 
 <section id="projects"></section>
@@ -178,23 +140,12 @@ I am a **Bachelor of Science, Electrical & Computer Engineering** student at the
   <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Wireless Power Module</h3>
   <p>Designed and assembled a custom module for robotics, focusing on high-efficiency power transfer.</p>
   <div class="card-stats">
-    <div class="stat-item">
-      <span class="stat-value">Altium</span>
-      <span class="stat-label">EDA</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">92%</span>
-      <span class="stat-label">Efficiency</span>
-    </div>
-    <div class="stat-item">
-      <span class="stat-value">REV A</span>
-      <span class="stat-label">Status</span>
-    </div>
+    <div class="stat-item"><span class="stat-value">Altium</span><span class="stat-label">EDA</span></div>
+    <div class="stat-item"><span class="stat-value">92%</span><span class="stat-label">Efficiency</span></div>
+    <div class="stat-item"><span class="stat-value">REV A</span><span class="stat-label">Status</span></div>
   </div>
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">PCB Design</span>
-    <span class="tag">Power Electronics</span>
-    <span class="tag">Hardware Testing</span>
+    <span class="tag">PCB Design</span><span class="tag">Power Electronics</span><span class="tag">Hardware Testing</span>
   </div>
 </div>
 
