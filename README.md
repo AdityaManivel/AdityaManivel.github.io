@@ -139,6 +139,59 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 # <i class="fa-solid fa-microchip"></i> Projects
 
+---
+
+<section id="projects"></section>
+
+# <i class="fa-solid fa-microchip"></i> Projects
+
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">WEARABLE TECH / EMBEDDED</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">NOV 2025 — JAN 2026</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">SwingTrack</h3>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board along with GPS and IMU sensors for real-time motion tracking and data acquisition, providing athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
+    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for ergonomics and reliable mobile power delivery for 4+ hours on a single charge.</li>
+  </ul>
+
+  <div class="card-stats">
+    <div class="stat-item"><span class="stat-value">ESP32</span><span class="stat-label">Dev Board</span></div>
+    <div class="stat-item"><span class="stat-value">±0.2m/s</span><span class="stat-label">Swing Accuracy</span></div>
+    <div class="stat-item"><span class="stat-value">4+ Hours</span><span class="stat-label">Battery Life</span></div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">GPS/IMU</span><span class="tag">Hardware Iteration</span><span class="tag">Data Acquisition</span>
+  </div>
+</div>
+
+<div class="project-card">
+  <div class="card-header">
+    <span class="card-category">ROBOTICS / PCB DESIGN</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">NOV 2025 — DEC 2025</span>
+  </div>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Line-Following Robot</h3>
+  
+  <ul style="font-size: 0.9rem;">
+    <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% line-following accuracy.</li>
+    <li>Independently engineered a custom KiCAD PCB with a 20+ component array of potentiometers, resistors, photoresistors and LEDs to accurately measure light reflectance values.</li>
+    <li>Soldered through-hole components to a custom PCB and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
+  </ul>
+
+  <div class="card-stats">
+    <div class="stat-item"><span class="stat-value">>90%</span><span class="stat-label">Accuracy</span></div>
+    <div class="stat-item"><span class="stat-value">20+</span><span class="stat-label">Components</span></div>
+    <div class="stat-item"><span class="stat-value">KiCAD</span><span class="stat-label">PCB Design</span></div>
+  </div>
+
+  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
+    <span class="tag">Arduino</span><span class="tag">Through-Hole Soldering</span><span class="tag">Optoelectronics</span>
+  </div>
+</div>
+
 <div class="project-card">
   <div class="card-header">
     <span class="card-category">HARDWARE DESIGN</span>
