@@ -207,15 +207,3 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 <section id="timeline"></section>
 
 # <i class="fa-solid fa-clock-rotate-left"></i> Interactive Timeline
-
-* **Jan 2026 — Present:** [**Programmable Matter Lab**](#experience) — Undergraduate Researcher
-* **Nov 2025 — Jan 2026:** [**SwingTrack**](#projects) — Wearable Tennis Tracker
-* **Nov 2025 — Dec 2025:** [**Line-Following Robot**](#projects) — Custom PCB & Robotics
-* **July 2025 — Oct 2025:** [**Blood Cancer United**](#experience) — Information Management Intern
-* **Sept 2024 — June 2025:** [**Human Powered Submarine**](#experience) — Electronics Engineer
-* **Sept 2024 — Present:** [**Husky Robotics Club**](#experience) — Electronics Engineer
-
-### Key Technical Milestones
-* **2026:** Launching Professional Portfolio and Research at UW
-* **2025:** Junior Standing at the University of Washington
-* **2024:** Successfully fabricated and routed first custom dual-layer PCB
