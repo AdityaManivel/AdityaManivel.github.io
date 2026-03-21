@@ -22,6 +22,7 @@
         background-image: radial-gradient(var(--trace-lowkey) 1px, transparent 0);
         background-size: 40px 40px;
         line-height: 1.6;
+        overflow-x: hidden;
       }
       .nav-menu { 
         position: fixed; top: 0; width: 100%; background: rgba(10, 46, 42, 0.98); 
@@ -41,77 +42,57 @@
       .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3rem; font-weight: 700; color: var(--copper); margin: 0; }
       .project-tagline { font-weight: 300; font-size: 1.1rem; opacity: 0.9; letter-spacing: 0.5px; }
       .main-content { max-width: 850px; padding: 2rem; margin: 0 auto; }
-      
-      /* --- INTERACTIVE TIMELINE STYLES --- */
-      .timeline-container {
-        margin: 4rem 0;
-        padding: 2rem 0;
-        background: rgba(0,0,0,0.2);
-        border-radius: 12px;
-        border: 1px solid rgba(212, 175, 55, 0.1);
+
+      /* --- VERTICAL NATURAL TIMELINE --- */
+      .vertical-timeline {
+        margin: 4rem 0 2rem 20px;
+        border-left: 2px solid rgba(212, 175, 55, 0.2);
+        padding-left: 30px;
       }
-      .timeline-wrapper {
-        display: flex;
-        overflow-x: auto;
-        padding: 40px 20px;
-        gap: 50px;
+      .v-item {
         position: relative;
-        scrollbar-width: thin;
-        scrollbar-color: var(--copper) transparent;
+        margin-bottom: 50px;
       }
-      .timeline-wrapper::-webkit-scrollbar { height: 6px; }
-      .timeline-wrapper::-webkit-scrollbar-thumb { background: var(--copper); border-radius: 10px; }
-      
-      .timeline-item {
-        min-width: 160px;
-        position: relative;
-        text-decoration: none;
-        transition: transform 0.3s ease;
-      }
-      .timeline-item:hover { transform: translateY(-8px); }
-      
-      .timeline-dot {
+      .v-dot {
+        position: absolute;
+        left: -38px;
+        top: 5px;
         width: 14px;
         height: 14px;
         background: var(--neon-cyan);
         border-radius: 50%;
-        margin-bottom: 20px;
         box-shadow: 0 0 10px var(--neon-cyan);
-        z-index: 2;
-        position: relative;
+        transition: 0.3s;
       }
-      .timeline-item:hover .timeline-dot {
+      .v-item:hover .v-dot {
         box-shadow: 0 0 20px var(--neon-cyan), 0 0 35px var(--neon-cyan);
+        transform: scale(1.2);
       }
-      
-      .timeline-line {
-        position: absolute;
-        top: 46px; /* Align with dot center */
-        left: 0;
-        width: 200%; 
-        height: 2px;
-        background: rgba(212, 175, 55, 0.2);
-        z-index: 1;
+      .v-content {
+        text-decoration: none;
+        display: block;
+        transition: transform 0.3s ease;
       }
-      
-      .timeline-date {
+      .v-content:hover { transform: translateX(10px); }
+      .v-date {
         font-family: 'JetBrains Mono', monospace;
         color: var(--copper);
         font-size: 0.75rem;
+        font-weight: 700;
         display: block;
         margin-bottom: 5px;
       }
-      .timeline-title {
+      .v-title {
         color: var(--silkscreen);
         font-weight: 600;
-        font-size: 0.95rem;
+        font-size: 1.1rem;
         margin: 0;
       }
-      .timeline-desc {
+      .v-desc {
         color: #cfd8dc;
-        font-size: 0.75rem;
-        opacity: 0.6;
-        margin-top: 4px;
+        font-size: 0.85rem;
+        opacity: 0.7;
+        margin-top: 5px;
       }
 
       /* Base Content Styles */
@@ -153,51 +134,61 @@
 
     <main class="main-content">
       
+      {{ content }}
+
+      <hr>
+
       <section id="timeline">
-        <h1><i class="fa-solid fa-timeline"></i> Interactive Roadmap</h1>
-        <div class="timeline-container">
-          <div class="timeline-wrapper">
-            <div class="timeline-line"></div>
-            
-            <a href="#experience" class="timeline-item">
-              <span class="timeline-date">JAN 2026</span>
-              <div class="timeline-dot"></div>
-              <p class="timeline-title">Prog. Matter Lab</p>
-              <p class="timeline-desc">Embedded Research</p>
-            </a>
-
-            <a href="#projects" class="timeline-item">
-              <span class="timeline-date">NOV 2025</span>
-              <div class="timeline-dot"></div>
-              <p class="timeline-title">SwingTrack</p>
-              <p class="timeline-desc">Wearable IoT</p>
-            </a>
-
-            <a href="#projects" class="timeline-item">
-              <span class="timeline-date">NOV 2025</span>
-              <div class="timeline-dot"></div>
-              <p class="timeline-title">Line-Follower</p>
-              <p class="timeline-desc">Custom PCB Design</p>
-            </a>
-
-            <a href="#experience" class="timeline-item">
-              <span class="timeline-date">JULY 2025</span>
-              <div class="timeline-dot"></div>
-              <p class="timeline-title">Blood Cancer Utd</p>
-              <p class="timeline-desc">Info Systems Intern</p>
-            </a>
-
-            <a href="#experience" class="timeline-item">
-              <span class="timeline-date">SEPT 2024</span>
-              <div class="timeline-dot"></div>
-              <p class="timeline-title">Husky Robotics</p>
-              <p class="timeline-desc">Electronics Engineer</p>
+        <h1><i class="fa-solid fa-route"></i> Interactive Roadmap</h1>
+        <div class="vertical-timeline">
+          
+          <div class="v-item">
+            <div class="v-dot"></div>
+            <a href="#experience" class="v-content">
+              <span class="v-date">JAN 2026 — PRESENT</span>
+              <p class="v-title">Programmable Matter Lab</p>
+              <p class="v-desc">Undergraduate Researcher | Embedded Systems & BLE</p>
             </a>
           </div>
+
+          <div class="v-item">
+            <div class="v-dot"></div>
+            <a href="#projects" class="v-content">
+              <span class="v-date">NOV 2025 — JAN 2026</span>
+              <p class="v-title">SwingTrack</p>
+              <p class="v-desc">Wearable Tennis Tracker | ESP32, GPS, & IMU</p>
+            </a>
+          </div>
+
+          <div class="v-item">
+            <div class="v-dot"></div>
+            <a href="#projects" class="v-content">
+              <span class="v-date">NOV 2025 — DEC 2025</span>
+              <p class="v-title">Line-Following Robot</p>
+              <p class="v-desc">Hardware Design | Custom KiCAD PCB Fabrication</p>
+            </a>
+          </div>
+
+          <div class="v-item">
+            <div class="v-dot"></div>
+            <a href="#experience" class="v-content">
+              <span class="v-date">JULY 2025 — OCT 2025</span>
+              <p class="v-title">Blood Cancer United</p>
+              <p class="v-desc">Information Management Intern | Salesforce CRM</p>
+            </a>
+          </div>
+
+          <div class="v-item">
+            <div class="v-dot"></div>
+            <a href="#experience" class="v-content">
+              <span class="v-date">SEPT 2024 — JUNE 2025</span>
+              <p class="v-title">Husky Robotics / HPS</p>
+              <p class="v-desc">Electronics Engineer | Wireless Power & Motor Control</p>
+            </a>
+          </div>
+
         </div>
       </section>
-
-      {{ content }}
 
       <footer style="text-align: center; padding: 5rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace;">
         &copy; 2026 ADITYA MANIVEL // STATUS: ACTIVE
