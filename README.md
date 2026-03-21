@@ -1,6 +1,9 @@
 <section id="about"></section>
 
 # <i class="fa-solid fa-address-card"></i> About
+  
+  > **Current Status:** 🚀 Actively seeking Summer 2026 Internship opportunities in Embedded Systems, Hardware Engineering, or Robotics.
+  
   I am an **Electrical & Computer Engineering** student at the **University of Washington** focused on building integrated hardware systems and embedded solutions for specialized environments. My background spans from designing **Altium** and **KiCAD** based PCBs for robotics to assembling wireless power modules and creating low-latency communication networks. I specialize in the end-to-end development cycle, including schematic capture, board assembly, and system-level debugging to ensure reliability in demanding applications. 
   
   Beyond hardware, I leverage a strong foundation in firmware development and technical computing to bridge the gap between physical sensors and software applications. Having worked in multidisciplinary teams for research and college clubs, I prioritize design reliability, signal integrity, and cost-effective integration.
