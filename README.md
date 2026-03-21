@@ -173,23 +173,32 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   
   <ul style="font-size: 0.9rem;">
     <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% line-following accuracy.</li>
-    <li>Independently engineered a custom KiCAD PCB with a 20+ component array to measure light reflectance values.</li>
+    <li>Independently engineered a custom KiCAD PCB with a 20+ component array of potentiometers, resistors, photoresistors and LEDs to accurately measure light reflectance values.</li>
     <li>Soldered through-hole components to a custom PCB and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
   </ul>
 
-  <div style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 15px; justify-content: center; align-items: start;">
-    <img src="Robot.png" alt="Line-Following Robot" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3);">
-    <img src="PCBLineFollow.png" alt="Custom KiCAD PCB Layout" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: contain; background: #1a1a1a;">
+  <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px; margin-bottom: 15px; align-items: center;">
+    
+    <div style="width: 100%; display: flex; justify-content: center;">
+      <img src="Robot.png" alt="Line-Following Robot" style="width: 100%; max-width: 500px; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
+    </div>
+
+    <div style="display: flex; gap: 10px; width: 100%; justify-content: center; align-items: start;">
+      <img src="PCBLineFollow.png" alt="KiCAD PCB Layout" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: contain; background: #1a1a1a;">
+      <img src="PCBLineFollow1.png" alt="Assembled PCB 3D View" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: contain; background: #1a1a1a;">
+    </div>
   </div>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">>90% </span><span class="stat-label">Accuracy</span></div>
-    <div class="stat-item"><span class="stat-value">20+ </span><span class="stat-label">Components</span></div>
-    <div class="stat-item"><span class="stat-value">KiCAD </span><span class="stat-label">PCB Design</span></div>
+    <div class="stat-item"><span class="stat-value">>90%</span><span class="stat-label">Accuracy</span></div>
+    <div class="stat-item"><span class="stat-value">20+</span><span class="stat-label">Components</span></div>
+    <div class="stat-item"><span class="stat-value">KiCAD</span><span class="stat-label">PCB Design</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Arduino</span><span class="tag">Through-Hole Soldering</span><span class="tag">Optoelectronics</span>
+    <span class="tag">Arduino</span>
+    <span class="tag">Through-Hole Soldering</span>
+    <span class="tag">Optoelectronics</span>
   </div>
 </div>
 
