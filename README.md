@@ -99,7 +99,8 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Salesforce</span><span class="tag">Data Management</span>
+    <span class="tag">Salesforce</span>
+    <span class="tag">Data Management</span>
   </div>
 </div>
 
@@ -132,12 +133,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <span class="tag">Mechatronics</span><span class="tag">Embedded Systems</span><span class="tag">Systems Engineering</span>
   </div>
 </div>
-
----
-
-<section id="projects"></section>
-
-# <i class="fa-solid fa-microchip"></i> Projects
 
 ---
 
