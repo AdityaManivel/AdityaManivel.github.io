@@ -14,7 +14,6 @@
         --copper: #d4af37;
         --silkscreen: #ffffff;
         --neon-cyan: #00ffcc;
-        --month-h: 45px; /* Proportional vertical scale */
       }
       
       body { 
@@ -23,56 +22,17 @@
         background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.05'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
       }
 
-      /* Navigation */
       .nav-menu { 
         position: fixed; top: 0; width: 100%; background: rgba(10, 46, 42, 0.95); 
         backdrop-filter: blur(8px); z-index: 9999; text-align: center; padding: 18px 0; border-bottom: 1px solid var(--copper); 
       }
       .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
 
-      /* Header */
       .page-header { padding: 10rem 1rem 6rem 1rem; background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); text-align: center; border-bottom: 3px solid var(--copper); }
       .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; color: var(--copper); margin: 0; }
 
-      .main-content { max-width: 1100px; padding: 2rem; margin: 0 auto; }
+      .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
       .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 4rem; text-transform: uppercase; }
-
-      /* --- PROPORTIONAL GANTT TIMELINE --- */
-      .gantt-container { display: grid; grid-template-columns: 140px 2px 1fr; margin-top: 3rem; position: relative; }
-      
-      .month-labels { display: flex; flex-direction: column; }
-      .month-tick { 
-        height: var(--month-h); text-align: right; padding-right: 25px; 
-        font-family: 'JetBrains Mono', monospace; font-size: 0.65rem; color: var(--copper); 
-        opacity: 0.5; display: flex; align-items: center; justify-content: flex-end; 
-      }
-      .month-tick.year-mark { opacity: 1; font-weight: 700; font-size: 0.85rem; color: var(--neon-cyan); }
-
-      .timeline-axis { background: rgba(212, 175, 55, 0.2); position: relative; }
-      .project-area { position: relative; margin-left: 30px; height: calc(var(--month-h) * 22); }
-
-      .p-block {
-        position: absolute; left: 0; width: 45%; 
-        background: rgba(10, 46, 42, 0.6); border-left: 3px solid var(--neon-cyan);
-        padding: 12px 18px; box-sizing: border-box; transition: 0.3s;
-        display: flex; flex-direction: column; justify-content: center; overflow: hidden;
-      }
-      .p-block:hover { background: rgba(0, 255, 204, 0.1); z-index: 10; transform: scale(1.02); }
-      
-      /* Parallel Offsets for overlapping dates */
-      .offset-mid { left: 48%; width: 48%; border-left-color: var(--copper); }
-
-      .p-role { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--neon-cyan); text-transform: uppercase; letter-spacing: 1px; }
-      .p-name { color: white; font-weight: 600; font-size: 0.95rem; margin: 2px 0 0 0; }
-
-      /* Positioning Logic based on Resume */
-      /* Top = May 2026 (Month 0), working down to Sept 2024 (Month 20+) */
-      .t-prog-matter { top: calc(var(--month-h) * 4); height: calc(var(--month-h) * 5); } /* Jan 26 - Pres */
-      .t-swingtrack { top: calc(var(--month-h) * 4); height: calc(var(--month-h) * 3); } /* Nov 25 - Jan 26 */
-      .t-robot      { top: calc(var(--month-h) * 6); height: calc(var(--month-h) * 2); } /* Nov 25 - Dec 25 */
-      .t-cancer     { top: calc(var(--month-h) * 7); height: calc(var(--month-h) * 4); } /* July 25 - Oct 25 */
-      .t-husky      { top: calc(var(--month-h) * 0); height: calc(var(--month-h) * 21); } /* Sept 24 - Pres */
-      .t-hps        { top: calc(var(--month-h) * 11); height: calc(var(--month-h) * 10); } /* Sept 24 - June 25 */
 
       footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
       hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.3; margin: 4rem 0; }
@@ -83,7 +43,6 @@
       <a href="#about">ABOUT</a>
       <a href="#experience">EXPERIENCE</a>
       <a href="#projects">PROJECTS</a>
-      <a href="#timeline">TIMELINE</a>
       <a href="./Resume.pdf" target="_blank">RESUME</a>
       <a href="#contact">CONTACT</a>
     </nav>
@@ -94,76 +53,8 @@
     </header>
 
     <main class="main-content">
-      <div id="about">
-        {{ content }}
-      </div>
-
-      <hr>
-
-      <section id="timeline">
-        <h1><i class="fa-solid fa-microchip"></i> Proportional History</h1>
-        
-        <div class="gantt-container">
-          <div class="month-labels">
-            <div class="month-tick year-mark">MAY 2026</div>
-            <div class="month-tick">APR 2026</div>
-            <div class="month-tick">MAR 2026</div>
-            <div class="month-tick">FEB 2026</div>
-            <div class="month-tick year-mark">JAN 2026</div>
-            <div class="month-tick">DEC 2025</div>
-            <div class="month-tick">NOV 2025</div>
-            <div class="month-tick">OCT 2025</div>
-            <div class="month-tick">SEP 2025</div>
-            <div class="month-tick">AUG 2025</div>
-            <div class="month-tick">JUL 2025</div>
-            <div class="month-tick year-mark">JUN 2025</div>
-            <div class="month-tick">MAY 2025</div>
-            <div class="month-tick">APR 2025</div>
-            <div class="month-tick">MAR 2025</div>
-            <div class="month-tick">FEB 2025</div>
-            <div class="month-tick year-mark">JAN 2025</div>
-            <div class="month-tick">DEC 2024</div>
-            <div class="month-tick">NOV 2024</div>
-            <div class="month-tick">OCT 2024</div>
-            <div class="month-tick year-mark">SEP 2024</div>
-          </div>
-
-          <div class="timeline-axis"></div>
-
-          <div class="project-area">
-            <div class="p-block t-husky offset-mid">
-              <span class="p-role">Electronics Engineer</span>
-              <span class="p-name">Husky Robotics Club</span>
-            </div>
-
-            <div class="p-block t-prog-matter">
-              <span class="p-role">Undergraduate Researcher</span>
-              <span class="p-name">Programmable Matter Lab</span>
-            </div>
-
-            <div class="p-block t-swingtrack offset-mid">
-              <span class="p-role">Project Lead</span>
-              <span class="p-name">SwingTrack</span>
-            </div>
-
-            <div class="p-block t-robot">
-              <span class="p-role">Hardware Lead</span>
-              <span class="p-name">Line-Following Robot</span>
-            </div>
-
-            <div class="p-block t-cancer">
-              <span class="p-role">Information Management Intern</span>
-              <span class="p-name">Blood Cancer United</span>
-            </div>
-
-            <div class="p-block t-hps offset-mid">
-              <span class="p-role">Project Engineer</span>
-              <span class="p-name">Human Powered Submarine</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
+      {{ content }}
+      
       <footer>
         &copy; 2026 ADITYA MANIVEL // STATUS: ACTIVE
       </footer>
