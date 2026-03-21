@@ -38,9 +38,9 @@ Beyond hardware, I leverage a strong foundation in firmware development and tech
   </ul>
 
   <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">ESP32-C3</span><span class="stat-label">MCU Stack</span></div>
-    <div class="stat-item"><span class="stat-value">-20%</span><span class="stat-label">Signal Noise</span></div>
-    <div class="stat-item"><span class="stat-value">LiFePO4</span><span class="stat-label">Power</span></div>
+    <div class="stat-item"><span class="stat-value">ESP32-C3 </span><span class="stat-label">MCU Stack</span></div>
+    <div class="stat-item"><span class="stat-value">-20% </span><span class="stat-label">Signal Noise</span></div>
+    <div class="stat-item"><span class="stat-value">LiFePO4 </span><span class="stat-label">Power</span></div>
   </div>
 
   <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
