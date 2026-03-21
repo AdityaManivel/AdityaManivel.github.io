@@ -14,6 +14,7 @@
         --copper: #d4af37;
         --silkscreen: #ffffff;
         --trace-lowkey: rgba(212, 175, 55, 0.05);
+        --neon-cyan: #00ffcc;
       }
       body { 
         background-color: var(--pcb-green); color: #cfd8dc; margin: 0; 
@@ -40,6 +41,80 @@
       .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3rem; font-weight: 700; color: var(--copper); margin: 0; }
       .project-tagline { font-weight: 300; font-size: 1.1rem; opacity: 0.9; letter-spacing: 0.5px; }
       .main-content { max-width: 850px; padding: 2rem; margin: 0 auto; }
+      
+      /* --- INTERACTIVE TIMELINE STYLES --- */
+      .timeline-container {
+        margin: 4rem 0;
+        padding: 2rem 0;
+        background: rgba(0,0,0,0.2);
+        border-radius: 12px;
+        border: 1px solid rgba(212, 175, 55, 0.1);
+      }
+      .timeline-wrapper {
+        display: flex;
+        overflow-x: auto;
+        padding: 40px 20px;
+        gap: 50px;
+        position: relative;
+        scrollbar-width: thin;
+        scrollbar-color: var(--copper) transparent;
+      }
+      .timeline-wrapper::-webkit-scrollbar { height: 6px; }
+      .timeline-wrapper::-webkit-scrollbar-thumb { background: var(--copper); border-radius: 10px; }
+      
+      .timeline-item {
+        min-width: 160px;
+        position: relative;
+        text-decoration: none;
+        transition: transform 0.3s ease;
+      }
+      .timeline-item:hover { transform: translateY(-8px); }
+      
+      .timeline-dot {
+        width: 14px;
+        height: 14px;
+        background: var(--neon-cyan);
+        border-radius: 50%;
+        margin-bottom: 20px;
+        box-shadow: 0 0 10px var(--neon-cyan);
+        z-index: 2;
+        position: relative;
+      }
+      .timeline-item:hover .timeline-dot {
+        box-shadow: 0 0 20px var(--neon-cyan), 0 0 35px var(--neon-cyan);
+      }
+      
+      .timeline-line {
+        position: absolute;
+        top: 46px; /* Align with dot center */
+        left: 0;
+        width: 200%; 
+        height: 2px;
+        background: rgba(212, 175, 55, 0.2);
+        z-index: 1;
+      }
+      
+      .timeline-date {
+        font-family: 'JetBrains Mono', monospace;
+        color: var(--copper);
+        font-size: 0.75rem;
+        display: block;
+        margin-bottom: 5px;
+      }
+      .timeline-title {
+        color: var(--silkscreen);
+        font-weight: 600;
+        font-size: 0.95rem;
+        margin: 0;
+      }
+      .timeline-desc {
+        color: #cfd8dc;
+        font-size: 0.75rem;
+        opacity: 0.6;
+        margin-top: 4px;
+      }
+
+      /* Base Content Styles */
       .main-content h1 { 
         font-family: 'JetBrains Mono', monospace;
         color: var(--silkscreen); border-left: 4px solid var(--copper); 
@@ -75,8 +150,55 @@
       <h1 class="project-name">{{ site.title }}</h1>
       <h2 class="project-tagline">{{ site.description }}</h2>
     </header>
+
     <main class="main-content">
+      
+      <section id="timeline">
+        <h1><i class="fa-solid fa-timeline"></i> Interactive Roadmap</h1>
+        <div class="timeline-container">
+          <div class="timeline-wrapper">
+            <div class="timeline-line"></div>
+            
+            <a href="#experience" class="timeline-item">
+              <span class="timeline-date">JAN 2026</span>
+              <div class="timeline-dot"></div>
+              <p class="timeline-title">Prog. Matter Lab</p>
+              <p class="timeline-desc">Embedded Research</p>
+            </a>
+
+            <a href="#projects" class="timeline-item">
+              <span class="timeline-date">NOV 2025</span>
+              <div class="timeline-dot"></div>
+              <p class="timeline-title">SwingTrack</p>
+              <p class="timeline-desc">Wearable IoT</p>
+            </a>
+
+            <a href="#projects" class="timeline-item">
+              <span class="timeline-date">NOV 2025</span>
+              <div class="timeline-dot"></div>
+              <p class="timeline-title">Line-Follower</p>
+              <p class="timeline-desc">Custom PCB Design</p>
+            </a>
+
+            <a href="#experience" class="timeline-item">
+              <span class="timeline-date">JULY 2025</span>
+              <div class="timeline-dot"></div>
+              <p class="timeline-title">Blood Cancer Utd</p>
+              <p class="timeline-desc">Info Systems Intern</p>
+            </a>
+
+            <a href="#experience" class="timeline-item">
+              <span class="timeline-date">SEPT 2024</span>
+              <div class="timeline-dot"></div>
+              <p class="timeline-title">Husky Robotics</p>
+              <p class="timeline-desc">Electronics Engineer</p>
+            </a>
+          </div>
+        </div>
+      </section>
+
       {{ content }}
+
       <footer style="text-align: center; padding: 5rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace;">
         &copy; 2026 ADITYA MANIVEL // STATUS: ACTIVE
       </footer>
