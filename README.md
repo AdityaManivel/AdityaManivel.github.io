@@ -11,9 +11,11 @@
   </p>
 </div>
 
-I am an **Electrical & Computer Engineering** student at the **University of Washington** focused on building integrated hardware systems and embedded solutions for specialized environments. My background spans from designing **Altium** and **KiCad** based PCBs for robotics to assembling wireless power modules and creating low-latency communication networks. I specialize in the end-to-end development cycle, including schematic capture, board assembly, and system-level debugging to ensure reliability in demanding applications. 
+I am an **Electrical & Computer Engineering** student at the University of Washington specializing in end-to-end embedded systems development.
 
-Beyond hardware, I leverage a strong foundation in firmware development and technical computing to bridge the gap between physical sensors and software applications. Having worked in multidisciplinary teams for research and college clubs, I prioritize design reliability, signal integrity, and cost-effective integration.
+* **Hardware Design:** Schematic capture and PCB layout using **Altium** and **KiCAD**.
+* **Systems Engineering:** Development of wireless power modules and low-latency communication networks.
+* **Firmware & Debugging:** Bridging physical sensors with software via system-level debugging and firmware development.
 
 ---
 
