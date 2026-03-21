@@ -7,203 +7,160 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <style>
-      html { scroll-behavior: smooth; }
       :root {
         --pcb-green: #061a18;
-        --soldermask: #0a2e2a;
         --copper: #d4af37;
-        --silkscreen: #ffffff;
         --neon-cyan: #00ffcc;
+        --month-h: 40px; /* Adjust this to change vertical scale */
       }
       
       body { 
-        background-color: var(--pcb-green); 
-        color: #cfd8dc; margin: 0; font-family: 'Inter', sans-serif; line-height: 1.6; overflow-x: hidden;
-        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.05'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
+        background-color: var(--pcb-green); color: #cfd8dc; margin: 0; font-family: 'Inter', sans-serif;
+        background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.4' stroke-opacity='0.04'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3C/g%3E%3C/svg%3E");
       }
-
-      .nav-menu { 
-        position: fixed; top: 0; width: 100%; background: rgba(10, 46, 42, 0.95); 
-        backdrop-filter: blur(8px); z-index: 9999; text-align: center; padding: 18px 0; border-bottom: 1px solid var(--copper); 
-      }
-      .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
-
-      .page-header { padding: 10rem 1rem 6rem 1rem; background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); text-align: center; border-bottom: 3px solid var(--copper); }
-      .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; color: var(--copper); margin: 0; }
 
       .main-content { max-width: 1000px; padding: 2rem; margin: 0 auto; }
-      .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 4rem; text-transform: uppercase; }
-
-      /* --- PARALLEL TIMELINE SYSTEM --- */
-      .timeline-container { margin-top: 3rem; position: relative; }
       
-      .timeline-row {
-        display: flex;
-        align-items: stretch;
-        margin-bottom: 20px;
-        min-height: 80px;
-      }
-
-      .tm-date-side {
-        width: 220px;
-        flex-shrink: 0;
-        text-align: right;
-        padding-right: 30px;
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.75rem;
-        color: var(--copper);
-        font-weight: 700;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        border-right: 2px solid rgba(212, 175, 55, 0.2);
+      /* --- PROPORTIONAL GANTT TIMELINE --- */
+      .gantt-container {
+        display: grid;
+        grid-template-columns: 120px 2px 1fr;
+        margin-top: 3rem;
         position: relative;
       }
 
-      /* Connection Dot */
-      .tm-date-side::after {
-        content: '';
-        position: absolute;
-        right: -7px;
-        width: 12px;
-        height: 12px;
-        background: var(--neon-cyan);
-        border-radius: 50%;
-        box-shadow: 0 0 10px var(--neon-cyan);
-      }
-
-      .tm-content-side {
-        flex-grow: 1;
-        padding-left: 30px;
+      .month-labels {
         display: flex;
-        gap: 15px; /* Spacing between parallel blocks */
-        align-items: center;
+        flex-direction: column;
       }
 
-      .tm-block {
-        flex: 1;
-        background: rgba(10, 46, 42, 0.5);
-        border: 1px solid rgba(212, 175, 55, 0.15);
-        border-radius: 4px;
-        padding: 12px 20px;
-        text-decoration: none;
-        transition: 0.3s ease;
+      .month-tick {
+        height: var(--month-h);
+        text-align: right;
+        padding-right: 20px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.65rem;
+        color: var(--copper);
+        opacity: 0.6;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+      }
+
+      .month-tick.year-mark { opacity: 1; font-weight: 700; font-size: 0.8rem; }
+
+      .timeline-axis {
+        background: rgba(212, 175, 55, 0.2);
+        position: relative;
+      }
+
+      .project-area {
+        position: relative;
+        margin-left: 30px;
+        height: calc(var(--month-h) * 20); /* Total months from Sept 2024 to May 2026 approx */
+      }
+
+      .p-block {
+        position: absolute;
+        left: 0;
+        width: 80%;
+        background: rgba(10, 46, 42, 0.7);
+        border-left: 3px solid var(--neon-cyan);
+        padding: 10px 15px;
+        box-sizing: border-box;
+        transition: 0.3s;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        height: 100%;
+        overflow: hidden;
       }
 
-      .tm-block:hover {
-        border-color: var(--neon-cyan);
-        background: rgba(10, 46, 42, 0.85);
-        transform: translateY(-2px);
-      }
+      .p-block:hover { background: rgba(0, 255, 204, 0.1); width: 85%; }
 
-      .tm-role {
-        color: var(--neon-cyan);
-        font-family: 'JetBrains Mono', monospace;
-        font-size: 0.65rem;
-        text-transform: uppercase;
-        margin-bottom: 2px;
-        letter-spacing: 1px;
-      }
+      /* Offsetting blocks that overlap horizontally */
+      .offset-right { left: 45%; width: 50%; border-left-color: var(--copper); }
 
-      .tm-title {
-        color: var(--silkscreen);
-        font-weight: 600;
-        font-size: 1rem;
-        margin: 0;
-      }
+      .p-role { font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: var(--neon-cyan); text-transform: uppercase; }
+      .p-name { color: white; font-weight: 600; font-size: 0.9rem; margin: 2px 0 0 0; }
 
-      footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
-      hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.3; margin: 4rem 0; }
+      /* POSITIONING (Month 0 = May 2026, working backwards) */
+      /* Top is most recent */
+      .t-now { top: calc(var(--month-h) * 0); height: calc(var(--month-h) * 5); } /* Jan '26 - May '26 */
+      .t-swing { top: calc(var(--month-h) * 5); height: calc(var(--month-h) * 3); } /* Nov '25 - Jan '26 */
+      .t-robot { top: calc(var(--month-h) * 5); height: calc(var(--month-h) * 2); } /* Nov '25 - Dec '25 */
+      .t-cancer { top: calc(var(--month-h) * 8); height: calc(var(--month-h) * 4); } /* July '25 - Oct '25 */
+      .t-husky { top: calc(var(--month-h) * 0); height: calc(var(--month-h) * 20); } /* Sept '24 - Present */
+      .t-hps { top: calc(var(--month-h) * 12); height: calc(var(--month-h) * 10); } /* Sept '24 - June '25 */
 
-      /* Mobile Adjustment */
-      @media (max-width: 768px) {
-        .tm-content-side { flex-direction: column; }
-        .tm-date-side { width: 120px; font-size: 0.65rem; }
-      }
     </style>
   </head>
   <body>
-    <nav class="nav-menu">
-      <a href="#about">ABOUT</a>
-      <a href="#experience">EXPERIENCE</a>
-      <a href="#projects">PROJECTS</a>
-      <a href="#timeline">TIMELINE</a>
-      <a href="./Resume.pdf" target="_blank">RESUME</a>
-      <a href="#contact">CONTACT</a>
-    </nav>
-
-    <header class="page-header">
-      <h1 class="project-name">{{ site.title | default: "Aditya Manivel" }}</h1>
-      <h2 style="color:white; opacity:0.8; font-weight: 300;">{{ site.description }}</h2>
-    </header>
-
     <main class="main-content">
-      {{ content }}
-      <hr>
-
       <section id="timeline">
-        <h1><i class="fa-solid fa-microchip"></i> Timeline</h1>
+        <h1 style="font-family:'JetBrains Mono'; border-left: 4px solid var(--copper); padding-left:15px;">PROPORTIONAL HISTORY</h1>
         
-        <div class="timeline-container">
-          
-          <div class="timeline-row">
-            <div class="tm-date-side">JANUARY 2026 — PRESENT</div>
-            <div class="tm-content-side">
-              <a href="#experience" class="tm-block">
-                <div class="tm-role">Undergraduate Researcher</div>
-                <h3 class="tm-title">Programmable Matter Lab</h3>
-              </a>
-            </div>
+        <div class="gantt-container">
+          <div class="month-labels">
+            <div class="month-tick year-mark">MAY 2026</div>
+            <div class="month-tick">APR 2026</div>
+            <div class="month-tick">MAR 2026</div>
+            <div class="month-tick">FEB 2026</div>
+            <div class="month-tick year-mark">JAN 2026</div>
+            <div class="month-tick">DEC 2025</div>
+            <div class="month-tick">NOV 2025</div>
+            <div class="month-tick">OCT 2025</div>
+            <div class="month-tick">SEP 2025</div>
+            <div class="month-tick">AUG 2025</div>
+            <div class="month-tick">JUL 2025</div>
+            <div class="month-tick">JUN 2025</div>
+            <div class="month-tick">MAY 2025</div>
+            <div class="month-tick">APR 2025</div>
+            <div class="month-tick">MAR 2025</div>
+            <div class="month-tick">FEB 2025</div>
+            <div class="month-tick year-mark">JAN 2025</div>
+            <div class="month-tick">DEC 2024</div>
+            <div class="month-tick">NOV 2024</div>
+            <div class="month-tick">OCT 2024</div>
+            <div class="month-tick year-mark">SEP 2024</div>
           </div>
 
-          <div class="timeline-row">
-            <div class="tm-date-side">NOVEMBER 2025 — JANUARY 2026</div>
-            <div class="tm-content-side">
-              <a href="#projects" class="tm-block">
-                <div class="tm-role">Project Lead</div>
-                <h3 class="tm-title">SwingTrack</h3>
-              </a>
-              <a href="#projects" class="tm-block">
-                <div class="tm-role">Hardware Lead</div>
-                <h3 class="tm-title">Line-Following Robot</h3>
-              </a>
-            </div>
-          </div>
+          <div class="timeline-axis"></div>
 
-          <div class="timeline-row">
-            <div class="tm-date-side">JULY 2025 — OCTOBER 2025</div>
-            <div class="tm-content-side">
-              <a href="#experience" class="tm-block">
-                <div class="tm-role">Information Management Intern</div>
-                <h3 class="tm-title">Blood Cancer United</h3>
-              </a>
+          <div class="project-area">
+            
+            <div class="p-block t-now">
+              <span class="p-role">Undergraduate Researcher</span>
+              <span class="p-name">Programmable Matter Lab</span>
             </div>
-          </div>
 
-          <div class="timeline-row">
-            <div class="tm-date-side">SEPTEMBER 2024 — PRESENT</div>
-            <div class="tm-content-side">
-              <a href="#experience" class="tm-block">
-                <div class="tm-role">Electronics Engineer</div>
-                <h3 class="tm-title">Husky Robotics Club</h3>
-              </a>
-              <a href="#experience" class="tm-block">
-                <div class="tm-role">Project Engineer</div>
-                <h3 class="tm-title">Human Powered Submarine</h3>
-              </a>
+            <div class="p-block t-swing offset-right">
+              <span class="p-role">Project Lead</span>
+              <span class="p-name">SwingTrack</span>
             </div>
-          </div>
 
+            <div class="p-block t-robot">
+              <span class="p-role">Hardware Lead</span>
+              <span class="p-name">Line-Following Robot</span>
+            </div>
+
+            <div class="p-block t-cancer">
+              <span class="p-role">Information Management Intern</span>
+              <span class="p-name">Blood Cancer United</span>
+            </div>
+
+            <div class="p-block t-husky offset-right" style="border-left-color: #00ffcc; opacity: 0.5;">
+              <span class="p-role">Electronics Engineer</span>
+              <span class="p-name">Husky Robotics Club</span>
+            </div>
+
+            <div class="p-block t-hps">
+              <span class="p-role">Project Engineer</span>
+              <span class="p-name">Human Powered Submarine</span>
+            </div>
+
+          </div>
         </div>
       </section>
-
-      <footer>
-        &copy; 2026 ADITYA MANIVEL // STATUS: ACTIVE
-      </footer>
     </main>
   </body>
 </html>
