@@ -59,9 +59,9 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Programmable Matter Lab</h3>
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Undergraduate Researcher | Seattle, WA</p>
   <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values.</li>
-    <li>Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication.</li>
-    <li>Analyzed datasheets to develop electronics system including ESP32-C3, FDC2214 capacitance-to-digital converters, and multiplexers.</li>
+    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values. Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication. Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable 
+operating range (3.0V–3.6V) without the need for active regulation.</li>
+    <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized capacitance readings to reduce noise by 20%.</li>
   </ul>
 </div>
 
