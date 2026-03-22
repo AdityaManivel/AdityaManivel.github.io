@@ -79,7 +79,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     </div>
     <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
       <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">Altium</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">EDA Tool</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">PCB Design</span>
     </div>
   </div>
 </div>
