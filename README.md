@@ -33,7 +33,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
       <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Autodesk Fusion 360, AutoCAD</p>
       
       <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">SOFT SKILLS</h5>
-      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Technical Documentation, Cross-functional Collaboration, Communication, Leadership</p>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Technical Documentation, Cross-functional Collaboration, Agile Methodology, Project Management, Peer Mentorship</p>
     </div>
     <div>
       <h5 style="color: #00ffcc; margin-top: 0; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">TECHNICAL COMPUTING</h5>
@@ -59,8 +59,10 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Programmable Matter Lab</h3>
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Undergraduate Researcher | Seattle, WA</p>
   <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values. Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication. Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable 
-operating range (3.0V–3.6V) without the need for active regulation.</li>
+    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values.</li>
+    <li>Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication.</li>
+    <li>Analyzed datasheets to develop electronics system including ESP32-C3, FDC2214 capacitance-to-digital converters, and multiplexers.</li>
+    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable operating range (3.0V–3.6V).</li>
     <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized capacitance readings to reduce noise by 20%.</li>
   </ul>
 </div>
@@ -75,6 +77,9 @@ operating range (3.0V–3.6V) without the need for active regulation.</li>
   <ul style="font-size: 0.9rem; line-height: 1.6;">
     <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
     <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
+    <li>Replaced commercial motor controllers with a custom PCB solution, reducing system cost by 30%.</li>
+    <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors.</li>
+    <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
   </ul>
 </div>
 
@@ -97,6 +102,7 @@ operating range (3.0V–3.6V) without the need for active regulation.</li>
 
   <ul style="font-size: 0.9rem; line-height: 1.6;">
     <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
+    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
   </ul>
 </div>
 
@@ -124,6 +130,7 @@ operating range (3.0V–3.6V) without the need for active regulation.</li>
 
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
     <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
+    <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
   </ul>
 </div>
 
@@ -149,7 +156,8 @@ operating range (3.0V–3.6V) without the need for active regulation.</li>
   </div>
   
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Independently engineered a custom KiCAD PCB to measure light reflectance values.</li>
+    <li>Worked with a 4-person team to create a robot capable of following a 5-meter track with >90% accuracy.</li>
+    <li>Independently engineered a custom KiCAD PCB with 20+ components to measure light reflectance.</li>
   </ul>
 </div>
 
