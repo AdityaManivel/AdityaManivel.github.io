@@ -111,6 +111,34 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
 </div>
 
+<div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">ROBOTICS / MECHATRONICS</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">SEPT 2024 — JUNE 2025</span>
+  </div>
+  <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Human Powered Submarine Team</h3>
+  <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Inductive Charging Project Engineer | Seattle, WA</p>
+  <ul style="font-size: 0.9rem; line-height: 1.6;">
+    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
+    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
+    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing seal failure risk.</li>
+  </ul>
+  <div style="display: flex; gap: 10px; margin-top: 20px;">
+    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">Qi-Standard</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Wireless Power</span>
+    </div>
+    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">12k mAh</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Capacity</span>
+    </div>
+    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">100%</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Waterproof</span>
+    </div>
+  </div>
+</div>
+
 ---
 
 <section id="projects"></section>
@@ -151,10 +179,18 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Line-Following Robot</h3>
 
-  <div style="display: flex; gap: 10px; margin: 15px 0; overflow-x: auto;">
-    <img src="PCBLineFollow.png" alt="PCB Design Top" style="width: 32%; border-radius: 6px; border: 1px solid rgba(0, 255, 204, 0.3);">
-    <img src="PCBLineFollow1.png" alt="PCB Design Bottom" style="width: 32%; border-radius: 6px; border: 1px solid rgba(0, 255, 204, 0.3);">
-    <img src="Robot.png" alt="Assembled Robot" style="width: 32%; border-radius: 6px; border: 1px solid rgba(0, 255, 204, 0.3);">
+  <div style="display: flex; gap: 12px; margin: 20px 0; height: 320px;">
+    <div style="flex: 2;">
+      <img src="Robot.png" alt="Assembled Robot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3);">
+    </div>
+    <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
+      <div style="flex: 1; background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.2); overflow: hidden;">
+        <img src="PCBLineFollow.png" alt="PCB Top" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">
+      </div>
+      <div style="flex: 1; background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.2); overflow: hidden;">
+        <img src="PCBLineFollow1.png" alt="PCB Bottom" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">
+      </div>
+    </div>
   </div>
   
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
