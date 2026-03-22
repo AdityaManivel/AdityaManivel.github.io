@@ -19,6 +19,34 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 ---
 
+<section id="skills"></section>
+
+# <i class="fa-solid fa-gears"></i> Skills
+
+<div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.1);">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div>
+      <h5 style="color: #00ffcc; margin-top: 0; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">EMBEDDED & EDA</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">STM32, PSoC, ESP32-C3, Arduino, C, C++, Altium Designer, KiCAD</p>
+      
+      <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">CAD & DESIGN</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Autodesk Fusion 360, AutoCAD</p>
+      
+      <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">SOFT SKILLS</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Technical Documentation, Cross-functional Collaboration, Agile Methodology, Project Management, Peer Mentorship</p>
+    </div>
+    <div>
+      <h5 style="color: #00ffcc; margin-top: 0; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">TECHNICAL COMPUTING</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Python (NumPy, pandas, Matplotlib), MATLAB, Excel, Microsoft Office, Google Workspace</p>
+      
+      <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">LABORATORY</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">3D Printing (Prusa, Bambu), Multimeter, Soldering, Breadboarding</p>
+    </div>
+  </div>
+</div>
+
+---
+
 <section id="experience"></section>
 
 # <i class="fa-solid fa-briefcase"></i> Experience
@@ -34,8 +62,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values.</li>
     <li>Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication.</li>
     <li>Analyzed datasheets to develop electronics system including ESP32-C3, FDC2214 capacitance-to-digital converters, and multiplexers.</li>
-    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable operating range (3.0V–3.6V).</li>
-    <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized capacitance readings to reduce noise by 20%.</li>
   </ul>
 </div>
 
@@ -49,9 +75,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <ul style="font-size: 0.9rem; line-height: 1.6;">
     <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
     <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
-    <li>Replaced commercial motor controllers with a custom PCB solution, reducing system cost by 30%.</li>
-    <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors.</li>
-    <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
   </ul>
 </div>
 
@@ -74,7 +97,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
   <ul style="font-size: 0.9rem; line-height: 1.6;">
     <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
-    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
   </ul>
 </div>
 
@@ -82,24 +104,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 <section id="projects"></section>
 
-# <i class="fa-solid fa-microchip"></i> Skills & Projects
-
-<div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.1);">
-  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
-    <div>
-      <h5 style="color: #00ffcc; margin-top: 0; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">EMBEDDED & EDA</h5>
-      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">STM32, PSoC, ESP32-C3, Arduino, C, C++, Altium Designer, KiCAD</p>
-      <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">CAD & DESIGN</h5>
-      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Autodesk Fusion 360, AutoCAD</p>
-    </div>
-    <div>
-      <h5 style="color: #00ffcc; margin-top: 0; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">TECHNICAL COMPUTING</h5>
-      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Python (NumPy, pandas, Matplotlib), MATLAB, Excel, Microsoft Office, Google Workspace</p>
-      <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">LABORATORY</h5>
-      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">3D Printing (Prusa, Bambu), Multimeter, Soldering, Breadboards</p>
-    </div>
-  </div>
-</div>
+# <i class="fa-solid fa-microchip"></i> Projects
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
@@ -119,7 +124,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
     <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
-    <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
   </ul>
 </div>
 
@@ -145,8 +149,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
   
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Worked with a 4-person team to create a robot capable of following a 5-meter track with >90% accuracy.</li>
-    <li>Independently engineered a custom KiCAD PCB with 20+ components to measure light reflectance.</li>
+    <li>Independently engineered a custom KiCAD PCB to measure light reflectance values.</li>
   </ul>
 </div>
 
@@ -157,7 +160,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 # <i class="fa-solid fa-paper-plane"></i> Contact
 
 <div align="center" style="margin-top: 2rem; padding: 30px; border: 1px dashed rgba(0, 255, 204, 0.4); border-radius: 15px; background: rgba(10, 46, 42, 0.1);">
-  
   <div style="display: flex; justify-content: center; gap: 40px;">
     <a href="https://www.linkedin.com/in/adityamanivel" target="_blank" style="text-decoration: none; color: inherit;">
       <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" width="45" height="45" />
