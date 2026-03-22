@@ -16,6 +16,11 @@
         --neon-cyan: #00ffcc;
       }
       
+      /* FIX: This ensures sections don't hide behind the nav bar when clicked */
+      section {
+        scroll-margin-top: 80px;
+      }
+
       body { 
         background-color: var(--pcb-green); 
         color: #cfd8dc; margin: 0; font-family: 'Inter', sans-serif; line-height: 1.6; overflow-x: hidden;
