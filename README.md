@@ -118,6 +118,16 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Human Powered Submarine Team</h3>
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Inductive Charging Project Engineer | Seattle, WA</p>
+
+  <div style="display: flex; gap: 12px; margin: 20px 0; height: 250px;">
+    <div style="flex: 1; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.2); overflow: hidden;">
+      <img src="hpsub.png" alt="Submarine Power Module 1" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">
+    </div>
+    <div style="flex: 1; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.2); overflow: hidden;">
+      <img src="hpsub1.png" alt="Submarine Power Module 2" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">
+    </div>
+  </div>
+
   <ul style="font-size: 0.9rem; line-height: 1.6;">
     <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
     <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
