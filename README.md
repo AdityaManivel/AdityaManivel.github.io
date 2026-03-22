@@ -15,7 +15,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 * **Hardware Design:** Schematic capture and PCB layout using **Altium** and **KiCAD**.
 * **Systems Engineering:** Development of wireless power modules and low-latency communication networks.
-* **Firmware & Debugging:** Bridging physical sensors with software via system-level debugging.
+* **Firmware & Debugging:** Bridging physical sensors with software via system-level debugging and firmware development.
 
 ---
 
@@ -32,8 +32,11 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Undergraduate Researcher | Seattle, WA</p>
   
   <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement.</li>
+    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values.</li>
     <li>Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication.</li>
+    <li>Analyzed datasheets to develop electronics system including ESP32-C3, FDC2214 capacitance-to-digital converters, and multiplexers.</li>
+    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable operating range (3.0V–3.6V).</li>
+    <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized capacitance readings to reduce noise by 20%.</li>
   </ul>
 
   <div style="display: flex; gap: 10px; margin-top: 20px;">
@@ -61,8 +64,10 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Electronics Engineer | Seattle, WA</p>
   
   <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Designed a 20A, 24V three-phase MOSFET bridge with gate driver for a BLDC motor board.</li>
-    <li>Replaced commercial controllers with custom PCB, reducing system cost by 30%.</li>
+    <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
+    <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
+    <li>Replaced commercial motor controllers with a custom PCB solution, reducing system cost by 30%.</li>
+    <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
   </ul>
 
   <div style="display: flex; gap: 10px; margin-top: 20px;">
@@ -95,8 +100,9 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">SwingTrack</h3>
   
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Wearable tennis wrist device using ESP32 with GPS and IMU sensors for motion tracking.</li>
-    <li>Provides insights into swing speed (±0.2m/s) and court positioning feedback.</li>
+    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
+    <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
+    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for 4+ hours of mobile power delivery.</li>
   </ul>
 
   <div style="display: flex; gap: 10px; margin-top: 20px;">
@@ -111,6 +117,35 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
       <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">4+ Hours</span>
       <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Battery Life</span>
+    </div>
+  </div>
+</div>
+
+<div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">ROBOTICS / PCB DESIGN</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">NOV 2025 — DEC 2025</span>
+  </div>
+  <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Line-Following Robot</h3>
+  
+  <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
+    <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% accuracy.</li>
+    <li>Independently engineered a custom KiCAD PCB with a 20+ component array to measure light reflectance values.</li>
+    <li>Soldered through-hole components and fabricated a light-shielding enclosure to mitigate interference.</li>
+  </ul>
+
+  <div style="display: flex; gap: 10px; margin-top: 20px;">
+    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">>90%</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Accuracy</span>
+    </div>
+    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">20+</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Components</span>
+    </div>
+    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">KiCAD</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">PCB Design</span>
     </div>
   </div>
 </div>
