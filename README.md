@@ -89,7 +89,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">JULY 2025 — SEPTEMBER 2025</span>
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Blood Cancer United</h3>
-  <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Information Management Intern | Seattle, WA</p>
+  <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Information Management Intern | Remote</p>
   <ul style="font-size: 0.9rem; line-height: 1.6;">
     <li>Maintained a database of 100+ patient records by transferring patient medical data from forms into Salesforce with a focus on data integrity and systems organization.</li>
     <li>Performed manual data verification and quality control to ensure cancer types and patient interactions were logged without errors.</li>
