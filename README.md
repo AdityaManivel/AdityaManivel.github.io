@@ -141,7 +141,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 # <i class="fa-solid fa-paper-plane"></i> Contact
 
 <div align="center" style="margin-top: 2rem; padding: 30px; border: 1px dashed rgba(0, 255, 204, 0.4); border-radius: 15px; background: rgba(10, 46, 42, 0.1);">
-  <p style="font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; margin-bottom: 25px;">Let's discuss <b>Hardware Engineering</b> or <b>Embedded Systems</b>!</p>
   
   <div style="display: flex; justify-content: center; gap: 40px;">
     <a href="https://www.linkedin.com/in/adityamanivel" target="_blank" style="text-decoration: none; color: inherit;">
