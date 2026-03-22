@@ -37,20 +37,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable operating range (3.0V–3.6V).</li>
     <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized capacitance readings to reduce noise by 20%.</li>
   </ul>
-  <div style="display: flex; gap: 10px; margin-top: 20px;">
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">ESP32-C3</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">MCU Stack</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">-20%</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Signal Noise</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">LiFePO4</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Power</span>
-    </div>
-  </div>
 </div>
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
@@ -64,51 +50,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
     <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
     <li>Replaced commercial motor controllers with a custom PCB solution, reducing system cost by 30%.</li>
-    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 integration.</li>
-    <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors.</li>
-    <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
   </ul>
-  <div style="display: flex; gap: 10px; margin-top: 20px;">
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">20A / 24V</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Power Rating</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">-30%</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">System Cost</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">Altium</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">EDA Tool</span>
-    </div>
-  </div>
-</div>
-
-<div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
-  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">INFORMATION SYSTEMS / CRM MANAGEMENT</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">JULY 2025 — OCT 2025</span>
-  </div>
-  <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Blood Cancer United</h3>
-  <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Information Management Intern | Remote</p>
-  <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Maintained a database of 100+ patient records by transferring medical data into Salesforce with a focus on data integrity.</li>
-    <li>Performed manual data verification and quality control to ensure cancer types were logged without errors.</li>
-  </ul>
-  <div style="display: flex; gap: 10px; margin-top: 20px;">
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">Salesforce</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">CRM Platform</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">100+</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Verified Records</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">Zero-Error</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Data Logging</span>
-    </div>
-  </div>
 </div>
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
@@ -131,22 +73,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <ul style="font-size: 0.9rem; line-height: 1.6;">
     <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
     <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
-    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing seal failure risk.</li>
   </ul>
-  <div style="display: flex; gap: 10px; margin-top: 20px;">
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">Qi-Standard</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Wireless Power</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">12k mAh</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Capacity</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">100%</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Waterproof</span>
-    </div>
-  </div>
 </div>
 
 ---
@@ -174,23 +101,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
     <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
     <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
-    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for 4+ hours of battery life.</li>
   </ul>
-
-  <div style="display: flex; gap: 10px; margin-top: 20px;">
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">ESP32</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Dev Board</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">±0.2m/s</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Accuracy</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">4+ Hours</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Battery Life</span>
-    </div>
-  </div>
 </div>
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
@@ -204,7 +115,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <div style="flex: 2;">
       <img src="Robot.png" alt="Assembled Robot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3);">
     </div>
-    
     <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
       <div style="flex: 1; background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.2); overflow: hidden;">
         <img src="PCBLineFollow.png" alt="PCB Top" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">
@@ -216,23 +126,31 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
   
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% accuracy.</li>
-    <li>Independently engineered a custom KiCAD PCB with a 20+ component array to measure light reflectance values.</li>
-    <li>Soldered through-hole components and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
+    <li>Independently engineered a custom KiCAD PCB to measure light reflectance values.</li>
+    <li>Soldered through-hole components and fabricated a light-shielding enclosure.</li>
   </ul>
+</div>
 
-  <div style="display: flex; gap: 10px; margin-top: 20px;">
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">>90%</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Accuracy</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">20+</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Components</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">KiCAD</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">PCB Design</span>
-    </div>
+---
+
+<section id="contact"></section>
+
+# <i class="fa-solid fa-paper-plane"></i> Contact & Connect
+
+<div align="center" style="margin-top: 2rem; padding: 30px; border: 1px dashed rgba(0, 255, 204, 0.4); border-radius: 15px; background: rgba(10, 46, 42, 0.1);">
+  <p style="font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; margin-bottom: 25px;">Let's discuss <b>Hardware Engineering</b> or <b>Embedded Systems</b>!</p>
+  
+  <div style="display: flex; justify-content: center; gap: 40px;">
+    <a href="https://www.linkedin.com/in/adityamanivel" target="_blank" style="text-decoration: none; color: inherit;">
+      <img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="LinkedIn" width="45" height="45" />
+      <span style="display: block; font-size: 0.75rem; margin-top: 8px; color: #00ffcc;">LinkedIn</span>
+    </a>
+
+    <a href="mailto:adityamanivel@gmail.com" style="text-decoration: none; color: inherit;">
+      <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/gmail.svg" alt="Email" width="45" height="45" style="filter: invert(82%) sepia(53%) saturate(543%) hue-rotate(114deg) brightness(101%) contrast(101%);" />
+      <span style="display: block; font-size: 0.75rem; margin-top: 8px; color: #00ffcc;">Email</span>
+    </a>
   </div>
+
+  <p style="margin-top: 30px; font-size: 0.8rem; opacity: 0.6;">Located in Seattle, WA</p>
 </div>
