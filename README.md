@@ -33,7 +33,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
       <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Autodesk Fusion 360, AutoCAD</p>
       
       <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">SOFT SKILLS</h5>
-      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Technical Documentation, Cross-functional Collaboration, Agile Methodology, Project Management, Peer Mentorship</p>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Technical Documentation, Cross-functional Collaboration, Communication, Leadership</p>
     </div>
     <div>
       <h5 style="color: #00ffcc; margin-top: 0; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">TECHNICAL COMPUTING</h5>
