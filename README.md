@@ -79,7 +79,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     </div>
     <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
       <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">Altium</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">PCB Design</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">EDA Tool</span>
     </div>
   </div>
 </div>
@@ -151,11 +151,22 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">NOV 2025 — JAN 2026</span>
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">SwingTrack</h3>
+
+  <div style="display: flex; gap: 12px; margin: 20px 0; height: 250px;">
+    <div style="flex: 1; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.2); overflow: hidden;">
+      <img src="ST1.png" alt="SwingTrack Device 1" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">
+    </div>
+    <div style="flex: 1; background: rgba(0,0,0,0.3); border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.2); overflow: hidden;">
+      <img src="ST2.png" alt="SwingTrack Device 2" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">
+    </div>
+  </div>
+
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
     <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
     <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
     <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for 4+ hours of battery life.</li>
   </ul>
+
   <div style="display: flex; gap: 10px; margin-top: 20px;">
     <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
       <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">ESP32</span>
@@ -183,6 +194,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <div style="flex: 2;">
       <img src="Robot.png" alt="Assembled Robot" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3);">
     </div>
+    
     <div style="flex: 1; display: flex; flex-direction: column; gap: 12px;">
       <div style="flex: 1; background: rgba(0,0,0,0.2); border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.2); overflow: hidden;">
         <img src="PCBLineFollow.png" alt="PCB Top" style="width: 100%; height: 100%; object-fit: contain; padding: 5px;">
