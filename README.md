@@ -1,3 +1,15 @@
+<div align="center" style="margin-bottom: 2rem;">
+  <p style="font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; word-spacing: 20px;">
+    <a href="#about" style="text-decoration: none; color: #d4af37;">ABOUT</a>
+    <a href="#skills" style="text-decoration: none; color: #d4af37;">SKILLS</a>
+    <a href="#experience" style="text-decoration: none; color: #d4af37;">EXPERIENCE</a>
+    <a href="#projects" style="text-decoration: none; color: #d4af37;">PROJECTS</a>
+    <a href="#resume" style="text-decoration: none; color: #d4af37;">RESUME</a>
+    <a href="#contact" style="text-decoration: none; color: #d4af37;">CONTACT</a>
+  </p>
+  <hr style="border: 0; height: 1px; background: linear-gradient(to right, rgba(0,0,0,0), #d4af37, rgba(0,0,0,0)); margin-top: 10px;">
+</div>
+
 <section id="about"></section>
 
 # <i class="fa-solid fa-address-card"></i> About
