@@ -32,21 +32,24 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Undergraduate Researcher | Seattle, WA</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software using measured capacitance values.</li>
+    <li>Digitally modeled 9 tiles to guide physical layout and mapped hardware block placement into software.</li>
     <li>Implemented a low-latency ESP32-C3 BLE Broadcasting network for real-time computer communication.</li>
-    <li>Analyzed datasheets to develop electronics system including ESP32-C3 microcontroller, FDC2214 capacitance-to-digital converters, and multiplexers.</li>
-    <li>Designed a direct-drive power system utilizing 3.2V LiFePO4 batteries to maintain a stable operating range (3.0V–3.6V).</li>
-    <li>Prototyped circuits on breadboards, optimizing signal routing and stabilized capacitance readings to reduce noise by 20%.</li>
+    <li>Prototyped circuits on breadboards, optimizing signal routing to reduce noise by 20%.</li>
   </ul>
 
-  <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">ESP32-C3 </span><span class="stat-label">MCU Stack</span></div>
-    <div class="stat-item"><span class="stat-value">-20% </span><span class="stat-label">Signal Noise</span></div>
-    <div class="stat-item"><span class="stat-value">LiFePO4 </span><span class="stat-label">Power</span></div>
-  </div>
-
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Embedded C</span><span class="tag">BLE</span><span class="tag">Mixed-Signal</span><span class="tag">Signal Integrity</span>
+  <div class="card-stats" style="display: flex; gap: 15px; margin: 15px 0;">
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">ESP32-C3</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">MCU Stack</span>
+    </div>
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">-20%</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Signal Noise</span>
+    </div>
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">LiFePO4</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Power</span>
+    </div>
   </div>
 </div>
 
@@ -59,78 +62,23 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
   
   <ul style="font-size: 0.9rem;">
-    <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
-    <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
-    <li>Replaced commercial motor controllers with a custom PCB solution, reducing system cost by 30%.</li>
-    <li>Developed and tested MOSFET bridge using external PWM signals to ensure stable operation before STM32 integration.</li>
-    <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors.</li>
-    <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
+    <li>Designed a 20A, 24V three-phase MOSFET bridge for a Brushless DC motor board.</li>
+    <li>Replaced commercial motor controllers with custom PCB, reducing system cost by 30%.</li>
   </ul>
 
-  <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">20A / 24V </span><span class="stat-label">Power Rating</span></div>
-    <div class="stat-item"><span class="stat-value">-30% </span><span class="stat-label">System Cost</span></div>
-    <div class="stat-item"><span class="stat-value">Altium </span><span class="stat-label">EDA Tool</span></div>
-  </div>
-
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">PCB Layout</span><span class="tag">Motor Control</span><span class="tag">PSoC</span><span class="tag">Soldering</span>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="card-header">
-    <span class="card-category">INFORMATION SYSTEMS / CRM MANAGEMENT</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">JULY 2025 — OCT 2025</span>
-  </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Blood Cancer United</h3>
-  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Information Management Intern | Remote</p>
-  
-  <ul style="font-size: 0.9rem;">
-    <li>Maintained a database of 100+ patient records by transferring medical data into Salesforce.</li>
-    <li>Focused on data integrity and systems organization for sensitive patient information.</li>
-    <li>Performed manual data verification and quality control to ensure interactions were logged without errors.</li>
-  </ul>
-
-  <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Salesforce</span><span class="stat-label">CRM Platform</span></div>
-    <div class="stat-item"><span class="stat-value">100+</span><span class="stat-label">Verified Records</span></div>
-    <div class="stat-item"><span class="stat-value">Zero-Error</span><span class="stat-label">Data Logging</span></div>
-  </div>
-
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Salesforce</span>
-    <span class="tag">Data Management</span>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="card-header">
-    <span class="card-category">ROBOTICS / MECHATRONICS</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">SEP 2024 — JUNE 2025</span>
-  </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Human Powered Submarine</h3>
-  <p style="font-weight: 600; color: var(--copper); margin-top: -10px;">Electronics Engineer | Seattle, WA</p>
-  
-  <ul style="font-size: 0.9rem;">
-    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
-    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
-    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing seal failure risk.</li>
-  </ul>
-
-  <div style="display: flex; gap: 10px; margin-top: 15px; margin-bottom: 15px; justify-content: center;">
-    <img src="hpsub1.png" alt="Human Powered Submarine Assembly" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
-    <img src="hpsub.png" alt="Electronics and Inductive Coil Detail" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
-  </div>
-
-  <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">Qi-Standard</span><span class="stat-label">Wireless Power</span></div>
-    <div class="stat-item"><span class="stat-value">12,000 mAh</span><span class="stat-label">Battery Capacity</span></div>
-    <div class="stat-item"><span class="stat-value">100%</span><span class="stat-label">Waterproof Seal</span></div>
-  </div>
-
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Mechatronics</span><span class="tag">Embedded Systems</span><span class="tag">Systems Engineering</span>
+  <div class="card-stats" style="display: flex; gap: 15px; margin: 15px 0;">
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">20A / 24V</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Power Rating</span>
+    </div>
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">-30%</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">System Cost</span>
+    </div>
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">Altium</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">EDA Tool</span>
+    </div>
   </div>
 </div>
 
@@ -145,60 +93,26 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <span class="card-category">WEARABLE TECH / EMBEDDED</span>
     <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">NOV 2025 — JAN 2026</span>
   </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">SwingTrack</h3>
+  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem; color: #00ffcc;">SwingTrack</h3>
   
   <ul style="font-size: 0.9rem;">
-    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board along with GPS and IMU sensors for real-time motion tracking and data acquisition.</li>
-    <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
-    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for ergonomics and reliable mobile power delivery for 4+ hours.</li>
+    <li>Wearable tennis wrist device using ESP32 with GPS and IMU sensors for motion tracking.</li>
+    <li>Provides insights into swing speed (±0.2m/s) and court positioning feedback.</li>
   </ul>
 
-  <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">ESP32</span><span class="stat-label">Dev Board</span></div>
-    <div class="stat-item"><span class="stat-value">±0.2m/s</span><span class="stat-label">Swing Accuracy</span></div>
-    <div class="stat-item"><span class="stat-value">4+ Hours</span><span class="stat-label">Battery Life</span></div>
-  </div>
-
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">GPS/IMU</span><span class="tag">Hardware Iteration</span><span class="tag">Data Acquisition</span>
-  </div>
-</div>
-
-<div class="project-card">
-  <div class="card-header">
-    <span class="card-category">ROBOTICS / PCB DESIGN</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem;">NOV 2025 — DEC 2025</span>
-  </div>
-  <h3 style="font-family: 'JetBrains Mono', monospace; margin-top: 0.5rem;">Line-Following Robot</h3>
-  
-  <ul style="font-size: 0.9rem;">
-    <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% line-following accuracy.</li>
-    <li>Independently engineered a custom KiCAD PCB with a 20+ component array of potentiometers, resistors, photoresistors and LEDs to accurately measure light reflectance values.</li>
-    <li>Soldered through-hole components to a custom PCB and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
-  </ul>
-
-  <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px; margin-bottom: 15px; align-items: center;">
-    
-    <div style="width: 100%; display: flex; justify-content: center;">
-      <img src="Robot.png" alt="Line-Following Robot" style="width: 100%; max-width: 500px; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: cover;">
+  <div class="card-stats" style="display: flex; gap: 15px; margin: 15px 0;">
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">ESP32</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Dev Board</span>
     </div>
-
-    <div style="display: flex; gap: 10px; width: 100%; justify-content: center; align-items: start;">
-      <img src="PCBLineFollow.png" alt="KiCAD PCB Layout" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: contain; background: #1a1a1a;">
-      <img src="PCBLineFollow1.png" alt="Assembled PCB 3D View" style="width: 48%; border-radius: 8px; border: 1px solid rgba(0, 255, 204, 0.3); object-fit: contain; background: #1a1a1a;">
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">±0.2m/s</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Accuracy</span>
     </div>
-  </div>
-
-  <div class="card-stats">
-    <div class="stat-item"><span class="stat-value">>90%</span><span class="stat-label">Accuracy</span></div>
-    <div class="stat-item"><span class="stat-value">20+</span><span class="stat-label">Components</span></div>
-    <div class="stat-item"><span class="stat-value">KiCAD</span><span class="stat-label">PCB Design</span></div>
-  </div>
-
-  <div class="tag-container" style="display: flex; gap: 8px; flex-wrap: wrap;">
-    <span class="tag">Arduino</span>
-    <span class="tag">Through-Hole Soldering</span>
-    <span class="tag">Optoelectronics</span>
+    <div class="stat-item" style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 8px 12px; border-radius: 4px; flex: 1; text-align: center;">
+      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.8rem;">4+ Hours</span>
+      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Battery Life</span>
+    </div>
   </div>
 </div>
 
@@ -207,3 +121,25 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 <section id="timeline"></section>
 
 # <i class="fa-solid fa-clock-rotate-left"></i> Interactive Timeline
+
+<div class="gantt-container" style="display: grid; grid-template-columns: 140px 2px 1fr; margin-top: 3rem; position: relative;">
+  <div class="month-labels" style="display: flex; flex-direction: column;">
+    <div style="height: 45px; text-align: right; padding-right: 25px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #00ffcc; font-weight: 700; display: flex; align-items: center; justify-content: flex-end;">MAY 2026</div>
+    <div style="height: 45px; text-align: right; padding-right: 25px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #00ffcc; font-weight: 700; display: flex; align-items: center; justify-content: flex-end;">JAN 2026</div>
+    <div style="height: 45px; text-align: right; padding-right: 25px; font-family: 'JetBrains Mono', monospace; font-size: 0.8rem; color: #00ffcc; font-weight: 700; display: flex; align-items: center; justify-content: flex-end;">SEP 2024</div>
+  </div>
+
+  <div style="background: rgba(212, 175, 55, 0.2); position: relative;"></div>
+
+  <div style="position: relative; margin-left: 30px; height: 500px;">
+    <div style="position: absolute; top: 0; height: 500px; width: 45%; left: 48%; border-left: 3px solid #00ffcc; background: rgba(10, 46, 42, 0.3); padding: 10px; opacity: 0.6;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: #00ffcc; text-transform: uppercase;">Electronics Engineer</span>
+      <span style="color: white; font-weight: 600; font-size: 0.9rem; display: block;">Husky Robotics Club</span>
+    </div>
+    
+    <div style="position: absolute; top: 0; height: 100px; width: 45%; border-left: 3px solid #00ffcc; background: rgba(10, 46, 42, 0.6); padding: 10px;">
+      <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.6rem; color: #00ffcc; text-transform: uppercase;">Researcher</span>
+      <span style="color: white; font-weight: 600; font-size: 0.9rem; display: block;">Prog. Matter Lab</span>
+    </div>
+  </div>
+</div>
