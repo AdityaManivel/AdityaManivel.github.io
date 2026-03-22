@@ -4,7 +4,7 @@
 
 <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid #00ffcc; padding: 1.5rem; border-radius: 8px; margin-bottom: 2rem;">
   <h4 style="margin: 0; color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 1.1rem;">
-    Actively seeking Summer 2026 Internships
+    Actively Seeking Summer 2026 Internships
   </h4>
   <p style="margin: 8px 0 0 0; font-size: 0.95rem; opacity: 0.9;">
     Focus: Embedded Systems | Hardware Engineering | Robotics
