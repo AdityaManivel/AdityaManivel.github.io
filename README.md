@@ -54,7 +54,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
     <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">RESEARCH / EMBEDDED SYSTEMS</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">JAN 2026 — PRESENT</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">JANUARY 2026 — PRESENT</span>
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Programmable Matter Lab</h3>
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Undergraduate Researcher | Seattle, WA</p>
@@ -69,8 +69,8 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">ROBOTICS / HARDWARE DESIGN</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">SEPT 2024 — PRESENT</span>
+    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">ROBOTICS / PCB DESIGN</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">SEPTEMBER 2024 — PRESENT</span>
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Husky Robotics Club</h3>
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Electronics Engineer | Seattle, WA</p>
@@ -85,22 +85,21 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">DATABASE / IT SUPPORT</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">JUNE 2025 — SEPT 2025</span>
+    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">DATABASE MANAGEMENT</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">JULY 2025 — SEPTEMBER 2025</span>
   </div>
-  <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Information Management Intern</h3>
-  <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Intern | Seattle, WA</p>
+  <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Blood Cancer United</h3>
+  <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Information Management Intern | Seattle, WA</p>
   <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Managed and updated central databases using Microsoft Office and Google Workspace.</li>
-    <li>Provided cross-functional technical support to assist internal team members.</li>
-    <li>Collaborated with senior staff to maintain data integrity and project organization.</li>
+    <li>Maintained a database of 100+ patient records by transferring patient medical data from forms into Salesforce with a focus on data integrity and systems organization.</li>
+    <li>Performed manual data verification and quality control to ensure cancer types and patient interactions were logged without errors.</li>
   </ul>
 </div>
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">ROBOTICS / MECHATRONICS</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">SEPT 2024 — JUNE 2025</span>
+    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">SUBMERSIBLE ELECTRONICS / WIRELESS CHARGING</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">SEPTEMBER 2024 — JUNE 2025</span>
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Human Powered Submarine Team</h3>
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Inductive Charging Project Engineer | Seattle, WA</p>
@@ -130,7 +129,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
     <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">WEARABLE TECH / EMBEDDED</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">NOV 2025 — JAN 2026</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">NOVEMBER 2025 — JANUARY 2026</span>
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">SwingTrack</h3>
 
@@ -152,7 +151,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
     <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">ROBOTICS / PCB DESIGN</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">NOV 2025 — DEC 2025</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">NOVEMBER 2025 — DECEMBER 2025</span>
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Line-Following Robot</h3>
 
