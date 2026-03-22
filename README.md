@@ -101,8 +101,9 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
 
   <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal.</li>
-    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells).</li>
+    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal, eliminating the need for manual cable management.</li>
+    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells), ensuring reliable power delivery for submarine electronics.</li>
+    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing the risk of seal failure during frequent charging cycles.</li>
   </ul>
 </div>
 
@@ -129,8 +130,8 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
 
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
-    <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
+    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board along with GPS and IMU sensors for real-time motion tracking and data acquisition, providing athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
+    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for ergonomics and reliable mobile power delivery for 4+ hours on a single charge.</li>
   </ul>
 </div>
 
@@ -156,8 +157,9 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
   
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Worked with a 4-person team to create a robot capable of following a 5-meter track with >90% accuracy.</li>
-    <li>Independently engineered a custom KiCAD PCB with 20+ components to measure light reflectance.</li>
+    <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% line-following accuracy.</li>
+    <li>Independently engineered a custom KiCAD PCB with a 20+ component array of potentiometers, resistors, photoresistors and LEDs to accurately measure light reflectance values.</li>
+    <li>Soldered through-hole components to a custom PCB and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
   </ul>
 </div>
 
