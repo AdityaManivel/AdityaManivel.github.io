@@ -92,8 +92,8 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Blood Cancer United</h3>
   <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Information Management Intern | Remote</p>
   <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Maintained a database of 100+ patient records by transferring medical data into Salesforce with a focus on data integrity and systems organization.</li>
-    <li>Performed manual data verification and quality control to ensure cancer types and patient interactions were logged without errors.</li>
+    <li>Maintained a database of 100+ patient records by transferring medical data into Salesforce with a focus on data integrity.</li>
+    <li>Performed manual data verification and quality control to ensure cancer types were logged without errors.</li>
   </ul>
   <div style="display: flex; gap: 10px; margin-top: 20px;">
     <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
@@ -111,34 +111,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
 </div>
 
-<div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
-  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
-    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">ROBOTICS / MECHATRONICS</span>
-    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">SEPT 2024 — JUNE 2025</span>
-  </div>
-  <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Human Powered Submarine Team</h3>
-  <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Inductive Charging Project Engineer | Seattle, WA</p>
-  <ul style="font-size: 0.9rem; line-height: 1.6;">
-    <li>Engineered a wireless, submersible power module using Qi-standard inductive charging to maintain a 100% waterproof seal, eliminating the need for manual cable management.</li>
-    <li>Delivered a high-capacity charging system for a 12,000 mAh Li-ion battery array (four 18650 cells), ensuring reliable power delivery for submarine electronics.</li>
-    <li>Improved longevity by reducing mechanical wear on internal connectors and reducing the risk of seal failure during frequent charging cycles.</li>
-  </ul>
-  <div style="display: flex; gap: 10px; margin-top: 20px;">
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">Qi-Standard</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Wireless Power</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">12,000 mAh</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Battery Capacity</span>
-    </div>
-    <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
-      <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">100%</span>
-      <span style="display: block; font-size: 0.6rem; opacity: 0.7; text-transform: uppercase;">Waterproof Seal</span>
-    </div>
-  </div>
-</div>
-
 ---
 
 <section id="projects"></section>
@@ -152,9 +124,9 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">SwingTrack</h3>
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking and data acquisition.</li>
+    <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
     <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
-    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for ergonomics and reliable mobile power delivery for 4+ hours.</li>
+    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for 4+ hours of battery life.</li>
   </ul>
   <div style="display: flex; gap: 10px; margin-top: 20px;">
     <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
@@ -178,11 +150,19 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">NOV 2025 — DEC 2025</span>
   </div>
   <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Line-Following Robot</h3>
+
+  <div style="display: flex; gap: 10px; margin: 15px 0; overflow-x: auto;">
+    <img src="PCBLineFollow.png" alt="PCB Design Top" style="width: 32%; border-radius: 6px; border: 1px solid rgba(0, 255, 204, 0.3);">
+    <img src="PCBLineFollow1.png" alt="PCB Design Bottom" style="width: 32%; border-radius: 6px; border: 1px solid rgba(0, 255, 204, 0.3);">
+    <img src="Robot.png" alt="Assembled Robot" style="width: 32%; border-radius: 6px; border: 1px solid rgba(0, 255, 204, 0.3);">
+  </div>
+  
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% line-following accuracy.</li>
-    <li>Independently engineered a custom KiCAD PCB with a 20+ component array of potentiometers, resistors, photoresistors and LEDs to accurately measure light reflectance values.</li>
-    <li>Soldered through-hole components to a custom PCB and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
+    <li>Worked with a 4-person team to create a robot capable of following a 5-meter black track using Arduino, achieving >90% accuracy.</li>
+    <li>Independently engineered a custom KiCAD PCB with a 20+ component array to measure light reflectance values.</li>
+    <li>Soldered through-hole components and fabricated a light-shielding enclosure to mitigate ambient light interference.</li>
   </ul>
+
   <div style="display: flex; gap: 10px; margin-top: 20px;">
     <div style="background: rgba(0, 255, 204, 0.1); border: 1px solid rgba(0, 255, 204, 0.3); padding: 10px; border-radius: 6px; flex: 1; text-align: center;">
       <span style="display: block; color: #00ffcc; font-weight: 700; font-size: 0.85rem;">>90%</span>
