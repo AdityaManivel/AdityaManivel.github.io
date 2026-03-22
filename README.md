@@ -14,8 +14,8 @@
 I am an **Electrical & Computer Engineering** student at the University of Washington specializing in end-to-end embedded systems development.
 
 * **Hardware Design:** Schematic capture and PCB layout using **Altium** and **KiCAD**.
-* **Systems Engineering:** Development of wireless power modules and low-latency communication networks.
-* **Firmware & Debugging:** Bridging physical sensors with software via system-level debugging and firmware development.
+* **Power & Communication** Development of wireless power modules and low-latency communication networks.
+* **Firmware:** Bridging physical sensors with software via system-level debugging and firmware development.
 
 ---
 
