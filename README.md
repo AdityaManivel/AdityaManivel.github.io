@@ -82,7 +82,24 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 <section id="projects"></section>
 
-# <i class="fa-solid fa-microchip"></i> Projects
+# <i class="fa-solid fa-microchip"></i> Skills & Projects
+
+<div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 15px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.1);">
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+    <div>
+      <h5 style="color: #00ffcc; margin-top: 0; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">EMBEDDED & EDA</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">STM32, PSoC, ESP32-C3, Arduino, C, C++, Altium Designer, KiCAD</p>
+      <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">CAD & DESIGN</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Autodesk Fusion 360, AutoCAD</p>
+    </div>
+    <div>
+      <h5 style="color: #00ffcc; margin-top: 0; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">TECHNICAL COMPUTING</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">Python (NumPy, pandas, Matplotlib), MATLAB, Excel, Microsoft Office, Google Workspace</p>
+      <h5 style="color: #00ffcc; margin-top: 15px; margin-bottom: 10px; font-size: 0.8rem; letter-spacing: 1px;">LABORATORY</h5>
+      <p style="font-size: 0.85rem; margin: 0; opacity: 0.8;">3D Printing (Prusa, Bambu), Multimeter, Soldering, Breadboards</p>
+    </div>
+  </div>
+</div>
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
@@ -103,7 +120,6 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
     <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
     <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
-    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for 4+ hours of battery life.</li>
   </ul>
 </div>
 
