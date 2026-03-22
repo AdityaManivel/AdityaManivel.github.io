@@ -85,6 +85,20 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 <div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
   <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+    <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">DATABASE / IT SUPPORT</span>
+    <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">JUNE 2025 — SEPT 2025</span>
+  </div>
+  <h3 style="margin: 0; font-family: 'JetBrains Mono', monospace; color: #fff;">Information Management Intern</h3>
+  <p style="font-weight: 600; color: #d4af37; margin: 5px 0 15px 0;">Intern | Seattle, WA</p>
+  <ul style="font-size: 0.9rem; line-height: 1.6;">
+    <li>Managed and updated central databases using Microsoft Office and Google Workspace.</li>
+    <li>Provided cross-functional technical support to assist internal team members.</li>
+    <li>Collaborated with senior staff to maintain data integrity and project organization.</li>
+  </ul>
+</div>
+
+<div style="border: 1px solid rgba(0, 255, 204, 0.2); padding: 20px; border-radius: 12px; margin-bottom: 2rem; background: rgba(10, 46, 42, 0.2);">
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
     <span style="color: #00ffcc; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 1px;">ROBOTICS / MECHATRONICS</span>
     <span style="font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; opacity: 0.6;">SEPT 2024 — JUNE 2025</span>
   </div>
