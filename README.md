@@ -50,6 +50,8 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
     <li>Collaborated with partner to design PCBs using Altium Designer for team's mockup Mars Rover.</li>
     <li>Designed a 20A, 24V three-phase MOSFET bridge with high/low-side gate driver for a Brushless DC motor board.</li>
     <li>Replaced commercial motor controllers with a custom PCB solution, reducing system cost by 30%.</li>
+    <li>Created PSoC based PCB capable of independently controlling up to 12 servo motors.</li>
+    <li>Executed schematic design and PCB layout, followed by board assembly using through-hole and reflow soldering.</li>
   </ul>
 </div>
 
@@ -101,6 +103,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
     <li>Co-developed a wearable tennis wrist device using an ESP32 dev board with GPS and IMU sensors for real-time motion tracking.</li>
     <li>Provided athletes with insights into swing speed (±0.2m/s) and court positioning feedback.</li>
+    <li>Iterated from breadboard to a wrist-mounted form factor, optimizing hardware layout for 4+ hours of battery life.</li>
   </ul>
 </div>
 
@@ -126,8 +129,8 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
   </div>
   
   <ul style="font-size: 0.9rem; line-height: 1.6; margin-top: 15px;">
-    <li>Independently engineered a custom KiCAD PCB to measure light reflectance values.</li>
-    <li>Soldered through-hole components and fabricated a light-shielding enclosure.</li>
+    <li>Worked with a 4-person team to create a robot capable of following a 5-meter track with >90% accuracy.</li>
+    <li>Independently engineered a custom KiCAD PCB with 20+ components to measure light reflectance.</li>
   </ul>
 </div>
 
@@ -135,7 +138,7 @@ I am an **Electrical & Computer Engineering** student at the University of Washi
 
 <section id="contact"></section>
 
-# <i class="fa-solid fa-paper-plane"></i> Contact & Connect
+# <i class="fa-solid fa-paper-plane"></i> Contact
 
 <div align="center" style="margin-top: 2rem; padding: 30px; border: 1px dashed rgba(0, 255, 204, 0.4); border-radius: 15px; background: rgba(10, 46, 42, 0.1);">
   <p style="font-family: 'JetBrains Mono', monospace; font-size: 1.1rem; margin-bottom: 25px;">Let's discuss <b>Hardware Engineering</b> or <b>Embedded Systems</b>!</p>
