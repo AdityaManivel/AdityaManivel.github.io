@@ -14,7 +14,6 @@
         --copper: #d4af37;
         --silkscreen: #ffffff;
         --neon-cyan: #00ffcc;
-        --trace-opacity: 0.07;
       }
       
       section { scroll-margin-top: 100px; }
@@ -59,10 +58,8 @@
       .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
       .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 5rem; text-transform: uppercase; font-size: 1.5rem; }
       
-      /* Global Component Styling */
       strong { color: var(--neon-cyan); font-weight: 600; }
       
-      /* Image Schematic Style */
       img { 
         border-radius: 8px; 
         border: 1px solid rgba(212, 175, 55, 0.3); 
@@ -72,28 +69,23 @@
       }
       img:hover { border-color: var(--neon-cyan); transform: scale(1.01); }
 
-      /* PCB Trace Horizontal Rule */
       hr {
         border: 0;
         height: 1px;
         background: linear-gradient(90deg, var(--neon-cyan) 0%, var(--copper) 50%, transparent 100%);
         opacity: 0.3;
         margin: 4rem 0;
-        position: relative;
       }
 
-      /* Footer & System Status */
+      /* Footer & Status Light */
       footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; border-top: 1px solid rgba(212, 175, 55, 0.1); }
       .status-indicator { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 15px; }
       .status-dot { height: 8px; width: 8px; background-color: #00ff00; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px #00ff00; animation: pulse 2s infinite; }
       @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
-      /* Custom Scrollbar for the PCB vibe */
       ::-webkit-scrollbar { width: 10px; }
       ::-webkit-scrollbar-track { background: var(--pcb-green); }
       ::-webkit-scrollbar-thumb { background: var(--soldermask); border: 1px solid var(--copper); }
-      ::-webkit-scrollbar-thumb:hover { background: var(--copper); }
-
     </style>
   </head>
   <body>
