@@ -16,10 +16,7 @@
         --neon-cyan: #00ffcc;
       }
       
-      /* FIX: This ensures sections don't hide behind the nav bar when clicked */
-      section {
-        scroll-margin-top: 80px;
-      }
+      section { scroll-margin-top: 80px; }
 
       body { 
         background-color: var(--pcb-green); 
@@ -27,24 +24,52 @@
         background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.05'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
       }
 
+      /* Glassmorphism Nav Bar */
       .nav-menu { 
         position: fixed; top: 0; width: 100%; 
-        background: rgba(6, 26, 24, 0.85); /* Slightly transparent */
-        backdrop-filter: blur(12px); /* Apple-style blur */
+        background: rgba(6, 26, 24, 0.85);
+        backdrop-filter: blur(12px); 
         -webkit-backdrop-filter: blur(12px);
         z-index: 9999; text-align: center; padding: 18px 0; 
-        border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Subtle copper glow */
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
       }
-      .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
+      .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; transition: 0.3s; }
+      .nav-menu a:hover { color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan); }
 
       .page-header { padding: 10rem 1rem 6rem 1rem; background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); text-align: center; border-bottom: 3px solid var(--copper); }
       .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; color: var(--copper); margin: 0; }
+      
+      .header-tag {
+        display: inline-block;
+        background: rgba(0, 255, 204, 0.1);
+        border: 1px solid var(--neon-cyan);
+        color: var(--neon-cyan);
+        padding: 5px 12px;
+        border-radius: 20px;
+        font-family: 'JetBrains Mono', monospace;
+        font-size: 0.8rem;
+        margin-bottom: 15px;
+      }
 
       .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
       .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 4rem; text-transform: uppercase; }
+      
+      /* Hardware Highlight */
+      strong { color: var(--neon-cyan); }
 
       footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
+      
+      /* Pulsing System Status */
+      .status-indicator {
+        display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px;
+      }
+      .status-dot {
+        height: 8px; width: 8px; background-color: #00ff00; border-radius: 50%; display: inline-block; 
+        box-shadow: 0 0 8px #00ff00; animation: pulse 2s infinite;
+      }
+      @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
+
       hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.3; margin: 4rem 0; }
     </style>
   </head>
@@ -59,15 +84,20 @@
     </nav>
 
     <header class="page-header">
+      <div class="header-tag">Junior Standing // Class of 2028</div>
       <h1 class="project-name">{{ site.title | default: "Aditya Manivel" }}</h1>
-      <h2 style="color:white; opacity:0.8; font-weight: 300;">Junior Standing | Class of 2028 | University of Washington</h2>
+      <h2 style="color:white; opacity:0.8; font-weight: 300; margin-top: 10px;">Electrical & Computer Engineering | University of Washington</h2>
     </header>
 
     <main class="main-content">
       {{ content }}
       
       <footer>
-        &copy; 2026 ADITYA MANIVEL // STATUS: ACTIVE
+        <div>&copy; 2026 ADITYA MANIVEL</div>
+        <div class="status-indicator">
+          <span class="status-dot"></span>
+          <span style="color: #00ff00;">SYSTEM STATUS: ACTIVE // INTERNSHIP SEARCH ON</span>
+        </div>
       </footer>
     </main>
   </body>
