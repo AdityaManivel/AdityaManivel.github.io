@@ -28,8 +28,13 @@
       }
 
       .nav-menu { 
-        position: fixed; top: 0; width: 100%; background: rgba(10, 46, 42, 0.95); 
-        backdrop-filter: blur(8px); z-index: 9999; text-align: center; padding: 18px 0; border-bottom: 1px solid var(--copper); 
+        position: fixed; top: 0; width: 100%; 
+        background: rgba(6, 26, 24, 0.85); /* Slightly transparent */
+        backdrop-filter: blur(12px); /* Apple-style blur */
+        -webkit-backdrop-filter: blur(12px);
+        z-index: 9999; text-align: center; padding: 18px 0; 
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3); /* Subtle copper glow */
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
       }
       .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
 
