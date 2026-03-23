@@ -14,9 +14,10 @@
         --copper: #d4af37;
         --silkscreen: #ffffff;
         --neon-cyan: #00ffcc;
+        --trace-opacity: 0.07;
       }
       
-      section { scroll-margin-top: 80px; }
+      section { scroll-margin-top: 100px; }
 
       body { 
         background-color: var(--pcb-green); 
@@ -24,58 +25,80 @@
         background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.5' stroke-opacity='0.05'%3E%3Cpath d='M10 10h30v10h10v30h20v10h30'/%3E%3Ccircle cx='10' cy='10' r='1.5'/%3E%3Cpath d='M0 80h20v-20h10V20H0'/%3E%3Ccircle cx='30' cy='20' r='1.5'/%3E%3C/g%3E%3C/svg%3E");
       }
 
-      /* Glassmorphism Nav Bar */
+      /* Glassmorphism Navigation */
       .nav-menu { 
         position: fixed; top: 0; width: 100%; 
         background: rgba(6, 26, 24, 0.85);
         backdrop-filter: blur(12px); 
         -webkit-backdrop-filter: blur(12px);
         z-index: 9999; text-align: center; padding: 18px 0; 
-        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        border-bottom: 1px solid rgba(212, 175, 55, 0.2);
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
       }
-      .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; transition: 0.3s; }
+      .nav-menu a { color: var(--copper); text-decoration: none; margin: 0 15px; font-weight: 600; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; transition: 0.3s; letter-spacing: 1px; }
       .nav-menu a:hover { color: var(--neon-cyan); text-shadow: 0 0 10px var(--neon-cyan); }
 
+      /* Header Styling */
       .page-header { padding: 10rem 1rem 6rem 1rem; background: linear-gradient(135deg, var(--soldermask) 0%, var(--pcb-green) 100%); text-align: center; border-bottom: 3px solid var(--copper); }
-      .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; color: var(--copper); margin: 0; }
+      .project-name { font-family: 'JetBrains Mono', monospace; font-size: 3.5rem; color: var(--copper); margin: 0; text-transform: uppercase; letter-spacing: -2px; }
       
       .header-tag {
         display: inline-block;
         background: rgba(0, 255, 204, 0.1);
         border: 1px solid var(--neon-cyan);
         color: var(--neon-cyan);
-        padding: 5px 12px;
+        padding: 5px 15px;
         border-radius: 20px;
         font-family: 'JetBrains Mono', monospace;
         font-size: 0.8rem;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px rgba(0, 255, 204, 0.1);
       }
 
+      /* Content Layout */
       .main-content { max-width: 900px; padding: 2rem; margin: 0 auto; }
-      .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 4rem; text-transform: uppercase; }
+      .main-content h1 { font-family: 'JetBrains Mono', monospace; color: var(--silkscreen); border-left: 4px solid var(--copper); padding-left: 15px; margin-top: 5rem; text-transform: uppercase; font-size: 1.5rem; }
       
-      /* Hardware Highlight */
-      strong { color: var(--neon-cyan); }
+      /* Global Component Styling */
+      strong { color: var(--neon-cyan); font-weight: 600; }
+      
+      /* Image Schematic Style */
+      img { 
+        border-radius: 8px; 
+        border: 1px solid rgba(212, 175, 55, 0.3); 
+        box-shadow: 0 10px 30px rgba(0,0,0,0.5); 
+        margin: 1.5rem 0;
+        transition: 0.4s;
+      }
+      img:hover { border-color: var(--neon-cyan); transform: scale(1.01); }
 
-      footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; }
-      
-      /* Pulsing System Status */
-      .status-indicator {
-        display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 10px;
+      /* PCB Trace Horizontal Rule */
+      hr {
+        border: 0;
+        height: 1px;
+        background: linear-gradient(90deg, var(--neon-cyan) 0%, var(--copper) 50%, transparent 100%);
+        opacity: 0.3;
+        margin: 4rem 0;
+        position: relative;
       }
-      .status-dot {
-        height: 8px; width: 8px; background-color: #00ff00; border-radius: 50%; display: inline-block; 
-        box-shadow: 0 0 8px #00ff00; animation: pulse 2s infinite;
-      }
+
+      /* Footer & System Status */
+      footer { text-align: center; padding: 6rem 0; color: #455a64; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; border-top: 1px solid rgba(212, 175, 55, 0.1); }
+      .status-indicator { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 15px; }
+      .status-dot { height: 8px; width: 8px; background-color: #00ff00; border-radius: 50%; display: inline-block; box-shadow: 0 0 8px #00ff00; animation: pulse 2s infinite; }
       @keyframes pulse { 0% { opacity: 1; } 50% { opacity: 0.3; } 100% { opacity: 1; } }
 
-      hr { border: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--copper), transparent); opacity: 0.3; margin: 4rem 0; }
+      /* Custom Scrollbar for the PCB vibe */
+      ::-webkit-scrollbar { width: 10px; }
+      ::-webkit-scrollbar-track { background: var(--pcb-green); }
+      ::-webkit-scrollbar-thumb { background: var(--soldermask); border: 1px solid var(--copper); }
+      ::-webkit-scrollbar-thumb:hover { background: var(--copper); }
+
     </style>
   </head>
   <body>
     <nav class="nav-menu">
-      <a href="#about">ABOUT</a>
+      <a href="#about"><i class="fa-solid fa-microchip" style="font-size: 0.7rem; margin-right: 5px;"></i> ABOUT</a>
       <a href="#skills">SKILLS</a>
       <a href="#experience">EXPERIENCE</a>
       <a href="#projects">PROJECTS</a>
@@ -84,19 +107,19 @@
     </nav>
 
     <header class="page-header">
-      <div class="header-tag">Junior Standing // Class of 2028</div>
+      <div class="header-tag">JUNIOR STANDING // CLASS OF 2028</div>
       <h1 class="project-name">{{ site.title | default: "Aditya Manivel" }}</h1>
-      <h2 style="color:white; opacity:0.8; font-weight: 300; margin-top: 10px;">Electrical & Computer Engineering | University of Washington</h2>
+      <h2 style="color:white; opacity:0.8; font-weight: 300; margin-top: 10px; letter-spacing: 1px;">Electrical & Computer Engineering | University of Washington</h2>
     </header>
 
     <main class="main-content">
       {{ content }}
       
       <footer>
-        <div>&copy; 2026 ADITYA MANIVEL</div>
+        <div style="letter-spacing: 2px;">&copy; 2026 ADITYA MANIVEL // PORTFOLIO_V2.0</div>
         <div class="status-indicator">
           <span class="status-dot"></span>
-          <span style="color: #00ff00;">SYSTEM STATUS: ACTIVE // INTERNSHIP SEARCH ON</span>
+          <span style="color: #00ff00; letter-spacing: 1px;">SYSTEM STATUS: ACTIVE // INTERNSHIP SEARCH ON</span>
         </div>
       </footer>
     </main>
