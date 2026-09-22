@@ -27,3 +27,15 @@ body::before{
 main,footer{position:relative;z-index:1}
 .hero,.metrics,.section{isolation:isolate}
 @media(max-width:600px){body::before{opacity:.14;background-size:600px 390px}}
+
+.lab-card{grid-column:1/-1}
+.lab-gallery{display:grid;grid-template-columns:.75fr 1.5fr .75fr;gap:14px;margin-top:28px}
+.lab-gallery figure{margin:0;border:1px solid var(--line);background:#081410;overflow:hidden;display:flex;flex-direction:column}
+.lab-image{height:240px;background:#eef2f0;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.lab-image img{width:100%;height:100%;object-fit:contain;display:block}
+.lab-image.portrait img{object-fit:cover}
+.lab-gallery figcaption{padding:15px 16px;display:flex;flex-direction:column;gap:6px}
+.lab-gallery figcaption strong{font:500 12px var(--mono);color:var(--mint);text-transform:uppercase;letter-spacing:.08em}
+.lab-gallery figcaption span{font-size:12px;line-height:1.5;color:var(--muted)}
+@media(max-width:900px){.lab-gallery{grid-template-columns:1fr 1fr}.lab-gallery .diagram{grid-column:1/-1;grid-row:1}.lab-image{height:260px}}
+@media(max-width:600px){.lab-gallery{grid-template-columns:1fr}.lab-gallery .diagram{grid-column:auto;grid-row:auto}.lab-image{height:230px}}
