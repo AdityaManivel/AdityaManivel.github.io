@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Aditya Manivel, a UW Electrical & Computer Engineering student building embedded systems, PCBs, firmware, and hardware test platforms." />
+  <meta name="theme-color" content="#07110f" />
+  <title>Aditya Manivel — Electrical & Computer Engineer</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2307110f'/%3E%3Cpath d='M16 42 29 15h6l13 27h-8l-3-7H26l-3 7zm13-14h6l-3-8z' fill='%235fffc4'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <header class="nav-shell">
+    <nav class="nav" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Aditya Manivel home"><span>AM</span><i></i></a>
+      <div class="nav-links">
+        <a href="#work">Work</a><a href="#projects">Projects</a><a href="#about">About</a>
+      </div>
+      <a class="contact-link" href="mailto:adityamanivel@gmail.com">Let’s connect <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="live-dot"></span> ECE @ University of Washington</p>
+        <h1>I build the layer<br>where <em>hardware</em><br>meets <em>code.</em></h1>
+        <p class="intro">I’m Aditya Manivel, an electrical & computer engineering student focused on embedded systems, PCB design, and integrated hardware development.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#work">Explore my work <span>↓</span></a>
+          <a class="text-link" href="https://www.linkedin.com/in/adityamanivel" target="_blank" rel="noreferrer">LinkedIn ↗</a>
+        </div>
+      </div>
+
+      <div class="system-card reveal" aria-label="Embedded system architecture diagram">
+        <div class="card-top"><span>SYSTEM_01</span><span>ONLINE</span></div>
+        <div class="schematic">
+          <div class="chip main-chip"><small>CONTROL</small><strong>STM32</strong><span>ARM Cortex-M</span></div>
+          <div class="node linux"><small>COMPUTE</small><strong>LINUX</strong></div>
+          <div class="node motor"><small>ACTUATION</small><strong>2× STEPPER</strong></div>
+          <div class="node sensor"><small>INPUT</small><strong>4× LIMIT SW</strong></div>
+          <svg viewBox="0 0 500 380" role="presentation">
+            <path d="M147 91 H250 V148"/><path d="M350 201 H427 V104"/><path d="M350 217 H426 V310"/><path d="M250 254 V327 H147"/>
+            <circle cx="250" cy="91" r="4"/><circle cx="426" cy="217" r="4"/><circle cx="250" cy="327" r="4"/>
+          </svg>
+        </div>
+        <div class="signal-row"><span>UART</span><span>12V / 5V / 3V3</span><span>4-LAYER PCB</span></div>
+      </div>
+    </section>
+
+    <section class="metrics wrap" aria-label="Portfolio highlights">
+      <div><strong>05</strong><span>Automated test fixtures redesigned</span></div>
+      <div><strong>04</strong><span>Custom multilayer PCBs designed</span></div>
+      <div><strong>20A</strong><span>Three-phase motor drive hardware</span></div>
+      <div><strong>86.6%</strong><span>INT8 vision model accuracy</span></div>
+    </section>
+
+    <section id="work" class="section wrap">
+      <div class="section-heading reveal"><p class="index">01 / EXPERIENCE</p><h2>Engineering in the real world.</h2></div>
+      <article class="feature-work reveal">
+        <div class="work-meta">
+          <span class="company">SPACELABS HEALTHCARE</span>
+          <span>Hardware Test Engineering Intern</span>
+          <span>Summer 2026 · Snoqualmie, WA</span>
+        </div>
+        <div class="work-body">
+          <h3>Redesigned the electronics architecture behind five medical-device reliability test fixtures.</h3>
+          <p>Designed a four-layer STM32 PCB controlling two stepper motors, a servo, limit switches, and dual buck regulators. Built the firmware and Linux-side software for automated sequences, UART communication, remote access, and system monitoring.</p>
+          <div class="tags"><span>STM32</span><span>Altium Designer</span><span>Embedded C</span><span>Linux</span><span>UART</span></div>
+        </div>
+      </article>
+      <div class="experience-grid">
+        <article class="exp-card reveal"><p>JAN 2026 — JUN 2026</p><h3>Programmable Matter Lab</h3><span>Undergraduate Researcher</span><p>Created a nine-tile capacitive sensing system with an ESP32-C3 BLE network, reducing measurement noise by 20% and enabling real-time physical-to-digital interaction.</p></article>
+        <article class="exp-card reveal"><p>SEP 2024 — PRESENT</p><h3>Husky Robotics</h3><span>Hardware Engineer</span><p>Designed four-layer motor-control and servo PCBs for a Mars rover, including a 20 A, 24 V three-phase MOSFET bridge and a 12-channel PSoC servo board.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="wrap">
+        <div class="section-heading reveal"><p class="index">02 / SELECTED PROJECTS</p><h2>From schematic to working system.</h2></div>
+        <div class="project-list">
+          <article class="project reveal"><div class="project-num">01</div><div><p class="project-type">EDGE AI · COMPUTER VISION</p><h3>Real-Time Hand Gesture Classifier</h3><p>Trained and deployed a MobileNetV2 transfer-learning model on an Arduino UNO Q Linux MPU using Edge Impulse, OpenCV, and a 2,520-image dataset.</p><div class="tags"><span>Python</span><span>MobileNetV2</span><span>INT8</span><span>OpenCV</span></div></div><div class="project-stat"><strong>86.56%</strong><span>test accuracy</span></div></article>
+          <article class="project reveal"><div class="project-num">02</div><div><p class="project-type">EMBEDDED · WEARABLE</p><h3>SwingTrack Tennis Device</h3><p>Co-developed an ESP32 wearable integrating GPS and IMU sensing for swing speed and court positioning, optimized for a three-hour battery life.</p><div class="tags"><span>ESP32</span><span>IMU</span><span>GPS</span><span>Embedded C</span></div></div><div class="project-stat"><strong>±0.2</strong><span>m/s precision</span></div></article>
+          <article class="project reveal"><div class="project-num">03</div><div><p class="project-type">DIGITAL DESIGN · FPGA</p><h3>Adaptive Traffic Controller</h3><p>Built a SystemVerilog finite-state machine with protected turn phases, sensor-driven transitions, timed light cycles, and seven-segment status monitoring.</p><div class="tags"><span>SystemVerilog</span><span>FSM</span><span>DE1-SoC</span></div></div><div class="project-stat"><strong>08</strong><span>control states</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about wrap">
+      <div class="about-copy reveal"><p class="index">03 / ABOUT</p><h2>I like making complex systems tangible.</h2><p>At UW, I’m building depth across circuits, embedded programming, digital design, and signal processing. Outside the classroom, I gravitate toward projects where hardware, firmware, and real-world constraints all have to work together.</p><p>I’m currently interested in hardware engineering, embedded systems, firmware, and test engineering opportunities.</p></div>
+      <div class="toolbox reveal">
+        <p class="toolbox-title">ENGINEERING TOOLBOX</p>
+        <div><span>Hardware</span><p>STM32 · ESP32 · Arduino · PCB bring-up · Motor control</p></div>
+        <div><span>Design</span><p>Altium Designer · KiCad · 4-layer PCB · Power distribution</p></div>
+        <div><span>Software</span><p>C · Python · Linux · Git · MATLAB</p></div>
+        <div><span>Lab</span><p>Oscilloscope · Multimeter · Bench supply · Soldering</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <div><p class="eyebrow">OPEN TO ENGINEERING OPPORTUNITIES</p><h2>Let’s build something<br>that works.</h2></div>
+      <div class="footer-links"><a href="mailto:adityamanivel@gmail.com">adityamanivel@gmail.com ↗</a><a href="https://www.linkedin.com/in/adityamanivel" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+    </div>
+    <div class="wrap copyright"><span>© 2026 ADITYA MANIVEL</span><span>SEATTLE, WA · 47.6062° N</span></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
