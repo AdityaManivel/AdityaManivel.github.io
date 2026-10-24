@@ -362,3 +362,10 @@
 #work .spacelabs-card .process-step-images .photo-hint{font-size:10px;padding:5px}
 @media(max-width:900px){#work .spacelabs-card .spacelabs-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:570px){#work .spacelabs-card .spacelabs-process-grid{grid-template-columns:1fr}}
+
+/* Captions for newly added Spacelabs workflow photos */
+#work .spacelabs-card .process-photo{min-width:0}
+#work .spacelabs-card .process-photo .spacelabs-photo-button{width:100%!important;height:150px!important;margin:0!important}
+#work .spacelabs-card .process-photo:only-child{grid-column:1/-1}
+#work .spacelabs-card .process-photo:only-child .spacelabs-photo-button{height:175px!important}
+#work .spacelabs-card .process-photo-caption{font-size:11px;line-height:1.5;color:#687d91;margin:7px 0 0}
