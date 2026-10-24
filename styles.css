@@ -60,10 +60,9 @@
 /* Isolate the BLDC motor board from the gray tabletop in its original photo.
    Non-destructive crop is applied both to preview and enlarged view. */
 #work .exp-card-husky .husky-photo-button{background:transparent;border-color:#e2eaf0}
+/* Show the original PCB photograph, including its gray background. */
 #work .exp-card-husky .husky-photo-button img,
-.pcb-lightbox img{
-  clip-path:polygon(2% 9%,91% 8%,99% 98%,1% 99%);
-}
+.pcb-lightbox img{clip-path:none}
 .pcb-lightbox{background:#f9fbfe}
 
 /* Two-image Husky Robotics gallery */
