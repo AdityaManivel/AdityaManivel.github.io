@@ -11,6 +11,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css?v=spacelabs-workflow-v3" />
+<style id="workflow-critical-css">
+#spacelabs-workflow .spacelabs-workflow-tabs{display:grid!important;grid-template-columns:1fr 1fr;gap:6px;padding:6px;margin:0 0 18px;background:#eef4fa;border:1px solid #d8e3ef;border-radius:14px;max-width:620px}
+#spacelabs-workflow .spacelabs-workflow-tab{appearance:none!important;background:transparent!important;border:0!important;border-radius:10px!important;padding:13px 16px!important;color:#55718d!important;font:700 14px/1.3 'DM Sans',sans-serif!important;cursor:pointer!important}
+#spacelabs-workflow .spacelabs-workflow-tab.is-active{background:white!important;color:#1769a7!important;box-shadow:0 2px 8px #1c496d22!important}
+#spacelabs-workflow [hidden]{display:none!important}
+#spacelabs-workflow .spacelabs-gallery,#spacelabs-workflow .spacelabs-firmware{margin:0!important;padding:0!important;border:0!important;box-shadow:none!important}
+#spacelabs-workflow .spacelabs-gallery-heading,#spacelabs-workflow .spacelabs-firmware>h4{display:none!important}
+#spacelabs-workflow .spacelabs-process-grid,#spacelabs-workflow .spacelabs-process{display:block!important;padding:0!important;margin:0!important}
+#spacelabs-workflow .process-step{display:block!important;position:relative!important;width:100%!important;margin:0!important;padding:20px!important;border:1px solid #d8e4ef!important;border-radius:14px!important;background:white!important}
+#spacelabs-workflow .process-step[hidden]{display:none!important}
+#spacelabs-workflow .process-step::before,#spacelabs-workflow .process-step::after{display:none!important}
+#spacelabs-workflow .spacelabs-stage-nav{display:flex!important;flex-wrap:wrap;gap:8px;margin:0 0 16px!important}
+#spacelabs-workflow .spacelabs-stage-button{appearance:none!important;border:1px solid #cdddea!important;background:white!important;border-radius:9px!important;padding:10px 14px!important;color:#38658b!important;font:700 13px 'DM Sans',sans-serif!important;cursor:pointer!important}
+#spacelabs-workflow .spacelabs-stage-button.is-active{background:#2276b7!important;border-color:#2276b7!important;color:white!important}
+#spacelabs-workflow .spacelabs-stage-footer{display:flex!important;align-items:center;justify-content:space-between;gap:10px;margin-top:16px}
+#spacelabs-workflow .spacelabs-stage-footer button{border:1px solid #cdddea;border-radius:9px;background:white;padding:10px 15px;color:#38658b;font:700 13px 'DM Sans',sans-serif;cursor:pointer}
+#spacelabs-workflow .spacelabs-stage-footer button:disabled{opacity:.35}
+#spacelabs-workflow .spacelabs-stage-count{color:#647d96;font-size:13px}
+@media(max-width:550px){#spacelabs-workflow .spacelabs-workflow-tab{font-size:12px!important;padding:10px 6px!important}}
+</style>
 </head>
 <body>
   
@@ -105,5 +125,35 @@
     <p>Husky Robotics · BLDC Motor Board</p>
   </dialog>
   <script src="script.js?v=spacelabs-workflow-v3"></script>
+<script id="workflow-inline-init">
+(function(){
+function init(){
+const root=document.getElementById('spacelabs-workflow');if(!root)return;
+const panels=[...root.querySelectorAll('[data-workflow-panel]')];
+const tabs=[...root.querySelectorAll('[data-workflow-tab]')];
+for(const panel of panels){
+const type=panel.getAttribute('data-workflow-panel');
+const stages=[...panel.querySelectorAll('.process-step')];
+const container=panel.querySelector('.spacelabs-process-grid,.spacelabs-process');
+if(!container||!stages.length)continue;
+const existing=panel.querySelector('.spacelabs-stage-nav');if(existing)existing.remove();
+const oldFooter=panel.querySelector('.spacelabs-stage-footer');if(oldFooter)oldFooter.remove();
+const nav=document.createElement('nav');nav.className='spacelabs-stage-nav';nav.setAttribute('aria-label',type+' process stages');
+const footer=document.createElement('div');footer.className='spacelabs-stage-footer';
+const prev=document.createElement('button'),next=document.createElement('button'),counter=document.createElement('span');
+prev.type=next.type='button';prev.textContent='← Previous';next.textContent='Next →';counter.className='spacelabs-stage-count';footer.append(prev,counter,next);
+let selected=type==='hardware'?stages.length-1:0;
+const buttons=stages.map((step,i)=>{const b=document.createElement('button');b.type='button';b.className='spacelabs-stage-button';b.textContent=String(i+1).padStart(2,'0');b.setAttribute('aria-label',step.querySelector('.process-step-header h4')?.textContent||'Step '+(i+1));b.addEventListener('click',()=>show(i));nav.append(b);return b});
+container.before(nav);container.after(footer);
+function show(index){selected=Math.max(0,Math.min(stages.length-1,index));stages.forEach((stage,i)=>{stage.hidden=i!==selected});buttons.forEach((button,i)=>{button.classList.toggle('is-active',i===selected);button.setAttribute('aria-current',i===selected?'step':'false')});counter.textContent='Step '+(selected+1)+' of '+stages.length;prev.disabled=selected===0;next.disabled=selected===stages.length-1}
+prev.addEventListener('click',()=>show(selected-1));next.addEventListener('click',()=>show(selected+1));show(selected);
+}
+function activate(type){panels.forEach(p=>p.hidden=p.getAttribute('data-workflow-panel')!==type);tabs.forEach(t=>{const active=t.getAttribute('data-workflow-tab')===type;t.classList.toggle('is-active',active);t.setAttribute('aria-selected',String(active))})}
+tabs.forEach(t=>t.addEventListener('click',()=>activate(t.getAttribute('data-workflow-tab'))));
+activate('hardware');
+}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
 </body>
 </html>
