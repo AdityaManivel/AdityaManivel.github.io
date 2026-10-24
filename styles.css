@@ -331,3 +331,34 @@
  }
  #work .exp-card-husky .husky-gallery .husky-photo-button{height:220px!important}
 }
+
+/* Spacelabs: left-to-right engineering process, with relevant photos at each stage */
+#work .spacelabs-card .spacelabs-gallery{display:block!important;width:100%}
+#work .spacelabs-card .spacelabs-original{max-width:360px;margin:0 0 24px}
+#work .spacelabs-card .spacelabs-original .spacelabs-photo-button{height:190px!important;width:100%;margin:0}
+#work .spacelabs-card .spacelabs-original p{font-size:12px;color:#687d91;margin:8px 0}
+#work .spacelabs-card .spacelabs-process-grid{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+ gap:16px;align-items:stretch;counter-reset:step;
+}
+#work .spacelabs-card .process-step{
+ min-width:0;padding:18px;border:1px solid #dce5ed;border-radius:12px;
+ background:rgba(255,255,255,.8);
+}
+#work .spacelabs-card .process-step-header{display:flex;gap:10px;align-items:baseline;margin-bottom:12px}
+#work .spacelabs-card .process-step-number{font:600 12px/1.5 "DM Sans",sans-serif;color:#286a9d}
+#work .spacelabs-card .process-step h4{
+ font:600 15px/1.4 "Space Grotesk",sans-serif!important;
+ letter-spacing:0!important;text-transform:none!important;
+ color:#24384b!important;margin:0!important;
+}
+#work .spacelabs-card .process-step-note{font:400 13px/1.6 "DM Sans",sans-serif;color:#687d91;margin:0}
+#work .spacelabs-card .process-step-images{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#work .spacelabs-card .process-step-images .spacelabs-photo-button{
+ width:100%!important;height:135px!important;margin:0!important;
+ padding:5px!important;min-width:0!important;grid-column:auto!important;
+}
+#work .spacelabs-card .process-step-images .spacelabs-photo-button:only-child{grid-column:1/-1;height:175px!important}
+#work .spacelabs-card .process-step-images .photo-hint{font-size:10px;padding:5px}
+@media(max-width:900px){#work .spacelabs-card .spacelabs-process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:570px){#work .spacelabs-card .spacelabs-process-grid{grid-template-columns:1fr}}
