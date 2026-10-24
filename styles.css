@@ -262,3 +262,72 @@
 #work .spacelabs-card .spacelabs-stage .spacelabs-photo-caption{font-size:12px;color:#687d91;margin:0 0 12px}
 @media(max-width:850px){#work .spacelabs-card .spacelabs-layout{grid-template-columns:1fr}#work .spacelabs-card .spacelabs-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}#work .spacelabs-card .spacelabs-gallery-heading{grid-column:1/-1}#work .spacelabs-card .spacelabs-stage .spacelabs-photo-button{height:160px}}
 @media(max-width:520px){#work .spacelabs-card .spacelabs-gallery{grid-template-columns:1fr}}
+
+/* Unified experience sections: narrative first, photo gallery underneath */
+#work .exp-card-husky .husky-layout,
+#work .spacelabs-card .spacelabs-layout{
+  display:flex!important;flex-direction:column!important;gap:24px!important;
+}
+#work .exp-card-husky .husky-copy,
+#work .spacelabs-card .spacelabs-copy{width:100%;min-width:0}
+#work .exp-card-husky .husky-gallery,
+#work .spacelabs-card .spacelabs-gallery{
+  width:100%;margin-top:10px!important;padding-top:24px!important;
+  border-top:1px solid #dce5ed!important;
+}
+#work .exp-card-husky .husky-gallery{
+  display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;
+  gap:12px 18px!important;align-items:start;
+}
+#work .exp-card-husky .experience-gallery-title{
+  grid-column:1/-1;font:600 16px/1.5 "Space Grotesk",sans-serif;
+  color:#273c51;margin:0 0 4px;
+}
+#work .exp-card-husky .husky-gallery .husky-photo-button{
+  width:100%!important;height:250px!important;max-width:none!important;
+  margin:0!important;min-width:0;
+}
+#work .exp-card-husky .husky-gallery .husky-photo-button img{
+  width:100%;height:100%;object-fit:contain;
+}
+#work .exp-card-husky .experience-image-caption{
+  margin:0 0 4px;font:400 12px/1.5 "DM Sans",sans-serif;
+  color:#687d91;
+}
+#work .exp-card-husky .husky-gallery .husky-render-button{grid-column:1;grid-row:2}
+#work .exp-card-husky .husky-gallery .husky-render-button + .experience-image-caption{grid-column:1;grid-row:3}
+#work .exp-card-husky .husky-gallery .husky-photo-button:not(.husky-render-button){grid-column:2;grid-row:2}
+#work .exp-card-husky .husky-gallery .husky-photo-button:not(.husky-render-button) + .experience-image-caption{grid-column:2;grid-row:3}
+#work .spacelabs-card .spacelabs-gallery{
+  display:block!important;
+}
+#work .spacelabs-card .spacelabs-gallery-heading{
+  font:600 16px/1.5 "Space Grotesk",sans-serif;margin:0 0 18px;
+}
+#work .spacelabs-card .spacelabs-stage{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:10px 16px;margin:0 0 30px;
+}
+#work .spacelabs-card .spacelabs-stage h4{
+  grid-column:1/-1;margin:0 0 4px;font-size:13px;
+}
+#work .spacelabs-card .spacelabs-stage .spacelabs-photo-button{
+  width:100%!important;height:210px!important;margin:0!important;
+  grid-column:auto!important;min-width:0;
+}
+#work .spacelabs-card .spacelabs-stage .spacelabs-photo-caption{
+  margin:0 0 8px!important;
+}
+@media(max-width:850px){
+ #work .spacelabs-card .spacelabs-stage{grid-template-columns:repeat(2,minmax(0,1fr))}
+ #work .exp-card-husky .husky-gallery .husky-photo-button{height:210px!important}
+}
+@media(max-width:560px){
+ #work .spacelabs-card .spacelabs-stage{grid-template-columns:1fr}
+ #work .exp-card-husky .husky-gallery{grid-template-columns:1fr!important}
+ #work .exp-card-husky .husky-gallery .husky-photo-button,
+ #work .exp-card-husky .husky-gallery .experience-image-caption{
+   grid-column:1!important;grid-row:auto!important;
+ }
+ #work .exp-card-husky .husky-gallery .husky-photo-button{height:220px!important}
+}
