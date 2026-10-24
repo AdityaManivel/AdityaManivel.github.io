@@ -65,3 +65,11 @@
   clip-path:polygon(2% 9%,91% 8%,99% 98%,1% 99%);
 }
 .pcb-lightbox{background:#f9fbfe}
+
+/* Two-image Husky Robotics gallery */
+#work .exp-card-husky .husky-gallery{display:flex;flex-direction:column;gap:14px;min-width:0}
+#work .exp-card-husky .husky-gallery .husky-photo-button{width:100%;margin:0}
+#work .exp-card-husky .husky-gallery .husky-photo-button img{height:205px;object-fit:contain}
+#work .exp-card-husky .husky-render-button img{clip-path:none;object-fit:contain}
+.pcb-lightbox.viewing-render img{clip-path:none}
+@media(max-width:760px){#work .exp-card-husky .husky-gallery .husky-photo-button img{height:220px}}
