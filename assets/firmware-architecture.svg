@@ -1,1 +1,50 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" role="img" aria-labelledby="t d"><title id="t">Firmware and software communication architecture</title><desc id="d">Browser connects by Wi-Fi HTTP to Linux Cortex-A7 web server, which communicates over RPMsg to Cortex-M4 UART relay, then to the separate STM32G473 PCB controller and motors. Camera streams through Linux GStreamer.</desc><defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#53677f" stroke-width="1.4"/></marker></defs><rect width="1120" height="440" rx="18" fill="#f8fafc"/><g font-family="Arial,sans-serif" fill="#1c3049"><text x="40" y="44" font-size="24" font-weight="700">Firmware &amp; Software Architecture</text><text x="40" y="70" font-size="14" fill="#62748a">STM32MP157D-DK1 Linux board + separate STM32G473 PCB</text></g><g stroke="#b9c9d9" stroke-width="2" fill="white"><rect x="35" y="170" width="180" height="125" rx="14"/><rect x="275" y="103" width="390" height="254" rx="18" fill="#edf4fb"/><rect x="301" y="153" width="160" height="132" rx="12"/><rect x="480" y="153" width="160" height="132" rx="12"/><rect x="733" y="170" width="175" height="125" rx="14"/><rect x="960" y="170" width="125" height="125" rx="14"/><rect x="301" y="13" width="160" height="67" rx="12"/></g><g font-family="Arial,sans-serif" text-anchor="middle" fill="#1c3049"><text x="125" y="218" font-size="19" font-weight="700">Browser</text><text x="125" y="245" font-size="13">HTML / CSS / JS</text><text x="470" y="127" font-size="18" font-weight="700">STM32MP157D-DK1</text><text x="381" y="190" font-size="16" font-weight="700">Cortex-A7</text><text x="381" y="212" font-size="13">Embedded Linux</text><text x="381" y="232" font-size="13">Python HTTP API</text><text x="381" y="252" font-size="13">GStreamer / MJPEG</text><text x="560" y="190" font-size="16" font-weight="700">Cortex-M4</text><text x="560" y="212" font-size="13">Bare-metal firmware</text><text x="560" y="232" font-size="13">RPMsg ↔ UART7</text><text x="560" y="252" font-size="13">Byte relay</text><text x="820" y="208" font-size="17" font-weight="700">STM32G473</text><text x="820" y="230" font-size="13">PCB firmware</text><text x="820" y="251" font-size="13">Command parsing</text><text x="1022" y="211" font-size="16" font-weight="700">Motors</text><text x="1022" y="235" font-size="13">Motor drivers</text><text x="381" y="41" font-size="17" font-weight="700">Camera</text><text x="381" y="60" font-size="12">V4L2 / GStreamer</text></g><g fill="none" stroke="#53677f" stroke-width="2.5" marker-end="url(#a)"><path d="M215 232 H300"/><path d="M461 219 H479"/><path d="M640 219 H732"/><path d="M908 232 H959"/><path d="M381 80 V152"/></g><g font-family="Arial,sans-serif" fill="#53677f" text-anchor="middle" font-size="12"><text x="257" y="201">HTTP / Wi-Fi</text><text x="470" y="310">OpenAMP / RPMsg</text><text x="687" y="201">UART7</text><text x="933" y="201">PWM / control</text><text x="470" y="336">Shared-memory IPC + IPCC notifications</text><text x="820" y="316">Independent physical PCB</text></g><text x="40" y="403" font-family="Arial,sans-serif" font-size="13" fill="#62748a">Boot automation: shell scripts + systemd • Z-axis servo: MODBUS RTU with CRC16</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
+<title id="title">Firmware communication block diagram</title><desc id="desc">Sketch-style diagram showing a laptop browser connected by Wi-Fi HTTP to a Linux web server on the STM32MP157D board. A camera feeds the web server. Linux communicates using OpenAMP RPMsg with the board's Cortex-M4, which relays UART commands to the separate STM32G473 PCB microcontroller. The PCB controls motor drivers and motors.</desc>
+<rect width="1200" height="520" fill="#fff"/>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="strokeWidth"><path d="M1 1 L9 5 L1 9" fill="none" stroke="#222" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+<g fill="none" stroke="#222" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+<path d="M52 142 Q50 126 66 125 L230 124 Q248 124 248 141 L248 307 Q248 323 231 323 L67 322 Q52 322 52 307 Z"/>
+<path d="M385 130 Q385 112 404 112 L654 113 Q672 113 671 133 L672 329 Q671 345 653 345 L403 345 Q384 344 384 327 Z"/>
+<path d="M418 160 Q419 149 434 149 L623 150 Q636 150 636 163 L636 226 Q635 238 622 238 L434 238 Q418 237 418 225 Z"/>
+<path d="M477 267 Q477 253 490 253 L574 253 Q587 253 587 268 L587 325 Q587 337 575 337 L490 337 Q477 336 477 325 Z"/>
+<path d="M463 22 Q463 12 475 12 L574 12 Q587 12 587 25 L587 69 Q587 81 574 81 L475 81 Q462 80 463 68 Z"/>
+<path d="M761 122 Q762 104 779 104 L927 104 Q944 105 945 124 L945 315 Q945 333 926 333 L778 332 Q760 332 760 314 Z"/>
+<path d="M1032 101 Q1033 84 1048 84 L1142 84 Q1158 85 1158 102 L1158 317 Q1158 335 1142 335 L1049 334 Q1032 334 1032 316 Z"/>
+<path d="M134 377 Q134 363 149 363 L235 363 Q249 364 249 379 L249 431 Q249 445 234 445 L149 445 Q134 445 134 432 Z"/>
+<path d="M248 200 L384 200" marker-end="url(#arrow)"/>
+<path d="M384 231 L249 231" marker-end="url(#arrow)"/>
+<path d="M525 82 L525 148" marker-end="url(#arrow)"/>
+<path d="M525 238 L525 252" marker-end="url(#arrow)"/>
+<path d="M541 253 L541 240" marker-end="url(#arrow)"/>
+<path d="M588 290 L759 250" marker-end="url(#arrow)"/>
+<path d="M760 276 L588 316" marker-end="url(#arrow)"/>
+<path d="M945 220 L1031 220" marker-end="url(#arrow)"/>
+<path d="M249 395 L759 319" marker-end="url(#arrow)"/>
+</g>
+<g font-family="'Comic Sans MS','Segoe Print','Bradley Hand',cursive" fill="#252525" text-anchor="middle">
+<text x="151" y="220" font-size="25">Browser</text>
+<text x="151" y="353" font-size="19">Laptop</text>
+<text x="527" y="137" font-size="21">STM32MP157D-DK1</text>
+<text x="527" y="184" font-size="20">Python Web Server</text>
+<text x="527" y="208" font-size="16">Linux · Cortex-A7</text>
+<text x="532" y="288" font-size="18">Cortex-M4</text>
+<text x="532" y="312" font-size="16">UART Relay</text>
+<text x="525" y="51" font-size="22">Camera</text>
+<text x="853" y="174" font-size="21">STM32G473</text>
+<text x="853" y="201" font-size="19">PCB MCU</text>
+<text x="853" y="228" font-size="16">Motor control</text>
+<text x="853" y="249" font-size="16">Command parsing</text>
+<text x="1094" y="183" font-size="22">Motor</text>
+<text x="1094" y="208" font-size="22">Drivers</text>
+<text x="1094" y="234" font-size="22">&amp; Motors</text>
+<text x="191" y="405" font-size="20">STM32</text>
+<text x="316" y="184" font-size="17">HTTP / Wi-Fi</text>
+<text x="317" y="258" font-size="16">MJPEG stream</text>
+<text x="580" y="249" font-size="15">RPMsg</text>
+<text x="676" y="269" font-size="17">UART7</text>
+<text x="686" y="311" font-size="15">Custom protocol</text>
+<text x="989" y="207" font-size="15">PWM</text>
+<text x="525" y="381" font-size="17">Embedded Linux + bare-metal M4 firmware</text>
+<text x="602" y="418" font-size="15">OpenAMP / RPMsg IPC · GStreamer camera streaming</text>
+<text x="601" y="445" font-size="15">Systemd services start and recover the software automatically</text>
+</g></svg>
