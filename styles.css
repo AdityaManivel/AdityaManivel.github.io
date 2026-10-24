@@ -56,3 +56,12 @@
 .pcb-lightbox p{text-align:center;margin:12px 0 0;font-size:13px}
 .pcb-lightbox-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border:0;border-radius:50%;background:#14273d;color:white;font-size:28px;cursor:pointer}
 @media(max-width:760px){#work .exp-card-husky .husky-layout{grid-template-columns:1fr;gap:22px}#work .exp-card-husky .husky-photo-button img{height:240px}}
+
+/* Isolate the BLDC motor board from the gray tabletop in its original photo.
+   Non-destructive crop is applied both to preview and enlarged view. */
+#work .exp-card-husky .husky-photo-button{background:transparent;border-color:#e2eaf0}
+#work .exp-card-husky .husky-photo-button img,
+.pcb-lightbox img{
+  clip-path:polygon(2% 9%,91% 8%,99% 98%,1% 99%);
+}
+.pcb-lightbox{background:#f9fbfe}
