@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261024-experience" />
+  <link rel="stylesheet" href="styles.css?v=pcb-lightbox-1" />
 </head>
 <body>
   
@@ -23,12 +23,18 @@
 
     <section id="work" class="section wrap">
       <div class="section-heading reveal"><p class="index">EXPERIENCE</p><h2>Experience</h2></div>
-      <article class="exp-card exp-card-husky reveal">
+      <article class="exp-card exp-card-husky reveal"><div class="husky-layout"><div class="husky-copy">
         <p>SEP 2024 — PRESENT</p>
         <h3>Husky Robotics</h3>
         <span>Hardware Engineer · University of Washington</span>
         <p>Designed two four-layer PCBs in Altium Designer for a mockup Mars rover: a 20 A, 24 V three-phase MOSFET bridge for BLDC motor control and a PSoC-based board capable of independently controlling up to 12 servo motors. Supported design reviews, board bring-up, and PCB assembly.</p>
         <div class="tags"><span>Altium Designer</span><span>BLDC</span><span>PSoC</span><span>Power Electronics</span><span>PCB Bring-Up</span></div>
+        </div>
+        <button class="husky-photo-button" type="button" aria-label="Enlarge Husky Robotics BLDC motor driver PCB photo" data-lightbox-open>
+          <img src="assets/husky-robotics-pcb.jpg" alt="Husky Robotics BLDC motor driver PCB with Allium husky logo and labeled connectors" loading="lazy" />
+          <span class="photo-hint">Click to enlarge ↗</span>
+        </button>
+        </div>
       </article>
       <div class="experience-grid">
         <article class="exp-card reveal"><p>JUN 2026 — SEP 2026</p><h3>Spacelabs Healthcare</h3><span>Hardware Test Engineering Intern</span><p>Redesigned the electronics architecture for five medical-device reliability test fixtures. Designed a four-layer STM32 PCB and developed firmware and Linux-side software for automated testing, UART communication, and system monitoring.</p><div class="tags"><span>STM32</span><span>Embedded C</span><span>Altium Designer</span><span>Linux</span><span>UART</span></div></article>
@@ -70,6 +76,11 @@
     </div>
     <div class="wrap copyright"><span>© 2026 ADITYA MANIVEL</span><span>SEATTLE, WA · 47.6062° N</span></div>
   </footer>
-  <script src="script.js"></script>
+  <dialog id="pcb-lightbox" class="pcb-lightbox" aria-label="Husky Robotics PCB enlarged photo">
+    <button class="pcb-lightbox-close" type="button" aria-label="Close enlarged image">×</button>
+    <img src="assets/husky-robotics-pcb.jpg" alt="Full view of Husky Robotics BLDC motor driver PCB" />
+    <p>Husky Robotics · BLDC motor driver PCB</p>
+  </dialog>
+  <script src="script.js?v=pcb1"></script>
 </body>
 </html>
