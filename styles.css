@@ -249,3 +249,16 @@
 #work .spacelabs-card .spacelabs-photo-button:first-child{grid-column:span 2;height:230px}
 #work .spacelabs-card .spacelabs-photo-button:nth-child(2){grid-column:span 2;height:230px}
 @media(max-width:760px){#work .spacelabs-card .spacelabs-gallery-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#work .spacelabs-card .spacelabs-photo-button{height:145px}#work .spacelabs-card .spacelabs-photo-button:first-child,#work .spacelabs-card .spacelabs-photo-button:nth-child(2){grid-column:span 1;height:145px}}
+
+/* Spacelabs progression photos aligned beside internship copy */
+#work .spacelabs-card .spacelabs-layout{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(290px,0.85fr);gap:34px;align-items:start}
+#work .spacelabs-card .spacelabs-copy{min-width:0}
+#work .spacelabs-card .spacelabs-gallery{margin:0;padding:0;border:0;min-width:0}
+#work .spacelabs-card .spacelabs-gallery-heading{margin:0 0 12px;font-size:15px}
+#work .spacelabs-card .spacelabs-stage{margin-bottom:18px}
+#work .spacelabs-card .spacelabs-stage h4{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#2e6f9e;margin:0 0 10px}
+#work .spacelabs-card .spacelabs-stage .spacelabs-photo-button{width:100%;height:190px;margin:0 0 6px;padding:10px;display:block}
+#work .spacelabs-card .spacelabs-stage .spacelabs-photo-button img{width:100%;height:100%;object-fit:contain}
+#work .spacelabs-card .spacelabs-stage .spacelabs-photo-caption{font-size:12px;color:#687d91;margin:0 0 12px}
+@media(max-width:850px){#work .spacelabs-card .spacelabs-layout{grid-template-columns:1fr}#work .spacelabs-card .spacelabs-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}#work .spacelabs-card .spacelabs-gallery-heading{grid-column:1/-1}#work .spacelabs-card .spacelabs-stage .spacelabs-photo-button{height:160px}}
+@media(max-width:520px){#work .spacelabs-card .spacelabs-gallery{grid-template-columns:1fr}}
