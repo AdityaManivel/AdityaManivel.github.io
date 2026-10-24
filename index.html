@@ -34,6 +34,23 @@
 #spacelabs-workflow [data-workflow-panel].is-selected{display:block!important}
 #spacelabs-workflow .spacelabs-workflow-tabs{width:min(100%,620px)!important;box-sizing:border-box}
 #spacelabs-workflow .spacelabs-workflow-tab{min-width:0!important;box-sizing:border-box}
+
+/* Stable tab geometry and horizontal photo gallery, overriding older gallery rules */
+#spacelabs-workflow{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}
+#spacelabs-workflow .spacelabs-workflow-tabs{display:grid!important;grid-template-columns:minmax(0,1fr) minmax(0,1fr)!important;width:min(100%,620px)!important;max-width:620px!important;min-width:0!important;box-sizing:border-box!important;margin:0 0 18px!important}
+#spacelabs-workflow .spacelabs-workflow-tab{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;min-width:0!important;max-width:none!important;min-height:44px!important;white-space:nowrap!important;box-sizing:border-box!important;flex:none!important}
+#spacelabs-workflow [data-workflow-panel]{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}
+#spacelabs-workflow .spacelabs-process-grid,#spacelabs-workflow .spacelabs-process{width:100%!important;max-width:100%!important;min-width:0!important}
+#spacelabs-workflow .process-step{width:100%!important;max-width:100%!important;min-width:0!important;box-sizing:border-box!important}
+#spacelabs-workflow .process-step-images{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:14px!important;width:100%!important;max-width:100%!important;align-items:start!important}
+#spacelabs-workflow .process-step-images>.process-photo,
+#spacelabs-workflow .process-step-images>.spacelabs-photo-button{grid-column:auto!important;grid-row:auto!important;width:100%!important;min-width:0!important;max-width:none!important;box-sizing:border-box!important}
+#spacelabs-workflow .process-step-images .spacelabs-photo-button,
+#spacelabs-workflow .process-step-images .spacelabs-photo-button:only-child,
+#spacelabs-workflow .process-step-images .process-photo:only-child .spacelabs-photo-button{display:flex!important;align-items:center!important;justify-content:center!important;width:100%!important;max-width:100%!important;height:160px!important;min-height:0!important;box-sizing:border-box!important}
+#spacelabs-workflow .process-step-images img{max-width:100%!important;max-height:100%!important;object-fit:contain!important}
+@media(max-width:750px){#spacelabs-workflow .process-step-images{grid-template-columns:repeat(2,minmax(0,1fr))!important}}
+@media(max-width:480px){#spacelabs-workflow .process-step-images{grid-template-columns:1fr!important}#spacelabs-workflow .spacelabs-workflow-tab{font-size:12px!important;padding:10px 5px!important}}
 </style>
 </head>
 <body>
