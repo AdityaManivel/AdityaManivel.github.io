@@ -41,3 +41,18 @@
 #work .exp-card .tags{margin-top:20px}
 #work .lab-card{grid-column:auto}
 @media(max-width:700px){#work .exp-card,#work .exp-card-husky{padding:23px 19px}#work .exp-card>p:not(:first-child){font-size:14px}}
+
+/* Husky Robotics project photo and accessible lightbox */
+#work .exp-card-husky .husky-layout{display:grid;grid-template-columns:minmax(0,1fr) minmax(220px,34%);gap:36px;align-items:center}
+#work .exp-card-husky .husky-copy{min-width:0}
+#work .exp-card-husky .husky-photo-button{position:relative;display:block;overflow:hidden;width:100%;padding:8px;border:1px solid #d5e2eb;border-radius:12px;background:#f4f8fb;cursor:zoom-in;box-shadow:0 6px 22px rgba(40,68,98,.08)}
+#work .exp-card-husky .husky-photo-button img{display:block;width:100%;height:280px;object-fit:contain;transition:transform .24s ease}
+#work .exp-card-husky .husky-photo-button:hover img,#work .exp-card-husky .husky-photo-button:focus-visible img{transform:scale(1.065)}
+#work .exp-card-husky .husky-photo-button:focus-visible{outline:3px solid #2d78ad;outline-offset:4px}
+#work .exp-card-husky .photo-hint{position:absolute;bottom:14px;right:14px;padding:7px 10px;border-radius:7px;background:rgba(17,33,52,.86);color:white;font-size:12px;font-weight:600}
+.pcb-lightbox{position:fixed;inset:0;max-width:min(96vw,1200px);max-height:95vh;width:max-content;margin:auto;padding:18px;border:1px solid #b7cad9;border-radius:14px;background:#f9fbfe;box-shadow:0 30px 90px rgba(0,0,0,.3);color:#1a293a}
+.pcb-lightbox::backdrop{background:rgba(8,19,34,.85);backdrop-filter:blur(5px)}
+.pcb-lightbox img{display:block;max-width:100%;max-height:calc(90vh - 95px);width:auto;height:auto;object-fit:contain;margin:auto}
+.pcb-lightbox p{text-align:center;margin:12px 0 0;font-size:13px}
+.pcb-lightbox-close{position:absolute;top:12px;right:12px;width:40px;height:40px;border:0;border-radius:50%;background:#14273d;color:white;font-size:28px;cursor:pointer}
+@media(max-width:760px){#work .exp-card-husky .husky-layout{grid-template-columns:1fr;gap:22px}#work .exp-card-husky .husky-photo-button img{height:240px}}
