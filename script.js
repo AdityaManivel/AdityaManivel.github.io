@@ -10,12 +10,19 @@ const seen = new IntersectionObserver((entries) => {
 document.querySelectorAll('.reveal').forEach((element) => seen.observe(element));
 
 
-// Open a full-screen-style PCB photo viewer; Escape and backdrop close it.
+// Full-screen-style viewer shared by the assembled PCB and Altium 3D render.
 const pcbDialog = document.getElementById('pcb-lightbox');
-const pcbOpen = document.querySelector('[data-lightbox-open]');
-if (pcbDialog && pcbOpen) {
-  pcbOpen.addEventListener('click', () => {
-    if (typeof pcbDialog.showModal === 'function') pcbDialog.showModal();
+if (pcbDialog) {
+  const viewerImage = pcbDialog.querySelector('img');
+  const viewerCaption = pcbDialog.querySelector('p');
+  document.querySelectorAll('[data-lightbox-open]').forEach((trigger) => {
+    trigger.addEventListener('click', () => {
+      viewerImage.src = trigger.dataset.imageSrc;
+      viewerImage.alt = trigger.dataset.imageAlt || 'BLDC Motor Board';
+      viewerCaption.textContent = trigger.dataset.imageTitle || 'BLDC Motor Board';
+      pcbDialog.classList.toggle('viewing-render', trigger.classList.contains('husky-render-button'));
+      if (typeof pcbDialog.showModal === 'function') pcbDialog.showModal();
+    });
   });
   pcbDialog.querySelector('.pcb-lightbox-close')?.addEventListener('click', () => pcbDialog.close());
   pcbDialog.addEventListener('click', (event) => {
