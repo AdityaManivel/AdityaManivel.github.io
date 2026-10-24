@@ -405,3 +405,41 @@
    transform:translateX(-50%);
  }
 }
+
+/* Vertical, numbered engineering timeline: 01 through 09 from top to bottom. */
+#work .spacelabs-card .spacelabs-process-grid{
+ display:flex!important;flex-direction:column!important;gap:0!important;
+ padding-left:38px;position:relative;
+}
+#work .spacelabs-card .spacelabs-process-grid::before{
+ content:"";position:absolute;left:17px;top:26px;bottom:26px;
+ width:2px;background:#c6dbe9;
+}
+#work .spacelabs-card .process-step{
+ position:relative!important;grid-column:auto!important;grid-row:auto!important;
+ width:100%;margin:0 0 22px!important;padding:18px!important;
+}
+#work .spacelabs-card .process-step::before{
+ content:"";position:absolute;left:-31px;top:24px;width:16px;height:16px;
+ border:3px solid #2875a9;border-radius:50%;background:#fff;
+ box-sizing:border-box;z-index:2;
+}
+#work .spacelabs-card .process-step::after{display:none!important;content:none!important}
+#work .spacelabs-card .process-step-images{
+ display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;
+}
+#work .spacelabs-card .process-step-images .process-photo:only-child{
+ grid-column:1/-1;max-width:440px;
+}
+#work .spacelabs-card .process-step-images .spacelabs-photo-button:only-child{
+ grid-column:auto!important;height:190px!important;max-width:440px;
+}
+#work .spacelabs-card .process-step-images .process-photo:only-child .spacelabs-photo-button{
+ height:210px!important;
+}
+@media(max-width:650px){
+ #work .spacelabs-card .spacelabs-process-grid{padding-left:28px}
+ #work .spacelabs-card .spacelabs-process-grid::before{left:11px}
+ #work .spacelabs-card .process-step::before{left:-25px;width:14px;height:14px}
+ #work .spacelabs-card .process-step-images{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
