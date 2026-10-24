@@ -72,3 +72,12 @@
 #work .exp-card-husky .husky-render-button img{clip-path:none;object-fit:contain}
 .pcb-lightbox.viewing-render img{clip-path:none}
 @media(max-width:760px){#work .exp-card-husky .husky-gallery .husky-photo-button img{height:220px}}
+
+/* Husky Robotics experience bullets and linked club title */
+#work .exp-card-husky .experience-title-link{color:inherit;text-decoration:none;transition:color .2s ease}
+#work .exp-card-husky .experience-title-link:hover,#work .exp-card-husky .experience-title-link:focus-visible{color:#286ca4;text-decoration:underline;text-underline-offset:4px}
+#work .exp-card-husky .experience-title-link span{font-size:.65em;vertical-align:middle;color:#2b73a7}
+#work .exp-card-husky .experience-bullets{list-style:disc outside;padding-left:1.25rem;margin:20px 0 4px;color:#56697e}
+#work .exp-card-husky .experience-bullets li{font-size:14px;line-height:1.7;margin-bottom:12px;padding-left:3px}
+#work .exp-card-husky .experience-bullets strong{color:#273c51;font-weight:700}
+@media(max-width:760px){#work .exp-card-husky .experience-bullets li{font-size:13px}}
