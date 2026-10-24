@@ -451,3 +451,14 @@
     align-content:center;
   }
 }
+
+/* Consistent, unobtrusive gallery affordances: never overlay PCB details. */
+#work .husky-photo-button,#work .spacelabs-photo-button{position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;box-sizing:border-box;cursor:zoom-in}
+#work .husky-photo-button img,#work .spacelabs-photo-button img{display:block;max-width:100%;max-height:100%;object-fit:contain;transition:transform .22s ease;transform-origin:center}
+#work .husky-photo-button:hover img,#work .spacelabs-photo-button:hover img{transform:scale(1.035)}
+#work .husky-photo-button .photo-hint,#work .spacelabs-photo-button .photo-hint,#work .exp-card-husky .photo-hint,#work .spacelabs-card .spacelabs-photo-button .photo-hint,#work .spacelabs-card .process-step-images .photo-hint{position:absolute!important;right:7px!important;bottom:7px!important;top:auto!important;left:auto!important;z-index:2;display:inline-flex;align-items:center;justify-content:center;background:rgba(20,37,55,.88)!important;color:#fff!important;font-size:10px!important;font-weight:600!important;line-height:1.2!important;padding:5px 7px!important;border-radius:6px!important;max-width:calc(100% - 14px);white-space:nowrap;opacity:0;transform:translateY(3px);transition:opacity .2s ease,transform .2s ease;pointer-events:none}
+#work .husky-photo-button:hover .photo-hint,#work .spacelabs-photo-button:hover .photo-hint,#work .husky-photo-button:focus-visible .photo-hint,#work .spacelabs-photo-button:focus-visible .photo-hint{opacity:1;transform:translateY(0)}
+#work .spacelabs-card .process-step-images>.process-photo{min-width:0}
+#work .spacelabs-card .process-step-images>.process-photo>.spacelabs-photo-button{width:100%!important}
+@media(hover:none){#work .husky-photo-button .photo-hint,#work .spacelabs-photo-button .photo-hint{opacity:1;transform:none;font-size:9px!important}}
+@media(prefers-reduced-motion:reduce){#work .husky-photo-button img,#work .spacelabs-photo-button img,#work .photo-hint{transition:none!important}}
