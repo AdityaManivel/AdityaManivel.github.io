@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=husky-gallery-3" />
+  <link rel="stylesheet" href="styles.css?v=husky-bullets-1" />
 </head>
 <body>
   
@@ -25,9 +25,15 @@
       <div class="section-heading reveal"><p class="index">EXPERIENCE</p><h2>Experience</h2></div>
       <article class="exp-card exp-card-husky reveal"><div class="husky-layout"><div class="husky-copy">
         <p>SEP 2024 — PRESENT</p>
-        <h3>Husky Robotics</h3>
-        <span>Hardware Engineer · University of Washington</span>
-        <p>Designed two four-layer PCBs in Altium Designer for a mockup Mars rover: a 20 A, 24 V three-phase MOSFET bridge for BLDC motor control and a PSoC-based board capable of independently controlling up to 12 servo motors. Supported design reviews, board bring-up, and PCB assembly.</p>
+        <h3><a class="experience-title-link" href="https://uwrobots.org/" target="_blank" rel="noopener noreferrer">Husky Robotics Club <span aria-hidden="true">↗</span></a></h3>
+        <span>Hardware Engineer · Seattle, WA</span>
+        <ul class="experience-bullets">
+          <li>Collaborated with the electronics team to design custom multilayer PCBs in Altium Designer for the team's mockup Mars rover.</li>
+          <li>Designed a <strong>24 V, 20 A three-phase BLDC motor driver PCB</strong> featuring six N-channel MOSFETs arranged in three half-bridges and a DRV8323 gate driver for PWM-based motor control. Selected components based on electrical requirements, developed schematics using manufacturer datasheets, and incorporated test points for debugging and board validation.</li>
+          <li>Designed the motor driver around external PWM control inputs to support interfacing with a microcontroller during testing, with future integration of an STM32 microcontroller planned for onboard motor control and communication.</li>
+          <li>Currently designing a custom <strong>8-layer FPGA-based instrumentation PCB</strong> integrating an Efinix Titanium Ti375 FPGA to support the rover's instrumentation and data acquisition systems.</li>
+          <li>Participated in PCB design reviews and supported board bring-up and assembly using through-hole and reflow soldering.</li>
+        </ul>
         <div class="tags"><span>Altium Designer</span><span>BLDC</span><span>PSoC</span><span>Power Electronics</span><span>PCB Bring-Up</span></div>
         </div>
         <div class="husky-gallery">
