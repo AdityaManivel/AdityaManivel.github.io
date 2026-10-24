@@ -159,3 +159,37 @@
   font-weight:400;
   color:#56697e;
 }
+
+/* Unified Experience typography: same exact rules for both featured cards */
+#work .exp-card-husky .husky-heading h3,
+#work .spacelabs-card > h3 {
+  font-family:"Space Grotesk",sans-serif!important;
+  font-size:25px!important;
+  font-weight:600!important;
+  letter-spacing:normal!important;
+  line-height:1.35!important;
+}
+#work .exp-card-husky .husky-heading h3 a,
+#work .spacelabs-card > h3 a {
+  font:inherit!important;
+  color:#17202b!important;
+  text-decoration:none!important;
+  border:0!important;
+}
+#work .exp-card-husky .husky-heading h3 a:hover,
+#work .spacelabs-card > h3 a:hover {color:#286a9d!important;}
+#work .exp-card-husky .husky-copy > span,
+#work .spacelabs-card > span {
+  font-family:"DM Sans",sans-serif!important;
+  font-size:14px!important;
+  font-weight:400!important;
+  line-height:1.7!important;
+  color:#17202b!important;
+}
+#work .exp-card-husky .husky-copy > p:first-child,
+#work .spacelabs-card > p:first-child {
+  font-family:"DM Sans",sans-serif!important;
+  font-size:14px!important;
+  font-weight:400!important;
+  color:#536273!important;
+}
