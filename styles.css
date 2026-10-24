@@ -369,3 +369,19 @@
 #work .spacelabs-card .process-photo:only-child{grid-column:1/-1}
 #work .spacelabs-card .process-photo:only-child .spacelabs-photo-button{height:175px!important}
 #work .spacelabs-card .process-photo-caption{font-size:11px;line-height:1.5;color:#687d91;margin:7px 0 0}
+
+/* Sequential hardware process with connecting arrows */
+#work .spacelabs-card .spacelabs-process-grid{gap:30px 24px;align-items:stretch}
+#work .spacelabs-card .process-step{position:relative;overflow:visible}
+#work .spacelabs-card .process-step:not(:nth-child(3n))::after{content:"→";position:absolute;right:-23px;top:50%;transform:translateY(-50%);color:#2875a9;font-size:25px;font-weight:500;z-index:2;pointer-events:none}
+#work .spacelabs-card .process-step:nth-child(3n):not(:last-child)::after{content:"↓";position:absolute;right:50%;bottom:-31px;transform:translateX(50%);color:#2875a9;font-size:25px;z-index:2;pointer-events:none}
+#work .spacelabs-card .process-step-images .process-photo{min-width:0}
+#work .spacelabs-card .process-step-images .process-photo:only-child{grid-column:1/-1}
+#work .spacelabs-card .process-step-images .process-photo:only-child .spacelabs-photo-button{height:175px!important}
+#work .spacelabs-card .spacelabs-firmware{margin-top:32px;padding-top:26px;border-top:1px solid #dce5ed}
+#work .spacelabs-card .spacelabs-firmware h4{font:600 19px/1.4 "Space Grotesk",sans-serif;color:#24384b;margin:0 0 8px}
+#work .spacelabs-card .spacelabs-firmware p{font-size:14px;color:#687d91;margin:0}
+@media(max-width:900px){
+ #work .spacelabs-card .process-step::after{display:none!important}
+ #work .spacelabs-card .spacelabs-process-grid{gap:16px}
+}
