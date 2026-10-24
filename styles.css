@@ -17,3 +17,16 @@
 
 /* Match graduation year to the black degree heading */
 .degree-year,.hero-illustrated .degree-year{color:var(--text)!important}
+
+/* Engineering highlight cards */
+.metrics{gap:14px;border:0;background:transparent;margin-top:0;margin-bottom:18px;align-items:stretch}
+.metrics .metric{position:relative;display:flex;flex-direction:column;align-items:flex-start;min-width:0;min-height:174px;padding:23px 21px 20px;border:1px solid #dbe6ef;border-radius:12px;background:rgba(255,255,255,.89);box-shadow:0 6px 24px rgba(40,70,100,.035);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+.metrics .metric:last-child{border:1px solid #dbe6ef}
+.metrics .metric:hover{transform:translateY(-3px);border-color:#abc8dc;box-shadow:0 10px 25px rgba(40,70,100,.075)}
+.metrics .metric-category{font:700 10px/1.4 var(--mono);letter-spacing:.085em;color:#60758c;margin-bottom:16px}
+.metrics .metric strong{font:750 clamp(28px,2.5vw,37px)/1.08 var(--mono);letter-spacing:-.05em;color:var(--blue);margin-bottom:12px}
+.metrics .metric .metric-unit{font:600 clamp(14px,1.25vw,17px)/1.2 var(--mono);letter-spacing:-.02em;color:#4c6881}
+.metrics .metric-description{font-size:13px;font-weight:650;line-height:1.55;color:#25354a}
+.metrics .metric-context{margin-top:auto;padding-top:12px;font-size:11px;line-height:1.4;color:#718298}
+@media(max-width:900px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:480px){.metrics{gap:10px}.metrics .metric{padding:18px 13px;min-height:170px}.metrics .metric-category{font-size:9px}.metrics .metric-description{font-size:12px}.metrics .metric-context{font-size:10px}}
