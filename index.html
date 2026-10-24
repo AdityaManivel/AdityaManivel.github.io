@@ -124,7 +124,7 @@
     <img src="assets/rover_board_rotated.png" alt="Husky Robotics BLDC Motor Board" />
     <p>Husky Robotics · BLDC Motor Board</p>
   </dialog>
-  <script src="script.js?v=spacelabs-workflow-v3"></script>
+  <script src="script.js?v=spacelabs-workflow-v4"></script>
 <script id="workflow-inline-init">
 (function(){
 function init(){
@@ -145,10 +145,10 @@ prev.type=next.type='button';prev.textContent='← Previous';next.textContent='N
 let selected=type==='hardware'?stages.length-1:0;
 const buttons=stages.map((step,i)=>{const b=document.createElement('button');b.type='button';b.className='spacelabs-stage-button';b.textContent=String(i+1).padStart(2,'0');b.setAttribute('aria-label',step.querySelector('.process-step-header h4')?.textContent||'Step '+(i+1));b.addEventListener('click',()=>show(i));nav.append(b);return b});
 container.before(nav);container.after(footer);
-function show(index){selected=Math.max(0,Math.min(stages.length-1,index));stages.forEach((stage,i)=>{stage.hidden=i!==selected});buttons.forEach((button,i)=>{button.classList.toggle('is-active',i===selected);button.setAttribute('aria-current',i===selected?'step':'false')});counter.textContent='Step '+(selected+1)+' of '+stages.length;prev.disabled=selected===0;next.disabled=selected===stages.length-1}
+function show(index){selected=Math.max(0,Math.min(stages.length-1,index));stages.forEach((stage,i)=>{const active=i===selected;stage.hidden=!active;stage.style.setProperty('display',active?'block':'none','important')});buttons.forEach((button,i)=>{button.classList.toggle('is-active',i===selected);button.setAttribute('aria-current',i===selected?'step':'false')});counter.textContent='Step '+(selected+1)+' of '+stages.length;prev.disabled=selected===0;next.disabled=selected===stages.length-1}
 prev.addEventListener('click',()=>show(selected-1));next.addEventListener('click',()=>show(selected+1));show(selected);
 }
-function activate(type){panels.forEach(p=>p.hidden=p.getAttribute('data-workflow-panel')!==type);tabs.forEach(t=>{const active=t.getAttribute('data-workflow-tab')===type;t.classList.toggle('is-active',active);t.setAttribute('aria-selected',String(active))})}
+function activate(type){panels.forEach(p=>{const active=p.getAttribute('data-workflow-panel')===type;p.hidden=!active;p.style.setProperty('display',active?'block':'none','important');});tabs.forEach(t=>{const active=t.getAttribute('data-workflow-tab')===type;t.classList.toggle('is-active',active);t.setAttribute('aria-selected',String(active))})}
 tabs.forEach(t=>t.addEventListener('click',()=>activate(t.getAttribute('data-workflow-tab'))));
 activate('hardware');
 }
