@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=board-cutout-1" />
+  <link rel="stylesheet" href="styles.css?v=husky-gallery-2" />
 </head>
 <body>
   
@@ -30,10 +30,16 @@
         <p>Designed two four-layer PCBs in Altium Designer for a mockup Mars rover: a 20 A, 24 V three-phase MOSFET bridge for BLDC motor control and a PSoC-based board capable of independently controlling up to 12 servo motors. Supported design reviews, board bring-up, and PCB assembly.</p>
         <div class="tags"><span>Altium Designer</span><span>BLDC</span><span>PSoC</span><span>Power Electronics</span><span>PCB Bring-Up</span></div>
         </div>
-        <button class="husky-photo-button" type="button" aria-label="Enlarge Husky Robotics BLDC Motor Board photo" data-lightbox-open>
-          <img src="assets/rover_board_rotated.png" alt="Husky Robotics BLDC Motor Board with husky logo and labeled connectors" loading="lazy" />
-          <span class="photo-hint">Click to enlarge ↗</span>
-        </button>
+        <div class="husky-gallery">
+          <button class="husky-photo-button" type="button" aria-label="Enlarge photo of Husky Robotics BLDC Motor Board" data-lightbox-open data-image-src="assets/rover_board_rotated.png" data-image-title="BLDC Motor Board · Assembled PCB" data-image-alt="Photograph of assembled Husky Robotics BLDC Motor Board">
+            <img src="assets/rover_board_rotated.png" alt="Assembled Husky Robotics BLDC Motor Board" loading="lazy" />
+            <span class="photo-hint">Click to enlarge ↗</span>
+          </button>
+          <button class="husky-photo-button husky-render-button" type="button" aria-label="Enlarge Altium 3D view of BLDC Motor Board" data-lightbox-open data-image-src="assets/Screenshot%202026-10-23%20183916.png" data-image-title="BLDC Motor Board · Altium 3D View" data-image-alt="Altium 3D rendering of the Husky Robotics BLDC Motor Board">
+            <img src="assets/Screenshot%202026-10-23%20183916.png" alt="Altium 3D rendering of the BLDC Motor Board" loading="lazy" />
+            <span class="photo-hint">Click to enlarge ↗</span>
+          </button>
+        </div>
         </div>
       </article>
       <div class="experience-grid">
@@ -81,6 +87,6 @@
     <img src="assets/rover_board_rotated.png" alt="Husky Robotics BLDC Motor Board" />
     <p>Husky Robotics · BLDC Motor Board</p>
   </dialog>
-  <script src="script.js?v=pcb1"></script>
+  <script src="script.js?v=pcb2"></script>
 </body>
 </html>
