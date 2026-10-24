@@ -443,3 +443,11 @@
  #work .spacelabs-card .process-step::before{left:-25px;width:14px;height:14px}
  #work .spacelabs-card .process-step-images{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+
+/* Keep the About landing section in its own viewport, with Experience below the fold. */
+@media (min-width:701px){
+  .hero-illustrated{
+    min-height:calc(100svh - 76px + 24px);
+    align-content:center;
+  }
+}
