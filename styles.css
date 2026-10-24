@@ -30,3 +30,14 @@
 .metrics .metric-context{margin-top:auto;padding-top:12px;font-size:11px;line-height:1.4;color:#718298}
 @media(max-width:900px){.metrics{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:480px){.metrics{gap:10px}.metrics .metric{padding:18px 13px;min-height:170px}.metrics .metric-category{font-size:9px}.metrics .metric-description{font-size:12px}.metrics .metric-context{font-size:10px}}
+
+/* Experience section: consistent full-width cards, content-driven height */
+#work .experience-grid{display:flex;flex-direction:column;gap:18px}
+#work .exp-card,#work .exp-card-husky{width:100%;max-width:none;grid-column:auto;box-sizing:border-box;padding:32px 36px;border:1px solid #dce7f0;border-radius:12px;background:rgba(255,255,255,.9);box-shadow:0 5px 18px rgba(38,73,103,.035)}
+#work .exp-card-husky{margin-bottom:18px}
+#work .exp-card h3{font-size:clamp(20px,2vw,25px);margin:10px 0 6px}
+#work .exp-card>span{font-size:13px;color:#334155}
+#work .exp-card>p:not(:first-child){max-width:1000px;font-size:15px;line-height:1.8}
+#work .exp-card .tags{margin-top:20px}
+#work .lab-card{grid-column:auto}
+@media(max-width:700px){#work .exp-card,#work .exp-card-husky{padding:23px 19px}#work .exp-card>p:not(:first-child){font-size:14px}}
