@@ -10,3 +10,7 @@
 
 /* Degree and graduation details */
 .degree-divider{color:#9bb1c6;font-weight:400;padding:0 .22em}.degree-year{color:var(--blue);font-weight:600;white-space:nowrap}.hero-illustrated h2{line-height:1.65}
+
+/* Keep complete degree, school and graduation year on one desktop line */
+@media(min-width:1051px){.hero-illustrated h2{white-space:nowrap;font-size:clamp(12px,1.04vw,16px);letter-spacing:-.025em;position:relative;left:50%;transform:translateX(-50%);width:max-content;max-width:none}.degree-year{color:var(--blue)}}
+@media(min-width:761px) and (max-width:1050px){.hero-illustrated h2{white-space:nowrap;font-size:clamp(11px,1.28vw,14px);letter-spacing:-.035em;position:relative;left:50%;transform:translateX(-50%);width:max-content;max-width:none}}
