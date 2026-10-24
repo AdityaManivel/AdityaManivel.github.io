@@ -462,3 +462,23 @@
 #work .spacelabs-card .process-step-images>.process-photo>.spacelabs-photo-button{width:100%!important}
 @media(hover:none){#work .husky-photo-button .photo-hint,#work .spacelabs-photo-button .photo-hint{opacity:1;transform:none;font-size:9px!important}}
 @media(prefers-reduced-motion:reduce){#work .husky-photo-button img,#work .spacelabs-photo-button img,#work .photo-hint{transition:none!important}}
+
+/* Compact interactive Spacelabs development workflow */
+.spacelabs-workflow{margin-top:24px;min-width:0}
+.spacelabs-workflow-tabs{display:flex;gap:8px;margin-bottom:16px;padding:5px;border:1px solid #dce6f0;background:#f5f8fc;border-radius:13px;max-width:620px}
+.spacelabs-workflow-tab{flex:1;border:0;border-radius:9px;padding:12px 14px;background:transparent;color:#45617d;font:inherit;font-weight:700;cursor:pointer}
+.spacelabs-workflow-tab.is-active{background:#fff;color:#185d9a;box-shadow:0 1px 7px #15395b20}
+.spacelabs-workflow [hidden]{display:none!important}
+.spacelabs-workflow .spacelabs-gallery,.spacelabs-workflow .spacelabs-firmware{margin:0;min-width:0}
+.spacelabs-workflow .spacelabs-gallery-heading,.spacelabs-workflow .spacelabs-firmware>h4{display:none}
+.spacelabs-workflow .spacelabs-process-grid,.spacelabs-workflow .spacelabs-process{display:block;min-width:0}
+.spacelabs-workflow .process-step{margin:0;min-width:0}
+.spacelabs-stage-nav{display:flex;gap:7px;flex-wrap:wrap;margin:0 0 15px}
+.spacelabs-stage-button{border:1px solid #cad9e8;background:#fff;color:#376183;border-radius:9px;min-width:40px;padding:8px 12px;font:inherit;font-weight:700;cursor:pointer}
+.spacelabs-stage-button.is-active{background:#196ca9;border-color:#196ca9;color:#fff}
+.spacelabs-stage-footer{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:14px}
+.spacelabs-stage-footer button{border:1px solid #cad9e8;border-radius:9px;background:#fff;color:#215c88;padding:9px 14px;font:inherit;font-weight:700;cursor:pointer}
+.spacelabs-stage-footer button:disabled{opacity:.35;cursor:default}
+.spacelabs-stage-count{color:#667b90;font-size:.85rem}
+.spacelabs-workflow .process-step-images{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr));gap:12px}
+@media(max-width:550px){.spacelabs-workflow-tab{padding:10px 7px;font-size:.85rem}.spacelabs-stage-button{padding:7px 10px}}
