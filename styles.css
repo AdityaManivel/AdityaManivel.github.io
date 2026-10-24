@@ -193,3 +193,33 @@
   font-weight:400!important;
   color:#536273!important;
 }
+
+/* Both experience titles share the exact same heading markup and styles. */
+#work .exp-card .husky-heading.experience-heading,
+#work .exp-card-husky .husky-heading{
+  display:flex;align-items:center;gap:13px;margin:16px 0 5px;
+}
+#work .exp-card .husky-heading h3,
+#work .exp-card-husky .husky-heading h3{
+  font-family:"Space Grotesk",sans-serif!important;
+  font-size:25px!important;font-weight:600!important;
+  line-height:1.35!important;letter-spacing:0!important;
+  margin:0!important;
+}
+#work .exp-card .husky-heading h3 a,
+#work .exp-card-husky .husky-heading h3 a,
+#work .exp-card .husky-heading h3 a:link,
+#work .exp-card .husky-heading h3 a:visited{
+  font-family:inherit!important;font-size:inherit!important;
+  font-weight:inherit!important;line-height:inherit!important;
+  color:#17202b!important;text-decoration:none!important;
+  text-decoration-line:none!important;border-bottom:0!important;
+  box-shadow:none!important;
+}
+#work .exp-card .husky-heading h3 a:hover,
+#work .exp-card-husky .husky-heading h3 a:hover{color:#286a9d!important}
+#work .spacelabs-card > span,
+#work .exp-card-husky .husky-copy > span{
+  display:block!important;font:400 14px/1.7 "DM Sans",sans-serif!important;
+  color:#17202b!important;letter-spacing:0!important;
+}
