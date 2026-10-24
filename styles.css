@@ -92,3 +92,8 @@
 #work .spacelabs-card .experience-bullets{list-style:disc outside;padding-left:1.25rem;margin:20px 0 4px;color:#56697e}
 #work .spacelabs-card .experience-bullets li{font-size:14px;line-height:1.7;margin-bottom:12px;padding-left:3px}
 @media(max-width:760px){#work .spacelabs-card .experience-bullets li{font-size:13px}}
+
+/* Match the Spacelabs company link to the Husky Robotics linked heading */
+#work .spacelabs-card .experience-title-link{color:inherit;text-decoration:none;transition:color .2s ease}
+#work .spacelabs-card .experience-title-link:hover,#work .spacelabs-card .experience-title-link:focus-visible{color:#286ca4;text-decoration:underline;text-underline-offset:4px}
+#work .spacelabs-card .experience-title-link span{font-size:.65em;vertical-align:middle;color:#2b73a7}
