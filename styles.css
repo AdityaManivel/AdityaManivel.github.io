@@ -97,3 +97,30 @@
 #work .spacelabs-card .experience-title-link{color:inherit;text-decoration:none;transition:color .2s ease}
 #work .spacelabs-card .experience-title-link:hover,#work .spacelabs-card .experience-title-link:focus-visible{color:#286ca4;text-decoration:underline;text-underline-offset:4px}
 #work .spacelabs-card .experience-title-link span{font-size:.65em;vertical-align:middle;color:#2b73a7}
+
+/* Consistent typography across Husky Robotics and Spacelabs experience cards */
+#work .exp-card-husky .husky-copy>p:first-child,
+#work .spacelabs-card>p:first-child{
+  font:400 14px/1.75 var(--sans);
+  color:#536273!important;
+  letter-spacing:0;
+  text-transform:none;
+  margin:0 0 12px;
+}
+#work .spacelabs-card>h3{margin:10px 0 6px}
+#work .exp-card-husky .husky-copy>span,
+#work .spacelabs-card>span{
+  display:block;
+  font:400 14px/1.7 var(--sans);
+  color:#17202b;
+}
+#work .exp-card-husky .experience-bullets li,
+#work .spacelabs-card .experience-bullets li{
+  font-size:14px;
+  line-height:1.7;
+  font-weight:400;
+}
+@media(max-width:760px){
+ #work .exp-card-husky .experience-bullets li,
+ #work .spacelabs-card .experience-bullets li{font-size:13px}
+}
