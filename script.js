@@ -14,12 +14,12 @@ document.querySelectorAll('.reveal').forEach((element) => seen.observe(element))
 const pcbDialog = document.getElementById('pcb-lightbox');
 if (pcbDialog) {
   const viewerImage = pcbDialog.querySelector('img');
-  const viewerCaption = pcbDialog.querySelector('p');
+  pcbDialog.querySelector('p')?.remove();
   document.querySelectorAll('[data-lightbox-open]').forEach((trigger) => {
     trigger.addEventListener('click', () => {
       viewerImage.src = trigger.dataset.imageSrc;
       viewerImage.alt = trigger.dataset.imageAlt || 'BLDC Motor Board';
-      viewerCaption.textContent = trigger.dataset.imageTitle || 'BLDC Motor Board';
+
       pcbDialog.classList.toggle('viewing-render', trigger.classList.contains('husky-render-button'));
       if (typeof pcbDialog.showModal === 'function') pcbDialog.showModal();
     });
