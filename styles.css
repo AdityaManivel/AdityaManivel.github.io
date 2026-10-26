@@ -512,3 +512,11 @@
 #work .exp-card-husky .husky-motor-details{list-style:none;margin:8px 0 4px;padding-left:20px}
 #work .exp-card-husky .husky-motor-details>li{position:relative;list-style:none;margin-bottom:7px;padding-left:13px}
 #work .exp-card-husky .husky-motor-details>li::before{content:"–";position:absolute;left:0;color:#56697e}
+
+/* Firmware architecture is a single full-width diagram, not a step carousel. */
+#work .spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-stage-nav,
+#work .spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-stage-footer{display:none!important}
+#work .spacelabs-workflow [data-workflow-panel="firmware"] .process-step-images{display:block!important}
+#work .spacelabs-workflow [data-workflow-panel="firmware"] .process-photo{width:100%!important}
+#work .spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-photo-button{width:100%!important;height:auto!important;min-height:0!important;display:block!important;padding:10px!important}
+#work .spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-photo-button img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important}
