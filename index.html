@@ -188,7 +188,7 @@ panels.forEach(function(panel){
   button.addEventListener('click',function(){show(i)});
   nav.appendChild(button);return button;
  });
- container.before(nav);container.after(footer);
+ container.before(nav);if(type!=='hardware')container.after(footer);
  function show(i){
   selected=Math.max(0,Math.min(stages.length-1,i));
   stages.forEach(function(stage,j){stage.hidden=j!==selected;stage.style.display=j===selected?'block':'none'});
