@@ -166,6 +166,12 @@ panels.forEach(function(panel){
  const stages=Array.from(panel.querySelectorAll('.process-step'));
  const container=panel.querySelector('.spacelabs-process-grid, .spacelabs-process');
  if(!container||!stages.length)return;
+ if(type==='firmware'){
+  panel.querySelector('.spacelabs-stage-nav')?.remove();
+  panel.querySelector('.spacelabs-stage-footer')?.remove();
+  stages.forEach(function(stage){stage.hidden=false;stage.style.display='block'});
+  return;
+ }
  panel.querySelector('.spacelabs-stage-nav')?.remove();
  panel.querySelector('.spacelabs-stage-footer')?.remove();
  const nav=document.createElement('nav');nav.className='spacelabs-stage-nav';
