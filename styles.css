@@ -520,3 +520,9 @@
 #work .spacelabs-workflow [data-workflow-panel="firmware"] .process-photo{width:100%!important}
 #work .spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-photo-button{width:100%!important;height:auto!important;min-height:0!important;display:block!important;padding:10px!important}
 #work .spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-photo-button img{display:block!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important}
+
+/* Full-size firmware diagram: override older 440px gallery-card limits. */
+#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="firmware"] .process-step-images>.process-photo:only-child{width:100%!important;max-width:none!important;grid-column:1/-1!important}
+#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="firmware"] .process-step-images .process-photo:only-child .spacelabs-photo-button{width:100%!important;max-width:none!important;height:440px!important;min-height:440px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:12px!important}
+#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-photo-button img{width:100%!important;height:100%!important;max-height:100%!important;object-fit:contain!important}
+@media(max-width:650px){#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="firmware"] .process-step-images .process-photo:only-child .spacelabs-photo-button{height:280px!important;min-height:280px!important}}
