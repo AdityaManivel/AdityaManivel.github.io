@@ -560,3 +560,9 @@
 /* Match submarine heading to the other experience headings while keeping it clickable */
 #work .submarine-card h3 .submarine-heading-link{color:inherit;font:inherit;font-weight:inherit;text-decoration:none}
 #work .submarine-card h3 .submarine-heading-link:hover,#work .submarine-card h3 .submarine-heading-link:focus-visible{color:var(--blue);text-decoration:underline;text-underline-offset:4px}
+
+/* HPS: always keep the two caption-free photos equal-sized and side by side */
+#work .submarine-card .submarine-gallery{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px;align-items:stretch}
+#work .submarine-card .submarine-gallery .submarine-photo-button{box-sizing:border-box;width:100%!important;min-width:0;height:260px!important;margin:0;aspect-ratio:auto}
+#work .submarine-card .submarine-gallery .submarine-photo-button img{width:100%!important;height:100%!important;object-fit:contain!important}
+@media(max-width:650px){#work .submarine-card .submarine-gallery{gap:8px}#work .submarine-card .submarine-gallery .submarine-photo-button{height:160px!important;padding:5px}}
