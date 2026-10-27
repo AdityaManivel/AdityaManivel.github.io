@@ -526,3 +526,13 @@
 #work .spacelabs-card .spacelabs-workflow [data-workflow-panel="firmware"] .process-step-images .process-photo:only-child .spacelabs-photo-button{width:100%!important;max-width:none!important;height:440px!important;min-height:440px!important;display:flex!important;align-items:center!important;justify-content:center!important;padding:12px!important}
 #work .spacelabs-card .spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-photo-button img{width:100%!important;height:100%!important;max-height:100%!important;object-fit:contain!important}
 @media(max-width:650px){#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="firmware"] .process-step-images .process-photo:only-child .spacelabs-photo-button{height:280px!important;min-height:280px!important}}
+
+/* Programmable Matter Lab: equal prototyping/final-product columns and zoomable images */
+#work .lab-gallery{grid-template-columns:minmax(0,1fr) minmax(0,1fr);align-items:stretch}
+#work .lab-gallery .phase-panel{min-width:0}
+#work .lab-gallery .lab-zoom-button{position:relative;display:block;width:100%;height:225px;padding:10px;border:1px solid #d5e2eb;border-radius:10px;background:#f8fafc;cursor:zoom-in;overflow:hidden}
+#work .lab-gallery .lab-zoom-button img{display:block;width:100%;height:100%;object-fit:contain}
+#work .lab-gallery .lab-zoom-button.lab-rotated img{transform:rotate(-90deg);width:225px;height:calc(100% - 12px);max-width:100%;margin:auto;object-fit:contain}
+#work .lab-gallery .lab-zoom-button .photo-hint{position:absolute;right:8px;bottom:8px}
+#pcb-lightbox.viewing-rotated img{transform:rotate(-90deg);max-width:min(70vh,85vw);max-height:80vw}
+@media(max-width:700px){#work .lab-gallery{grid-template-columns:1fr}#work .lab-gallery .prototype-images{grid-template-columns:1fr 1fr}#work .lab-gallery .lab-zoom-button{height:185px}}
