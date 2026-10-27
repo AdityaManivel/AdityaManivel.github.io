@@ -545,3 +545,7 @@
 #work .lab-gallery .lab-zoom-button.lab-rotated img{width:190px!important;height:190px!important;max-width:none!important;max-height:none!important;transform:rotate(-90deg);object-fit:contain}
 #work .lab-gallery figcaption{min-height:32px}
 @media(max-width:700px){#work .lab-gallery .prototype-images{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}#work .lab-gallery .lab-zoom-button{height:175px!important}#work .lab-gallery .lab-zoom-button.lab-rotated img{width:150px!important;height:150px!important}}
+
+#work .lab-gallery .lab-zoom-button.lab-rotated-clockwise img{width:190px!important;height:190px!important;max-width:none!important;max-height:none!important;transform:rotate(90deg);object-fit:contain}
+#pcb-lightbox.viewing-rotated-clockwise img{transform:rotate(90deg);max-width:min(70vh,85vw);max-height:80vw}
+@media(max-width:700px){#work .lab-gallery .lab-zoom-button.lab-rotated-clockwise img{width:150px!important;height:150px!important}}
