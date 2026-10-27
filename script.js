@@ -22,6 +22,7 @@ if (pcbDialog) {
 
       pcbDialog.classList.toggle('viewing-render', trigger.classList.contains('husky-render-button'));
       pcbDialog.classList.toggle('viewing-rotated', trigger.dataset.imageRotate === '-90');
+      pcbDialog.classList.toggle('viewing-rotated-clockwise', trigger.dataset.imageRotate === '90');
       if (typeof pcbDialog.showModal === 'function') pcbDialog.showModal();
     });
   });
