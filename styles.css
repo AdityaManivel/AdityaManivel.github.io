@@ -694,3 +694,10 @@
 #coursework .course-name{font:600 16px/1.4 'DM Sans',sans-serif;color:#243447}
 #coursework .course-arrow{position:absolute;right:19px;top:20px;color:#277ab7;font-size:17px}
 @media(max-width:650px){#coursework .coursework-grid{grid-template-columns:1fr}#coursework .course-card{min-height:80px}}
+
+/* Two distinct coursework columns: hardware left, software right. */
+#coursework .coursework-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:start}
+#coursework .coursework-column{display:flex;flex-direction:column;gap:12px;min-width:0}
+#coursework .coursework-category{font:600 15px/1.4 "DM Sans",sans-serif;color:#3d5b75;margin:0 0 4px;padding:0 2px}
+#coursework .coursework-column .course-card{width:100%;box-sizing:border-box}
+@media(max-width:650px){#coursework .coursework-grid{grid-template-columns:1fr;gap:25px}}
