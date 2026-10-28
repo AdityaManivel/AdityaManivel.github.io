@@ -654,3 +654,8 @@
 /* Project rows no longer reserve a third column for stats */
 #projects .project{grid-template-columns:60px minmax(0,1fr)!important}
 #projects .project-stat{display:none!important}
+
+/* Programmable Matter enlarged images: rotate -90° and fit entire image without clipping */
+#pcb-lightbox.viewing-rotated{position:fixed!important;box-sizing:border-box!important;width:min(94vw,1000px)!important;height:min(88dvh,850px)!important;max-width:94vw!important;max-height:88dvh!important;padding:0!important;overflow:hidden!important}
+#pcb-lightbox.viewing-rotated>img{position:absolute!important;left:50%!important;top:50%!important;display:block!important;width:min(76dvh,750px)!important;height:min(85vw,900px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center!important;transform:translate(-50%,-50%) rotate(-90deg)!important;transform-origin:center!important;clip-path:none!important}
+#pcb-lightbox.viewing-rotated .pcb-lightbox-close{z-index:3!important}
