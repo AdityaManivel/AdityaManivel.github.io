@@ -604,3 +604,7 @@
 /* Final sensing tile: preserve original image without zooming or cropping in lightbox */
 #pcb-lightbox.viewing-rotated-clockwise{width:fit-content!important;max-width:96vw!important;max-height:95vh!important;overflow:hidden!important}
 #pcb-lightbox.viewing-rotated-clockwise img{display:block!important;transform:rotate(90deg)!important;transform-origin:center!important;width:auto!important;height:auto!important;max-width:min(70vh,80vw)!important;max-height:min(70vw,80vh)!important;object-fit:contain!important;clip-path:none!important;margin:0 auto!important}
+
+/* Hardware process: keep text-only stages as tall as photo stages */
+#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="hardware"] .process-step{min-height:245px!important;box-sizing:border-box!important}
+@media(max-width:550px){#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="hardware"] .process-step{min-height:225px!important}}
