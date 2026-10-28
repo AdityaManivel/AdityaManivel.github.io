@@ -659,3 +659,8 @@
 #pcb-lightbox.viewing-rotated{position:fixed!important;box-sizing:border-box!important;width:min(94vw,1000px)!important;height:min(88dvh,850px)!important;max-width:94vw!important;max-height:88dvh!important;padding:0!important;overflow:hidden!important}
 #pcb-lightbox.viewing-rotated>img{position:absolute!important;left:50%!important;top:50%!important;display:block!important;width:min(76dvh,750px)!important;height:min(85vw,900px)!important;max-width:none!important;max-height:none!important;object-fit:contain!important;object-position:center!important;transform:translate(-50%,-50%) rotate(-90deg)!important;transform-origin:center!important;clip-path:none!important}
 #pcb-lightbox.viewing-rotated .pcb-lightbox-close{z-index:3!important}
+
+/* Prototype tile: upright orientation and fully visible enlarged photo */
+#work .lab-gallery .lab-zoom-button.lab-prototype-upright img{transform:none!important;object-fit:contain!important;width:100%!important;height:100%!important}
+#pcb-lightbox.viewing-prototype-upright{width:min(94vw,1100px)!important;height:min(90dvh,850px)!important;max-width:94vw!important;max-height:90dvh!important;padding:12px!important;overflow:hidden!important;box-sizing:border-box!important}
+#pcb-lightbox.viewing-prototype-upright>img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;transform:none!important;position:static!important;margin:auto!important}
