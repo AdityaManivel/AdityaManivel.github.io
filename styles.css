@@ -628,3 +628,8 @@
 #work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-photo:only-child .spacelabs-photo-button{height:520px!important;min-height:520px!important;max-height:520px!important;padding:8px!important}
 #work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-photo:only-child img{width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important}
 @media(max-width:650px){#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"],#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"]{min-height:390px!important}#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"] .process-step{min-height:325px!important}#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-step{min-height:390px!important}#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-photo:only-child .spacelabs-photo-button{height:320px!important;min-height:320px!important;max-height:320px!important}}
+
+/* Match the HPS external-link arrow exactly to Spacelabs and Husky Robotics */
+#work .submarine-card .experience-title-link span{font-size:.65em!important;vertical-align:middle!important;color:#2b73a7!important;font-weight:inherit!important;display:inline!important;line-height:1!important}
+#work .submarine-card .experience-title-link{font:inherit!important;color:inherit!important;text-decoration:none!important}
+#work .submarine-card .experience-title-link:hover,#work .submarine-card .experience-title-link:focus-visible{color:#286ca4!important;text-decoration:underline!important;text-underline-offset:4px}
