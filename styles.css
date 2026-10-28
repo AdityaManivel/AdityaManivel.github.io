@@ -685,3 +685,12 @@
 #projects .project .project-photo-gallery button.project-photo-button{display:block!important;box-sizing:border-box!important;width:240px!important;max-width:100%!important;height:165px!important;min-height:0!important;padding:7px!important;border:1px solid #d5e2eb!important;border-radius:12px!important;background:#f8fafc!important;overflow:hidden!important}
 #projects .project .project-photo-gallery button.project-photo-button img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important}
 #projects .project .project-photo-gallery button.project-photo-button .photo-hint{position:absolute!important;right:8px!important;bottom:8px!important;padding:5px 7px!important;border-radius:6px!important;background:rgba(17,33,52,.86)!important;color:white!important;font-size:10px!important;font-weight:600!important;line-height:1.2!important}
+
+/* Coursework — compact cards consistent with the portfolio's existing typography and borders. */
+#coursework .coursework-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+#coursework .course-card{position:relative;display:flex;flex-direction:column;justify-content:center;gap:7px;min-height:92px;padding:18px 44px 18px 20px;border:1px solid #d8e4ef;border-radius:13px;background:#fff;color:#1c2938;text-decoration:none;box-shadow:0 5px 22px rgba(27,67,102,.035);transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
+#coursework .course-card:hover{transform:translateY(-2px);border-color:#9fc5e3;box-shadow:0 9px 25px rgba(27,67,102,.09)}
+#coursework .course-code{font:600 12px/1.3 'DM Sans',sans-serif;color:#2675ad;letter-spacing:.035em}
+#coursework .course-name{font:600 16px/1.4 'DM Sans',sans-serif;color:#243447}
+#coursework .course-arrow{position:absolute;right:19px;top:20px;color:#277ab7;font-size:17px}
+@media(max-width:650px){#coursework .coursework-grid{grid-template-columns:1fr}#coursework .course-card{min-height:80px}}
