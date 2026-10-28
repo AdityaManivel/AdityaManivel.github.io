@@ -642,3 +642,15 @@
 /* HPS external-link icon: use the same small blue arrow as Husky Robotics */
 #work .submarine-card .experience-heading h3 .experience-title-link > span[aria-hidden="true"]{font-size:.65em!important;vertical-align:middle!important;color:#2b73a7!important;font-weight:inherit!important;line-height:normal!important;display:inline!important}
 #work .submarine-card .experience-heading h3 .experience-title-link{font-family:inherit!important;font-size:inherit!important;font-weight:inherit!important;line-height:inherit!important}
+
+/* Equal total panel heights including the hardware step navigation */
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"],
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"]{height:690px!important;min-height:690px!important;max-height:690px!important;box-sizing:border-box!important;overflow:hidden!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"] .spacelabs-process-grid{height:calc(100% - 72px)!important;min-height:0!important;box-sizing:border-box!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"] .process-step{height:100%!important;min-height:0!important;box-sizing:border-box!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-process-grid{height:100%!important;box-sizing:border-box!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-step{height:100%!important;min-height:0!important;box-sizing:border-box!important}
+@media(max-width:650px){#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"],#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"]{height:470px!important;min-height:470px!important;max-height:470px!important}}
+/* Project rows no longer reserve a third column for stats */
+#projects .project{grid-template-columns:60px minmax(0,1fr)!important}
+#projects .project-stat{display:none!important}
