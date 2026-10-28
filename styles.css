@@ -701,3 +701,11 @@
 #coursework .coursework-category{font:600 15px/1.4 "DM Sans",sans-serif;color:#3d5b75;margin:0 0 4px;padding:0 2px}
 #coursework .coursework-column .course-card{width:100%;box-sizing:border-box}
 @media(max-width:650px){#coursework .coursework-grid{grid-template-columns:1fr;gap:25px}}
+
+/* Gentle scroll-in motion for section headings and content; once per element. */
+@media (prefers-reduced-motion: no-preference){
+  html{scroll-behavior:smooth;scroll-padding-top:95px}
+  .scroll-fade{opacity:0;transform:translate3d(0,14px,0);transition:opacity .55s ease-out,transform .55s cubic-bezier(.2,.7,.2,1);will-change:opacity,transform}
+  .scroll-fade.scroll-visible{opacity:1;transform:none;will-change:auto}
+}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto!important}.scroll-fade{opacity:1!important;transform:none!important;transition:none!important}}
