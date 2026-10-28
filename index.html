@@ -192,6 +192,28 @@ panels.forEach(function(panel){
   nav.appendChild(button);return button;
  });
  container.before(nav);if(type!=='hardware')container.after(footer);
+ // Reserve the height of the tallest hardware stage so the next experience
+ // never jumps up or down as numbered stages are selected.
+ function syncHardwareHeight(){
+  if(type!=='hardware')return;
+  const width=container.clientWidth;
+  if(!width)return;
+  let tallest=0;
+  stages.forEach(function(stage){
+   const saved={hidden:stage.hidden,display:stage.style.display,position:stage.style.position,visibility:stage.style.visibility,width:stage.style.width};
+   stage.hidden=false;stage.style.display='block';stage.style.position='absolute';
+   stage.style.visibility='hidden';stage.style.width=width+'px';
+   tallest=Math.max(tallest,stage.getBoundingClientRect().height);
+   stage.hidden=saved.hidden;stage.style.display=saved.display;
+   stage.style.position=saved.position;stage.style.visibility=saved.visibility;stage.style.width=saved.width;
+  });
+  container.style.minHeight=Math.ceil(tallest)+'px';
+ }
+ if(type==='hardware'){
+  container.style.position='relative';
+  window.addEventListener('resize',syncHardwareHeight);
+  container.querySelectorAll('img').forEach(function(img){img.addEventListener('load',syncHardwareHeight)});
+ }
  function show(i){
   selected=Math.max(0,Math.min(stages.length-1,i));
   stages.forEach(function(stage,j){stage.hidden=j!==selected;stage.style.display=j===selected?'block':'none'});
@@ -202,6 +224,7 @@ panels.forEach(function(panel){
  previous.addEventListener('click',function(){show(selected-1)});
  next.addEventListener('click',function(){show(selected+1)});
  show(selected);
+ syncHardwareHeight();
 });
 function activate(type){
  panels.forEach(function(panel){panel.classList.toggle('is-selected',panel.dataset.workflowPanel===type)});
