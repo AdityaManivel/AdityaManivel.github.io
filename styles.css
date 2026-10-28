@@ -579,8 +579,11 @@
 #skills .skills-card-grid p{margin:0;color:var(--muted);font-size:14px;line-height:1.9}
 @media(max-width:650px){#skills .skills-card-grid{grid-template-columns:1fr}#skills .skills-card-grid>div{padding:20px}}
 
-/* Compact logo/title rows for the research lab and submarine team, matching Spacelabs */
-#work .lab-card .experience-heading,#work .submarine-card .experience-heading{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:13px!important;margin:16px 0 5px!important;min-height:0!important}
-#work .lab-card .experience-heading .husky-club-logo,#work .submarine-card .experience-heading .husky-club-logo{display:block!important;position:static!important;width:48px!important;height:48px!important;min-width:48px!important;max-width:48px!important;max-height:48px!important;flex:0 0 48px!important;object-fit:contain!important;border:1px solid #e3eaf1!important;border-radius:10px!important;background:#fff!important;padding:5px!important;margin:0!important;box-sizing:border-box!important}
-#work .lab-card .experience-heading h3,#work .submarine-card .experience-heading h3{display:block!important;flex:0 1 auto!important;margin:0!important;min-width:0!important;line-height:1.25!important}
-@media(max-width:600px){#work .lab-card .experience-heading .husky-club-logo,#work .submarine-card .experience-heading .husky-club-logo{width:42px!important;height:42px!important;min-width:42px!important;max-width:42px!important;max-height:42px!important;flex-basis:42px!important}}
+/* Research and submarine logos: identical dimensions to Spacelabs and Husky Robotics */
+#work .exp-card.lab-card .husky-heading.experience-heading,
+#work .exp-card.submarine-card .husky-heading.experience-heading{display:flex!important;align-items:center!important;gap:13px!important;margin:16px 0 5px!important}
+#work .exp-card.lab-card .husky-heading.experience-heading > img.husky-club-logo,
+#work .exp-card.submarine-card .husky-heading.experience-heading > img.husky-club-logo{display:block!important;position:static!important;width:60px!important;height:60px!important;min-width:60px!important;max-width:60px!important;min-height:60px!important;max-height:60px!important;flex:0 0 60px!important;box-sizing:border-box!important;object-fit:contain!important;object-position:center!important;padding:5px!important;margin:0!important;border:1px solid #e3eaf1!important;border-radius:10px!important;background:#fff!important}
+#work .exp-card.lab-card .husky-heading.experience-heading > h3,
+#work .exp-card.submarine-card .husky-heading.experience-heading > h3{margin:0!important;flex:0 1 auto!important}
+@media(max-width:600px){#work .exp-card.lab-card .husky-heading.experience-heading > img.husky-club-logo,#work .exp-card.submarine-card .husky-heading.experience-heading > img.husky-club-logo{width:52px!important;height:52px!important;min-width:52px!important;max-width:52px!important;min-height:52px!important;max-height:52px!important;flex-basis:52px!important}}
