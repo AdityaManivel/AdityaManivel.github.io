@@ -21,6 +21,7 @@ if (pcbDialog) {
       viewerImage.alt = trigger.dataset.imageAlt || 'BLDC Motor Board';
 
       pcbDialog.classList.toggle('viewing-render', trigger.classList.contains('husky-render-button'));
+      pcbDialog.classList.toggle('viewing-prototype-upright', trigger.classList.contains('lab-prototype-upright'));
       pcbDialog.classList.toggle('viewing-rotated', trigger.dataset.imageRotate === '-90');
       pcbDialog.classList.toggle('viewing-rotated-clockwise', trigger.dataset.imageRotate === '90');
       // For rotated photos, size the viewer using the *rotated* image bounds.
