@@ -200,14 +200,15 @@ panels.forEach(function(panel){
   if(!width)return;
   let tallest=0;
   stages.forEach(function(stage){
-   const saved={hidden:stage.hidden,display:stage.style.display,position:stage.style.position,visibility:stage.style.visibility,width:stage.style.width};
+   const saved={hidden:stage.hidden,display:stage.style.display,position:stage.style.position,visibility:stage.style.visibility,width:stage.style.width,minHeight:stage.style.minHeight};
    stage.hidden=false;stage.style.display='block';stage.style.position='absolute';
-   stage.style.visibility='hidden';stage.style.width=width+'px';
+   stage.style.visibility='hidden';stage.style.width=width+'px';stage.style.minHeight='0px';
    tallest=Math.max(tallest,stage.getBoundingClientRect().height);
    stage.hidden=saved.hidden;stage.style.display=saved.display;
-   stage.style.position=saved.position;stage.style.visibility=saved.visibility;stage.style.width=saved.width;
+   stage.style.position=saved.position;stage.style.visibility=saved.visibility;stage.style.width=saved.width;stage.style.minHeight=saved.minHeight;
   });
-  container.style.minHeight=Math.ceil(tallest)+'px';
+  container.style.minHeight='0px';
+  stages.forEach(function(stage){stage.style.setProperty('min-height',Math.ceil(tallest)+'px','important')});
  }
  if(type==='hardware'){
   container.style.position='relative';
