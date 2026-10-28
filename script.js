@@ -81,3 +81,23 @@ if (pcbDialog) {
     if (event.target === pcbDialog) pcbDialog.close();
   });
 }
+
+// Subtle scroll reveal: small upward motion and fade, once as each section enters view.
+// Both scrolling directions work; previously revealed content stays visible.
+(() => {
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const items = document.querySelectorAll('#work .exp-card, #projects .project, #education .education-entry, #coursework .course-card, #skills .skills-grid > *, .section-heading, #contact .footer-inner');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('scroll-visible');
+      observer.unobserve(entry.target);
+    });
+  }, {threshold: 0.08, rootMargin: '0px 0px -24px 0px'});
+  items.forEach((item) => {
+    // Avoid hiding anything already in the initial viewport.
+    if (item.getBoundingClientRect().top < window.innerHeight - 24) return;
+    item.classList.add('scroll-fade');
+    observer.observe(item);
+  });
+})();
