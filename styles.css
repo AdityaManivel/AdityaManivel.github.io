@@ -617,3 +617,14 @@
 #work .spacelabs-card .spacelabs-workflow [data-workflow-panel="hardware"] .spacelabs-process-grid::before{content:none!important;display:none!important}
 #work .spacelabs-card .spacelabs-workflow [data-workflow-panel="hardware"] .spacelabs-process-grid{padding-left:0!important;border-left:0!important}
 #work .spacelabs-card .spacelabs-workflow [data-workflow-panel="hardware"] .process-step{box-sizing:border-box!important;margin:0!important}
+
+/* Balanced Spacelabs hardware and firmware tabs: equal overall footprint */
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"],
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"]{box-sizing:border-box!important;min-height:620px!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"] .process-step{min-height:550px!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-step{min-height:620px!important;display:flex!important;align-items:center!important;justify-content:center!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .spacelabs-process,
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-step-images{width:100%!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-photo:only-child .spacelabs-photo-button{height:520px!important;min-height:520px!important;max-height:520px!important;padding:8px!important}
+#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-photo:only-child img{width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important}
+@media(max-width:650px){#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"],#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"]{min-height:390px!important}#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="hardware"] .process-step{min-height:325px!important}#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-step{min-height:390px!important}#work .spacelabs-card #spacelabs-workflow [data-workflow-panel="firmware"] .process-photo:only-child .spacelabs-photo-button{height:320px!important;min-height:320px!important;max-height:320px!important}}
