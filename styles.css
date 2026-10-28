@@ -612,3 +612,8 @@
 /* Enlarged photos: show the entire original image, never crop or zoom it */
 #pcb-lightbox:not(.viewing-rotated):not(.viewing-rotated-clockwise){box-sizing:border-box!important;width:fit-content!important;max-width:calc(100vw - 32px)!important;max-height:calc(100dvh - 32px)!important;overflow:hidden!important;padding:58px 12px 12px!important}
 #pcb-lightbox:not(.viewing-rotated):not(.viewing-rotated-clockwise)>img{display:block!important;width:auto!important;height:auto!important;max-width:calc(100vw - 56px)!important;max-height:calc(100dvh - 116px)!important;object-fit:contain!important;object-position:center!important;clip-path:none!important;transform:none!important;margin:auto!important}
+
+/* Single-step hardware gallery: no leftover timeline line or detached empty area */
+#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="hardware"] .spacelabs-process-grid::before{content:none!important;display:none!important}
+#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="hardware"] .spacelabs-process-grid{padding-left:0!important;border-left:0!important}
+#work .spacelabs-card .spacelabs-workflow [data-workflow-panel="hardware"] .process-step{box-sizing:border-box!important;margin:0!important}
