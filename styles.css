@@ -578,3 +578,9 @@
 #skills .skills-card-grid h3{margin:0 0 12px;font:600 17px var(--mono);color:var(--ink,#172b3f)}
 #skills .skills-card-grid p{margin:0;color:var(--muted);font-size:14px;line-height:1.9}
 @media(max-width:650px){#skills .skills-card-grid{grid-template-columns:1fr}#skills .skills-card-grid>div{padding:20px}}
+
+/* Compact logo/title rows for the research lab and submarine team, matching Spacelabs */
+#work .lab-card .experience-heading,#work .submarine-card .experience-heading{display:flex!important;align-items:center!important;justify-content:flex-start!important;gap:13px!important;margin:16px 0 5px!important;min-height:0!important}
+#work .lab-card .experience-heading .husky-club-logo,#work .submarine-card .experience-heading .husky-club-logo{display:block!important;position:static!important;width:48px!important;height:48px!important;min-width:48px!important;max-width:48px!important;max-height:48px!important;flex:0 0 48px!important;object-fit:contain!important;border:1px solid #e3eaf1!important;border-radius:10px!important;background:#fff!important;padding:5px!important;margin:0!important;box-sizing:border-box!important}
+#work .lab-card .experience-heading h3,#work .submarine-card .experience-heading h3{display:block!important;flex:0 1 auto!important;margin:0!important;min-width:0!important;line-height:1.25!important}
+@media(max-width:600px){#work .lab-card .experience-heading .husky-club-logo,#work .submarine-card .experience-heading .husky-club-logo{width:42px!important;height:42px!important;min-width:42px!important;max-width:42px!important;max-height:42px!important;flex-basis:42px!important}}
