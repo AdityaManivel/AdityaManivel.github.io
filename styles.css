@@ -837,3 +837,23 @@
 }
 @media(max-width:760px){.hero.hero-illustrated>.hero-circuit-intro{opacity:.25}}
 @media(prefers-reduced-motion:reduce){.hero-circuit-traces path{stroke-dashoffset:0!important;animation:none!important}.hero-circuit-nodes circle{opacity:1!important;animation:none!important}}
+
+/* First-visit PCB boot animation. One shot per browser tab; CSS transforms/opacity only. */
+.am-boot{display:none;position:fixed;inset:0;z-index:99999;align-items:center;justify-content:center;padding:24px;background:radial-gradient(ellipse at 50% 45%,#133a48 0%,#081b2a 65%,#061320 100%);pointer-events:none;color:#d6f6f4}
+.am-boot.am-boot-play{display:flex}
+.am-boot-board{width:min(960px,100%);border:1px solid #2a6070;border-radius:20px;background:#0b2635;box-shadow:0 24px 100px #0008;overflow:hidden}
+.am-boot-topline,.am-boot-bottom{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:15px 22px;font:600 11px/1.4 monospace;letter-spacing:1.4px;color:#a0cbd5}
+.am-boot-topline{border-bottom:1px solid #235063}.am-boot-bottom{border-top:1px solid #235063}
+.am-boot-svg{display:block;width:100%;height:auto;max-height:52vh}
+.am-boot-traces path{stroke-dasharray:1050;stroke-dashoffset:1050;animation:am-route 1.65s ease-out forwards}
+.am-boot-traces path:nth-child(even){animation-delay:.2s}
+.am-boot-pads circle,.am-boot-chip{opacity:0;animation:am-pop .45s ease-out .85s forwards}
+.am-boot-leds .am-led{opacity:0;transform-box:fill-box;transform-origin:center;animation:am-light .45s ease-out 1.45s forwards}
+.am-boot-leds .am-led:nth-child(2){animation-delay:1.65s}.am-boot-leds .am-led:nth-child(3){animation-delay:1.85s}.am-boot-leds .am-led:nth-child(4){animation-delay:2.05s}.am-boot-leds .am-led:nth-child(5){animation-delay:2.2s}
+.am-led-red{fill:#ff485d;filter:drop-shadow(0 0 9px #ff485d)}.am-led-green{fill:#48f69a;filter:drop-shadow(0 0 9px #48f69a)}.am-led-blue{fill:#48a9ff;filter:drop-shadow(0 0 9px #48a9ff)}
+.am-boot-motor{animation:am-motor-drive 2.3s cubic-bezier(.25,.5,.3,1) .55s both}.am-boot-motor-wheel{animation:am-wheel-spin .75s linear 3 .55s;transform-box:fill-box;transform-origin:center}
+.am-boot-progress{display:block;width:30%;max-width:200px;height:5px;border-radius:8px;background:#224455;overflow:hidden}.am-boot-progress i{display:block;width:100%;height:100%;background:linear-gradient(90deg,#39b2db,#53f1a7);transform:scaleX(0);transform-origin:left;animation:am-fill 2.6s ease-out .25s forwards}
+.am-boot-exit{animation:am-boot-dismiss .55s ease-in forwards}
+@keyframes am-route{to{stroke-dashoffset:0}}@keyframes am-pop{to{opacity:1}}@keyframes am-light{0%{opacity:0;transform:scale(.3)}70%{opacity:1;transform:scale(1.4)}100%{opacity:1;transform:scale(1)}}@keyframes am-motor-drive{from{transform:translate(-180px,355px);opacity:0}15%{opacity:1}to{transform:translate(660px,355px);opacity:1}}@keyframes am-wheel-spin{to{transform:rotate(360deg)}}@keyframes am-fill{to{transform:scaleX(1)}}@keyframes am-boot-dismiss{to{opacity:0;visibility:hidden}}
+@media(max-width:600px){.am-boot{padding:12px}.am-boot-topline,.am-boot-bottom{padding:12px;font-size:9px;letter-spacing:.3px}.am-boot-svg{min-height:210px}}
+@media(prefers-reduced-motion:reduce){.am-boot{display:none!important}}
