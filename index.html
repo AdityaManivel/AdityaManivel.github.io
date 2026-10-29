@@ -64,45 +64,48 @@
           <filter id="am-glow-v2" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
         </defs>
         <rect width="1200" height="560" fill="url(#am-grid-v2)"/>
-        <g class="am-robot-cables" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path class="am-cable am-cable-a" d="M350 236 C460 205 550 204 660 213 S800 231 881 244" stroke="#63d9f2" stroke-width="5"/>
-          <path class="am-cable am-cable-b" d="M350 262 C460 292 550 292 660 278 S800 268 881 269" stroke="#ffbc67" stroke-width="5"/>
-          <circle class="am-cable-plug" cx="881" cy="244" r="7" fill="#63d9f2"/>
-          <circle class="am-cable-plug" cx="881" cy="269" r="7" fill="#ffbc67"/>
-        </g>
         <g class="am-v2-computer">
-          <rect x="105" y="155" width="248" height="177" rx="13" fill="#0c2535" stroke="#8bd9e0" stroke-width="5"/>
-          <rect x="121" y="170" width="216" height="144" rx="5" fill="#123b4a"/>
-          <g fill="none" stroke="#5dd6ca" stroke-width="3" stroke-linecap="round"><path d="M143 210l16 12-16 12M170 236h26"/><path d="M145 265h95M145 279h60" opacity=".45"/></g>
-          <rect x="215" y="334" width="28" height="26" fill="#77a7b8"/><path d="M175 364H285" stroke="#8bd9e0" stroke-width="9" stroke-linecap="round"/>
-          
+          <rect x="96" y="167" width="265" height="180" rx="15" fill="#0c2535" stroke="#8bd9e0" stroke-width="5"/>
+          <rect x="113" y="183" width="231" height="147" rx="6" fill="#123b4a"/>
+          <g fill="none" stroke="#5dd6ca" stroke-width="3" stroke-linecap="round"><path d="M135 217l16 12-16 12M161 241h26"/><path d="M137 275h96M137 290h61" opacity=".55"/></g>
+          <rect x="215" y="347" width="28" height="23" fill="#77a7b8"/><path d="M173 373H285" stroke="#8bd9e0" stroke-width="9" stroke-linecap="round"/>
+          <circle cx="328" cy="199" r="5" fill="#6af4b4"/>
         </g>
         <g class="am-v2-robot">
-          <g class="am-v2-robot-body">
-            <rect x="863" y="214" width="220" height="145" rx="27" fill="#244e63" stroke="#83dbe0" stroke-width="5"/>
-            <rect x="898" y="243" width="150" height="67" rx="18" fill="#0c2a3a" stroke="#438fa3" stroke-width="3"/>
-            <circle class="am-v2-eye" cx="937" cy="277" r="13" fill="#70e7ec"/><circle class="am-v2-eye" cx="1009" cy="277" r="13" fill="#70e7ec"/>
-            <path d="M950 328h50" stroke="#80d5d6" stroke-width="5" stroke-linecap="round"/>
-            <path d="M972 214v-28" stroke="#8bdbe0" stroke-width="5"/><circle cx="972" cy="176" r="10" fill="#ffcf65"/>
-            <path d="M865 273h-23v45h23M1083 273h23v45h-23" fill="none" stroke="#8bdbe0" stroke-width="8"/>
+          <!-- Four-wheel mobile robot chassis with protective bumper and visible drivetrain. -->
+          <path d="M799 313h288l28 20v40l-24 19H800l-24-21v-37z" fill="#203e51" stroke="#8ac9d8" stroke-width="5"/>
+          <rect x="815" y="330" width="262" height="42" rx="13" fill="#355d70" stroke="#4e96a8" stroke-width="3"/>
+          <rect x="835" y="339" width="218" height="24" rx="8" fill="#132f41"/>
+          <path d="M781 347h-21m352 0h24" stroke="#9ddce2" stroke-width="12" stroke-linecap="round"/>
+          <rect x="1080" y="337" width="26" height="31" rx="6" fill="#d2e8ea"/>
+          <circle cx="1094" cy="346" r="4" fill="#57c8ff"/><circle cx="1094" cy="360" r="4" fill="#ff6b77"/>
+          <g class="am-v2-wheels">
+            <g class="am-v2-wheel" style="transform-origin:832px 389px"><circle cx="832" cy="389" r="34" fill="#101c29" stroke="#81c9d7" stroke-width="6"/><circle cx="832" cy="389" r="21" fill="#253f52" stroke="#6c9eac" stroke-width="3"/><path d="M832 370v38M813 389h38M818 375l28 28M846 375l-28 28" stroke="#8bd3de" stroke-width="3"/><circle cx="832" cy="389" r="7" fill="#b4e8e8"/></g>
+            <g class="am-v2-wheel" style="transform-origin:1046px 389px"><circle cx="1046" cy="389" r="34" fill="#101c29" stroke="#81c9d7" stroke-width="6"/><circle cx="1046" cy="389" r="21" fill="#253f52" stroke="#6c9eac" stroke-width="3"/><path d="M1046 370v38M1027 389h38M1032 375l28 28M1060 375l-28 28" stroke="#8bd3de" stroke-width="3"/><circle cx="1046" cy="389" r="7" fill="#b4e8e8"/></g>
           </g>
-        <g class="am-v2-pcb" transform="translate(700 145) scale(.35)">
-          <rect x="480" y="200" width="240" height="215" rx="18" fill="#105b50" stroke="#5ce2ba" stroke-width="5"/>
-          <g fill="none" stroke="#61cda8" stroke-width="3" opacity=".65"><path d="M500 242h44v28h32M500 375h50v-24h36M695 248h-36v24h-34M695 370h-40v-25h-30"/><path d="M600 220v42M600 356v38"/></g>
-          <rect x="553" y="270" width="95" height="88" rx="9" fill="#102c39" stroke="#b2e5d6" stroke-width="3"/>
-          <g fill="#b2e5d6"><rect x="563" y="262" width="7" height="8"/><rect x="584" y="262" width="7" height="8"/><rect x="605" y="262" width="7" height="8"/><rect x="626" y="262" width="7" height="8"/><rect x="563" y="358" width="7" height="8"/><rect x="584" y="358" width="7" height="8"/><rect x="605" y="358" width="7" height="8"/><rect x="626" y="358" width="7" height="8"/></g>
-          <path d="M573 314h18l9-13 12 25 8-12h12" fill="none" stroke="#6ce6cd" stroke-width="3" stroke-linecap="round"/>
-          <g fill="#b4ead8"><circle cx="502" cy="222" r="6"/><circle cx="698" cy="222" r="6"/><circle cx="502" cy="392" r="6"/><circle cx="698" cy="392" r="6"/></g>
-          
+          <!-- Four standoffs rigidly attach the circuit board above the chassis. -->
+          <g stroke="#b3d6d7" stroke-width="7" stroke-linecap="round"><path d="M847 286v45M1029 286v45M862 287v42M1014 287v42"/></g>
+          <g fill="#d9e8e3"><circle cx="847" cy="331" r="6"/><circle cx="1029" cy="331" r="6"/></g>
+          <!-- The PCB is mounted flat above the chassis, not floating. -->
+          <g class="am-v2-pcb">
+            <rect x="810" y="207" width="255" height="86" rx="10" fill="#105b50" stroke="#66e4bc" stroke-width="5"/>
+            <rect x="825" y="221" width="225" height="58" rx="5" fill="#136b5b" stroke="#388e7c" stroke-width="2"/>
+            <g fill="none" stroke="#7ee0b9" stroke-width="2.5" opacity=".9"><path d="M836 234h42v17h26M836 268h39v-13h30M1041 234h-45v16h-24M1041 266h-40v-14h-25M948 222v13M948 263v14"/></g>
+            <rect x="909" y="232" width="61" height="37" rx="5" fill="#122d3b" stroke="#add7cd" stroke-width="3"/>
+            <g fill="#d3e3dc"><rect x="915" y="226" width="5" height="6"/><rect x="931" y="226" width="5" height="6"/><rect x="947" y="226" width="5" height="6"/><rect x="963" y="226" width="5" height="6"/><rect x="915" y="269" width="5" height="6"/><rect x="931" y="269" width="5" height="6"/><rect x="947" y="269" width="5" height="6"/><rect x="963" y="269" width="5" height="6"/></g>
+            <rect x="840" y="245" width="30" height="15" rx="3" fill="#1d3443" stroke="#a5d8d2" stroke-width="2"/>
+            <rect x="1000" y="244" width="28" height="17" rx="3" fill="#1d3443" stroke="#a5d8d2" stroke-width="2"/>
+            <g fill="#a6e7c7"><circle cx="821" cy="217" r="4"/><circle cx="1054" cy="217" r="4"/><circle cx="821" cy="282" r="4"/><circle cx="1054" cy="282" r="4"/></g>
+          </g>
+          <!-- Short power and signal leads tucked into the chassis. -->
+          <g fill="none" stroke-linecap="round" stroke-width="4"><path d="M851 293v19q0 7 8 7h22" stroke="#f7b66c"/><path d="M1022 293v17q0 8-9 8h-25" stroke="#6fd5f4"/><path d="M939 293v24" stroke="#75f1b3"/></g>
+          <g class="am-v2-leds">
+            <circle class="am-v2-led am-v2-red" cx="864" cy="234" r="7"/>
+            <circle class="am-v2-led am-v2-green" cx="886" cy="234" r="7"/>
+            <circle class="am-v2-led am-v2-blue" cx="1015" cy="231" r="7"/>
+          </g>
+          <rect x="915" y="308" width="45" height="18" rx="5" fill="#172e3c" stroke="#8bc7d3" stroke-width="2"/>
         </g>
-        <g class="am-v2-leds" transform="translate(700 145) scale(.35)">
-          <circle class="am-v2-led am-v2-red" cx="530" cy="237" r="12"/>
-          <circle class="am-v2-led am-v2-green" cx="602" cy="237" r="12"/>
-          <circle class="am-v2-led am-v2-blue" cx="672" cy="237" r="12"/>
-        </g>          <g class="am-v2-wheels"><g class="am-v2-wheel" style="transform-origin:917px 374px"><circle cx="917" cy="374" r="25" fill="#102736" stroke="#8bdbe0" stroke-width="5"/><path d="M917 353v42M896 374h42M902 359l30 30M932 359l-30 30" stroke="#5da9bb" stroke-width="3"/><circle cx="917" cy="374" r="7" fill="#9be7e7"/></g><g class="am-v2-wheel" style="transform-origin:1030px 374px"><circle cx="1030" cy="374" r="25" fill="#102736" stroke="#8bdbe0" stroke-width="5"/><path d="M1030 353v42M1009 374h42M1015 359l30 30M1045 359l-30 30" stroke="#5da9bb" stroke-width="3"/><circle cx="1030" cy="374" r="7" fill="#9be7e7"/></g></g>
-          
-        </g>
-
       </svg>
       <div class="am-intro-loading" role="presentation"><div class="am-intro-loading-track"><span></span></div><div class="am-intro-loading-caption">LOADING PORTFOLIO <span>● ● ●</span></div></div>
     </div>
