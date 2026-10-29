@@ -767,3 +767,52 @@
   }
   @keyframes hero-degree-appear{from{opacity:0}to{opacity:1}}
 }
+
+
+/* Hero reveal: a cinematic but lightweight ECE-themed introduction. */
+@media (prefers-reduced-motion:no-preference) {
+  .hero.hero-illustrated .hero-copy > h1 {
+    animation:am-hero-title .9s cubic-bezier(.18,.75,.2,1) both!important;
+    animation-delay:.12s!important;
+  }
+  .hero.hero-illustrated .hero-copy > h2 {
+    animation:am-hero-fade .7s ease-out .48s both!important;
+  }
+  .hero.hero-illustrated .hero-copy > .hero-specialization {
+    animation:am-hero-rise .7s cubic-bezier(.2,.7,.2,1) .65s both!important;
+  }
+  .hero.hero-illustrated .hero-copy > .intro {
+    animation:am-hero-rise .65s ease-out both!important;
+  }
+  .hero.hero-illustrated .hero-copy > .intro:nth-of-type(2){animation-delay:.76s!important}
+  .hero.hero-illustrated .hero-copy > .intro:nth-of-type(3){animation-delay:.87s!important}
+  .hero.hero-illustrated .hero-copy > .intro:nth-of-type(4){animation-delay:.98s!important}
+  .hero.hero-illustrated .hero-copy > .hero-actions{
+    animation:am-hero-rise .65s ease-out 1.07s both!important;
+  }
+  .hero.hero-illustrated .hero-art-left{
+    animation:am-hero-art-left .9s cubic-bezier(.2,.7,.2,1) .35s both;
+  }
+  .hero.hero-illustrated .hero-art-right{
+    animation:am-hero-art-right .9s cubic-bezier(.2,.7,.2,1) .42s both;
+  }
+  .hero.hero-illustrated .hero-copy > h1::after{
+    content:"";display:block;width:clamp(55px,7vw,90px);height:3px;
+    border-radius:99px;margin:13px auto 0;
+    background:linear-gradient(90deg,#4e89bb,#9bc8e6,#4e89bb);
+    transform-origin:center;
+    animation:am-hero-trace .8s ease-out .75s both;
+  }
+  @keyframes am-hero-title {
+    from{opacity:0;transform:translate3d(0,26px,0) scale(.97);filter:blur(3px)}
+    to{opacity:1;transform:none;filter:blur(0)}
+  }
+  @keyframes am-hero-fade {from{opacity:0}to{opacity:1}}
+  @keyframes am-hero-rise {from{opacity:0;transform:translate3d(0,13px,0)}to{opacity:1;transform:none}}
+  @keyframes am-hero-art-left {from{opacity:0;transform:translate3d(-22px,0,0)}to{opacity:1;transform:none}}
+  @keyframes am-hero-art-right {from{opacity:0;transform:translate3d(22px,0,0)}to{opacity:1;transform:none}}
+  @keyframes am-hero-trace {from{opacity:0;transform:scaleX(0)}to{opacity:1;transform:scaleX(1)}}
+}
+@media (prefers-reduced-motion:reduce) {
+  .hero.hero-illustrated .hero-copy > h1::after{content:"";display:block;width:70px;height:3px;border-radius:99px;margin:13px auto 0;background:#6b9dc4}
+}
