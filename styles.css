@@ -990,3 +990,13 @@
   .am-boot-v2 .am-v2-cable-jacket,.am-boot-v2 .am-v2-cable-shadow,
   .am-boot-v2 .am-v2-cable-highlight{animation:none!important}
 }
+
+/* Tether is visibly connected before the robot undocks and rolls away. */
+.am-boot-v2 .am-v2-cable{opacity:0;animation:am-v2-cable-appear .35s ease .75s forwards}
+.am-boot-v2 .am-v2-cable-jacket,
+.am-boot-v2 .am-v2-cable-shadow,
+.am-boot-v2 .am-v2-cable-highlight{stroke-dasharray:none!important;animation:am-tether-disappear .55s ease-in 2.18s forwards!important}
+@keyframes am-tether-disappear{0%{opacity:1}45%{opacity:1}100%{opacity:0}}
+.am-boot-v2 .am-v2-cable-plug{animation:am-v2-plug-release .7s cubic-bezier(.2,.5,.4,1) 2.05s forwards}
+.am-boot-v2 .am-v2-robot{animation:am-v2-appear .45s ease-out .65s forwards,am-v2-driveaway-tether 2.9s cubic-bezier(.35,.08,.75,1) 2.3s forwards!important}
+@media(prefers-reduced-motion:reduce){.am-boot-v2 .am-v2-cable *{animation:none!important}}
