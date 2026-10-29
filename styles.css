@@ -1025,3 +1025,18 @@
   .am-boot.am-boot-play .am-boot-v2 .am-v2-robot{animation:none!important;transform:translateX(-180px)!important;opacity:1!important}
   .am-boot.am-boot-play .am-intro-loading{display:none!important}
 }
+
+
+/* Keep the rover and its mounted PCB as one object from the very first frame.
+   Only the parent rover fades in; its PCB never appears separately. */
+.am-boot.am-boot-play .am-boot-v2 .am-v2-robot{
+  opacity:0!important;
+  animation:am-v2-appear .38s ease-out 0s forwards,am-v2-driveaway-tether 2.9s cubic-bezier(.35,.08,.75,1) 2.3s forwards!important;
+}
+.am-boot.am-boot-play .am-boot-v2 .am-v2-robot .am-v2-pcb{
+  opacity:1!important;
+  animation:none!important;
+}
+@media(prefers-reduced-motion:reduce){
+  .am-boot.am-boot-play .am-boot-v2 .am-v2-robot{opacity:1!important;animation:none!important}
+}
