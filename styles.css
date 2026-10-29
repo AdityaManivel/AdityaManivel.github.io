@@ -904,3 +904,26 @@
 .am-boot-v2 .am-v2-wheels circle{animation:am-v2-wheel-turn .45s linear 9 4.6s!important}
 @keyframes am-v2-driveaway{0%{transform:translateX(0)}12%{transform:translateX(-28px)}30%{transform:translateX(55px)}100%{transform:translateX(1500px)}}
 @media(prefers-reduced-motion:reduce){.am-boot-v2 .am-v2-robot,.am-boot-v2 .am-v2-wheels circle{animation:none!important}}
+
+
+/* Fast, cinematic intro with a lightweight visual loading indicator. */
+.am-boot.am-boot-play .am-boot-board{position:relative!important}
+.am-intro-loading{position:absolute;left:50%;bottom:clamp(24px,6vh,64px);transform:translateX(-50%);z-index:5;width:min(310px,72vw);pointer-events:none}
+.am-intro-loading-track{height:5px;border-radius:99px;background:#214958;border:1px solid #4d8590;overflow:hidden;box-shadow:0 0 18px #50d8b022}
+.am-intro-loading-track span{display:block;width:100%;height:100%;transform:scaleX(0);transform-origin:left;background:linear-gradient(90deg,#43b8ff,#5dffc5 55%,#ff777a);box-shadow:0 0 12px #55e5c6;animation:am-intro-progress 4.2s cubic-bezier(.25,.1,.65,1) forwards}
+.am-intro-loading-caption{display:flex;justify-content:space-between;align-items:center;margin-top:10px;color:#a4d2dc;font:600 10px/1.3 'DM Sans',sans-serif;letter-spacing:2px}
+.am-intro-loading-caption span{color:#68e4b4;letter-spacing:5px;font-size:8px}
+@keyframes am-intro-progress{0%{transform:scaleX(0)}55%{transform:scaleX(.73)}100%{transform:scaleX(1)}}
+.am-boot-v2 .am-v2-traces path{animation-duration:.95s!important;animation-delay:.15s!important}
+.am-boot-v2 .am-v2-traces path:nth-child(even){animation-delay:.4s!important}
+.am-boot-v2 .am-v2-computer{animation-delay:.1s!important;animation-duration:.4s!important}
+.am-boot-v2 .am-v2-pcb{animation-delay:.45s!important;animation-duration:.4s!important}
+.am-boot-v2 .am-v2-led{animation-delay:1.15s!important;animation-duration:.3s!important}
+.am-boot-v2 .am-v2-led:nth-child(2),.am-boot-v2 .am-v2-led:nth-child(5){animation-delay:1.35s!important}
+.am-boot-v2 .am-v2-led:nth-child(3),.am-boot-v2 .am-v2-led:nth-child(6){animation-delay:1.55s!important}
+.am-boot-v2 .am-v2-robot{animation:am-v2-appear .45s ease-out .85s forwards,am-v2-driveaway 1.5s cubic-bezier(.35,.05,.8,.9) 2.45s forwards!important}
+.am-boot-v2 .am-v2-wheels circle{animation:am-v2-wheel-turn .35s linear 5 2.5s!important}
+.am-boot-v2 .am-v2-robot-body,.am-boot-v2 .am-v2-wheels{animation-delay:1.45s!important;animation-duration:.35s!important;animation-iteration-count:2!important}
+.am-boot-v2 .am-v2-pulses{animation-delay:1.6s!important}
+.am-boot-v2 .am-v2-pulses circle{animation-delay:1.75s!important;animation-duration:.7s!important}
+@media(prefers-reduced-motion:reduce){.am-intro-loading{display:none!important}}
