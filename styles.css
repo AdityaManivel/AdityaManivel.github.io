@@ -1000,3 +1000,28 @@
 .am-boot-v2 .am-v2-cable-plug{animation:am-v2-plug-release .7s cubic-bezier(.2,.5,.4,1) 2.05s forwards}
 .am-boot-v2 .am-v2-robot{animation:am-v2-appear .45s ease-out .65s forwards,am-v2-driveaway-tether 2.9s cubic-bezier(.35,.08,.75,1) 2.3s forwards!important}
 @media(prefers-reduced-motion:reduce){.am-boot-v2 .am-v2-cable *{animation:none!important}}
+
+
+/* Boot sequence: computer cable is connected to an already-visible rover at
+   frame zero. Show the progress indicator only after the hardware is on screen. */
+.am-boot.am-boot-play .am-boot-v2 .am-v2-robot{
+  opacity:1!important;
+  transform:translateX(-180px);
+  animation:am-v2-driveaway-tether 2.9s cubic-bezier(.35,.08,.75,1) 2.3s forwards!important;
+}
+.am-boot.am-boot-play .am-boot-v2 .am-v2-cable{
+  opacity:1!important;
+  animation:none!important;
+}
+.am-boot.am-boot-play .am-intro-loading{
+  opacity:0;
+  animation:am-intro-loading-reveal .4s ease 1s forwards!important;
+}
+.am-boot.am-boot-play .am-intro-loading-track span{
+  animation:am-intro-progress-final 4.05s linear 1.05s forwards!important;
+}
+@keyframes am-intro-loading-reveal{to{opacity:1}}
+@media(prefers-reduced-motion:reduce){
+  .am-boot.am-boot-play .am-boot-v2 .am-v2-robot{animation:none!important;transform:translateX(-180px)!important;opacity:1!important}
+  .am-boot.am-boot-play .am-intro-loading{display:none!important}
+}
