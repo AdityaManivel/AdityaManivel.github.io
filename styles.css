@@ -894,3 +894,13 @@
 @keyframes am-v2-wheel-turn{to{transform:rotate(360deg)}}
 @keyframes am-v2-roll{0%{translate:0 0}45%{translate:18px 0}100%{translate:0 0}}
 @media(prefers-reduced-motion:reduce){.am-boot-v2 .am-v2-wheels circle,.am-boot-v2 .am-v2-robot{animation:none!important}}
+
+/* Cinematic intro: full-screen artwork only, no boot labels or status bars. */
+.am-boot.am-boot-play .am-boot-board{display:flex!important;align-items:center!important;justify-content:center!important;grid-template-rows:none!important}
+.am-boot.am-boot-play .am-boot-svg{display:block!important;flex:1 1 auto!important;width:100vw!important;height:100dvh!important}
+.am-boot .am-boot-topline,.am-boot .am-boot-bottom{display:none!important}
+/* The rover comes alive, then accelerates off the right edge before the site is revealed. */
+.am-boot-v2 .am-v2-robot{animation:am-v2-appear .65s ease-out 1.5s forwards,am-v2-driveaway 3.2s cubic-bezier(.35,.05,.8,.9) 4.6s forwards!important}
+.am-boot-v2 .am-v2-wheels circle{animation:am-v2-wheel-turn .45s linear 9 4.6s!important}
+@keyframes am-v2-driveaway{0%{transform:translateX(0)}12%{transform:translateX(-28px)}30%{transform:translateX(55px)}100%{transform:translateX(1500px)}}
+@media(prefers-reduced-motion:reduce){.am-boot-v2 .am-v2-robot,.am-boot-v2 .am-v2-wheels circle{animation:none!important}}
