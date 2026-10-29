@@ -954,3 +954,39 @@
 .am-boot-v2 .am-v2-wheels circle{animation:none!important}
 .am-boot-v2 .am-v2-robot{animation:am-v2-appear .45s ease-out .85s forwards,am-v2-driveaway-final 2.9s cubic-bezier(.35,.08,.75,1) 2.3s forwards!important}
 @media(prefers-reduced-motion:reduce){.am-boot-v2 .am-v2-wheel{animation:none!important}}
+
+
+/* Animated tether: computer and rover start connected, then the plug releases
+   and the flexible cable retracts before the rover drives out of frame. */
+.am-boot-v2 .am-v2-robot{
+  animation:am-v2-appear .45s ease-out .65s forwards,am-v2-driveaway-tether 2.9s cubic-bezier(.35,.08,.75,1) 2.3s forwards!important;
+}
+@keyframes am-v2-driveaway-tether{
+  0%,10%{transform:translateX(-180px)}
+  22%{transform:translateX(-205px)}
+  38%{transform:translateX(-80px)}
+  100%{transform:translateX(1650px)}
+}
+.am-boot-v2 .am-v2-cable{opacity:0;animation:am-v2-cable-appear .35s ease .75s forwards}
+@keyframes am-v2-cable-appear{to{opacity:1}}
+.am-boot-v2 .am-v2-cable-jacket,
+.am-boot-v2 .am-v2-cable-shadow,
+.am-boot-v2 .am-v2-cable-highlight{
+  pathLength:100;
+  stroke-dasharray:100 100;
+  animation:am-v2-cable-retract .65s cubic-bezier(.25,.1,.4,1) 2.12s forwards;
+}
+@keyframes am-v2-cable-retract{to{stroke-dashoffset:-100}}
+.am-boot-v2 .am-v2-cable-plug{
+  animation:am-v2-plug-release .7s cubic-bezier(.2,.5,.4,1) 2.05s forwards;
+}
+@keyframes am-v2-plug-release{
+  0%{transform:translate(0,0);opacity:1}
+  28%{transform:translate(-22px,9px);opacity:1}
+  100%{transform:translate(-160px,28px);opacity:0}
+}
+@media(prefers-reduced-motion:reduce){
+  .am-boot-v2 .am-v2-cable,.am-boot-v2 .am-v2-cable-plug,
+  .am-boot-v2 .am-v2-cable-jacket,.am-boot-v2 .am-v2-cable-shadow,
+  .am-boot-v2 .am-v2-cable-highlight{animation:none!important}
+}
