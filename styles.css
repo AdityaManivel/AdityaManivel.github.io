@@ -948,3 +948,9 @@
 .hero.hero-illustrated .hero-copy>.hero-specialization{color:#17679d!important;font-weight:700!important}
 .hero.hero-illustrated .hero-art{position:relative;z-index:1}
 @media(max-width:760px){.hero.hero-illustrated .hero-copy .intro{font-size:15px!important;line-height:1.75!important}}
+
+/* Intro rover refinement: wheel rotation stays centered on each axle. */
+.am-boot-v2 .am-v2-wheel{transform-box:fill-box!important;transform-origin:center!important;animation:am-v2-wheel-spin-final .38s linear 8 2.3s!important}
+.am-boot-v2 .am-v2-wheels circle{animation:none!important}
+.am-boot-v2 .am-v2-robot{animation:am-v2-appear .45s ease-out .85s forwards,am-v2-driveaway-final 2.9s cubic-bezier(.35,.08,.75,1) 2.3s forwards!important}
+@media(prefers-reduced-motion:reduce){.am-boot-v2 .am-v2-wheel{animation:none!important}}
