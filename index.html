@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=boot-interaction-v2-20261029" />
+  <link rel="stylesheet" href="styles.css?v=rover-exit-20261029" />
 <style id="workflow-critical-css">
 #spacelabs-workflow .spacelabs-workflow-tabs{display:grid!important;grid-template-columns:1fr 1fr;gap:6px;padding:6px;margin:0 0 18px;background:#eef4fa;border:1px solid #d8e3ef;border-radius:14px;max-width:620px}
 #spacelabs-workflow .spacelabs-workflow-tab{appearance:none!important;background:transparent!important;border:0!important;border-radius:10px!important;padding:13px 16px!important;color:#55718d!important;font:700 14px/1.3 'DM Sans',sans-serif!important;cursor:pointer!important}
@@ -56,7 +56,7 @@
 <body>
   <div id="am-boot" class="am-boot" aria-hidden="true">
     <div class="am-boot-board">
-      <div class="am-boot-topline"><span>POWER ON</span><span>BOOT SEQUENCE</span></div>
+      
       <svg class="am-boot-svg am-boot-v2" viewBox="0 0 1200 560" role="presentation" focusable="false" aria-label="Animated PCB connecting a computer and robot with colored LEDs">
         <defs>
           <pattern id="am-grid-v2" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#3b6977" stroke-width=".65" opacity=".35"/></pattern>
@@ -103,7 +103,7 @@
           <circle class="am-v2-led am-v2-blue" cx="320" cy="270" r="8"/><circle class="am-v2-led am-v2-green" cx="830" cy="225" r="8"/><circle class="am-v2-led am-v2-red" cx="829" cy="300" r="8"/>
         </g>
         <g class="am-v2-pulses"><circle cx="350" cy="235" r="7" fill="#80f4dc"/><circle cx="700" cy="270" r="7" fill="#80f4dc"/></g>
-      </svg>     <div class="am-boot-bottom"><span class="am-boot-status">INITIALIZING HARDWARE <span class="am-boot-dots">•••</span></span><span class="am-boot-progress"><i></i></span></div>
+      </svg>
     </div>
   </div>
 
@@ -320,8 +320,8 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   // Play on every page load, including refresh. Respect reduced-motion settings.
   if(reduce){el.remove();return}
   el.classList.add('am-boot-play');
-  window.setTimeout(function(){el.classList.add('am-boot-exit')},3900);
-  window.setTimeout(function(){el.remove()},4600);
+  window.setTimeout(function(){el.classList.add('am-boot-exit')},8200);
+  window.setTimeout(function(){el.remove()},8900);
 })();
 </script>
 </body>
