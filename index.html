@@ -104,6 +104,7 @@
         </g>
         <g class="am-v2-pulses"><circle cx="350" cy="235" r="7" fill="#80f4dc"/><circle cx="700" cy="270" r="7" fill="#80f4dc"/></g>
       </svg>
+      <div class="am-intro-loading" role="presentation"><div class="am-intro-loading-track"><span></span></div><div class="am-intro-loading-caption">LOADING PORTFOLIO <span>● ● ●</span></div></div>
     </div>
   </div>
 
@@ -320,8 +321,8 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   // Play on every page load, including refresh. Respect reduced-motion settings.
   if(reduce){el.remove();return}
   el.classList.add('am-boot-play');
-  window.setTimeout(function(){el.classList.add('am-boot-exit')},8200);
-  window.setTimeout(function(){el.remove()},8900);
+  window.setTimeout(function(){el.classList.add('am-boot-exit')},4300);
+  window.setTimeout(function(){el.remove()},4850);
 })();
 </script>
 </body>
