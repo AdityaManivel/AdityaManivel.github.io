@@ -1040,3 +1040,20 @@
 @media(prefers-reduced-motion:reduce){
   .am-boot.am-boot-play .am-boot-v2 .am-v2-robot{opacity:1!important;animation:none!important}
 }
+
+
+/* Boot animation repair: keep computer and PCB-mounted rover visible until drive-off.
+   Override accumulated legacy intro animation rules without affecting the portfolio. */
+.am-boot.am-boot-play .am-boot-v2 .am-v2-computer{opacity:1!important;animation:none!important}
+.am-boot.am-boot-play .am-boot-v2 .am-v2-robot{
+  opacity:1!important;
+  transform:translateX(-180px);
+  animation:am-v2-driveaway-tether 2.9s cubic-bezier(.35,.08,.75,1) 2.3s forwards!important;
+}
+.am-boot.am-boot-play .am-boot-v2 .am-v2-robot .am-v2-pcb{opacity:1!important;animation:none!important}
+.am-boot.am-boot-play .am-boot-v2 .am-v2-robot .am-v2-led{
+  animation:am-v2-light .35s ease-out 1.1s forwards!important;
+}
+@media(prefers-reduced-motion:reduce){
+  .am-boot.am-boot-play .am-boot-v2 .am-v2-robot{animation:none!important}
+}
