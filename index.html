@@ -71,6 +71,16 @@
           <rect x="215" y="347" width="28" height="23" fill="#77a7b8"/><path d="M173 373H285" stroke="#8bd9e0" stroke-width="9" stroke-linecap="round"/>
           <circle cx="328" cy="199" r="5" fill="#6af4b4"/>
         </g>
+        <!-- Flexible tether remains plugged into the rover until startup completes. -->
+        <g class="am-v2-cable" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path class="am-v2-cable-shadow" d="M350 302 C405 302 405 382 480 382 S565 347 596 347" stroke="#030f1c" stroke-width="14"/>
+          <path class="am-v2-cable-jacket" d="M350 302 C405 302 405 382 480 382 S565 347 596 347" stroke="#67cfe0" stroke-width="8"/>
+          <path class="am-v2-cable-highlight" d="M350 302 C405 302 405 382 480 382 S565 347 596 347" stroke="#b7faff" stroke-width="2.5" opacity=".75"/>
+          <g class="am-v2-cable-plug">
+            <rect x="584" y="337" width="25" height="20" rx="4" fill="#c1e2e6" stroke="#377a8c" stroke-width="3"/>
+            <rect x="606" y="341" width="8" height="12" rx="2" fill="#78d9e0"/>
+          </g>
+        </g>
         <g class="am-v2-robot">
           <!-- Four-wheel mobile robot chassis with protective bumper and visible drivetrain. -->
           <path d="M799 313h288l28 20v40l-24 19H800l-24-21v-37z" fill="#203e51" stroke="#8ac9d8" stroke-width="5"/>
