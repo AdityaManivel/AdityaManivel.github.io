@@ -56,7 +56,7 @@
 <body>
   <div id="am-boot" class="am-boot" aria-hidden="true">
     <div class="am-boot-board">
-      <div class="am-boot-topline"><span>AM // EMBEDDED SYSTEMS</span><span>POWER ON · BOOT SEQUENCE</span></div>
+      <div class="am-boot-topline"><span>POWER ON</span><span>BOOT SEQUENCE</span></div>
       <svg class="am-boot-svg am-boot-v2" viewBox="0 0 1200 560" role="presentation" focusable="false" aria-label="Animated PCB connecting a computer and robot with colored LEDs">
         <defs>
           <pattern id="am-grid-v2" width="28" height="28" patternUnits="userSpaceOnUse"><path d="M28 0H0V28" fill="none" stroke="#3b6977" stroke-width=".65" opacity=".35"/></pattern>
@@ -75,7 +75,7 @@
           <rect x="121" y="170" width="216" height="144" rx="5" fill="#123b4a"/>
           <g fill="none" stroke="#5dd6ca" stroke-width="3" stroke-linecap="round"><path d="M143 210l16 12-16 12M170 236h26"/><path d="M145 265h95M145 279h60" opacity=".45"/></g>
           <rect x="215" y="334" width="28" height="26" fill="#77a7b8"/><path d="M175 364H285" stroke="#8bd9e0" stroke-width="9" stroke-linecap="round"/>
-          <text x="230" y="396" text-anchor="middle" fill="#a6d7e3" font-size="16" font-family="monospace" letter-spacing="2">COMPUTER</text>
+          
         </g>
         <g class="am-v2-pcb">
           <rect x="480" y="200" width="240" height="215" rx="18" fill="#105b50" stroke="#5ce2ba" stroke-width="5"/>
@@ -84,7 +84,7 @@
           <g fill="#b2e5d6"><rect x="563" y="262" width="7" height="8"/><rect x="584" y="262" width="7" height="8"/><rect x="605" y="262" width="7" height="8"/><rect x="626" y="262" width="7" height="8"/><rect x="563" y="358" width="7" height="8"/><rect x="584" y="358" width="7" height="8"/><rect x="605" y="358" width="7" height="8"/><rect x="626" y="358" width="7" height="8"/></g>
           <path d="M573 314h18l9-13 12 25 8-12h12" fill="none" stroke="#6ce6cd" stroke-width="3" stroke-linecap="round"/>
           <g fill="#b4ead8"><circle cx="502" cy="222" r="6"/><circle cx="698" cy="222" r="6"/><circle cx="502" cy="392" r="6"/><circle cx="698" cy="392" r="6"/></g>
-          <text x="600" y="446" text-anchor="middle" fill="#b9f4d9" font-size="16" font-family="monospace" letter-spacing="3">CIRCUIT BOARD</text>
+          
         </g>
         <g class="am-v2-robot">
           <g class="am-v2-robot-body">
@@ -96,7 +96,7 @@
             <path d="M865 273h-23v45h23M1083 273h23v45h-23" fill="none" stroke="#8bdbe0" stroke-width="8"/>
           </g>
           <g class="am-v2-wheels" fill="#102736" stroke="#8bdbe0" stroke-width="5"><circle cx="917" cy="374" r="25"/><circle cx="1030" cy="374" r="25"/></g>
-          <text x="972" y="432" text-anchor="middle" fill="#b4e0e8" font-size="16" font-family="monospace" letter-spacing="2">ROBOT</text>
+          
         </g>
         <g class="am-v2-leds">
           <circle class="am-v2-led am-v2-red" cx="530" cy="237" r="12"/><circle class="am-v2-led am-v2-green" cx="602" cy="237" r="12"/><circle class="am-v2-led am-v2-blue" cx="672" cy="237" r="12"/>
@@ -317,9 +317,8 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   var el=document.getElementById('am-boot');
   if(!el)return;
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var seen=false;
-  try{seen=sessionStorage.getItem('am-portfolio-boot-v2')==='1';sessionStorage.setItem('am-portfolio-boot-v2','1')}catch(e){}
-  if(seen||reduce){el.remove();return}
+  // Play on every page load, including refresh. Respect reduced-motion settings.
+  if(reduce){el.remove();return}
   el.classList.add('am-boot-play');
   window.setTimeout(function(){el.classList.add('am-boot-exit')},3900);
   window.setTimeout(function(){el.remove()},4600);
