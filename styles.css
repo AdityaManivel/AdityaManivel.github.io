@@ -1057,3 +1057,57 @@
 @media(prefers-reduced-motion:reduce){
   .am-boot.am-boot-play .am-boot-v2 .am-v2-robot{animation:none!important}
 }
+
+/* Polished cinematic hardware boot — restrained, composited effects. */
+.am-boot.am-boot-play{
+  isolation:isolate;
+  background:radial-gradient(ellipse 80% 65% at 54% 44%,#154b57 0%,#0a2a38 55%,#06131f 100%)!important;
+}
+.am-boot.am-boot-play::before{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(115deg,transparent 25%,rgba(100,226,216,.075) 48%,transparent 72%);
+  transform:translateX(-110%);animation:am-cinematic-sweep 2.1s ease-in-out .55s 1 both;
+}
+.am-boot.am-boot-play::after{
+  content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  box-shadow:inset 0 0 min(12vw,140px) rgba(0,0,0,.45);
+}
+@keyframes am-cinematic-sweep{to{transform:translateX(110%)}}
+.am-boot.am-boot-play .am-boot-svg{filter:drop-shadow(0 15px 28px rgba(0,0,0,.2))}
+.am-boot.am-boot-play .am-v2-computer{filter:drop-shadow(0 0 16px rgba(89,222,211,.12))}
+.am-boot.am-boot-play .am-v2-robot{filter:drop-shadow(0 12px 9px rgba(0,0,0,.28))}
+.am-boot.am-boot-play .am-v2-red{fill:#ff626d;filter:drop-shadow(0 0 5px #ff404f) drop-shadow(0 0 13px #ff404f)}
+.am-boot.am-boot-play .am-v2-green{fill:#65ffac;filter:drop-shadow(0 0 5px #4cff8c) drop-shadow(0 0 13px #4cff8c)}
+.am-boot.am-boot-play .am-v2-blue{fill:#69baff;filter:drop-shadow(0 0 5px #3f9cff) drop-shadow(0 0 13px #3f9cff)}
+.am-boot.am-boot-play .am-v2-led{opacity:0;animation:am-v2-light .38s cubic-bezier(.18,.8,.2,1) 1.15s forwards!important}
+.am-boot.am-boot-play .am-v2-led.am-v2-green{animation-delay:1.38s!important}
+.am-boot.am-boot-play .am-v2-led.am-v2-blue{animation-delay:1.62s!important}
+.am-boot.am-boot-play .am-intro-loading{z-index:6;bottom:clamp(22px,4.5vh,48px)!important;width:min(420px,78vw)!important}
+.am-boot.am-boot-play .am-intro-loading-track{height:6px!important;border:1px solid rgba(143,235,229,.32);background:#102f3c;box-shadow:0 0 22px rgba(79,220,203,.13)}
+.am-boot.am-boot-play .am-intro-loading-track span{
+  background:linear-gradient(90deg,#4daeff,#61ffbe 65%,#c2fff1);
+  box-shadow:0 0 13px rgba(93,255,198,.6);
+  animation:am-cinematic-progress 5.3s cubic-bezier(.36,.02,.22,1) 1.05s forwards!important;
+}
+@keyframes am-cinematic-progress{0%{transform:scaleX(0)}38%{transform:scaleX(.55)}70%{transform:scaleX(.81)}88%{transform:scaleX(.96)}100%{transform:scaleX(1)}}
+.am-boot.am-boot-play .am-intro-loading-caption{margin-top:12px;color:#b2dce3;font-size:10px;letter-spacing:2.3px}
+.am-boot.am-boot-play .am-v2-robot{
+  animation:am-cinematic-drive 3.25s cubic-bezier(.4,.02,.77,.98) 2.25s forwards!important;
+}
+@keyframes am-cinematic-drive{
+  0%,8%{transform:translateX(-180px)}
+  17%{transform:translateX(-203px)}
+  29%{transform:translateX(-145px)}
+  45%{transform:translateX(70px)}
+  100%{transform:translateX(1700px)}
+}
+.am-boot.am-boot-play .am-v2-wheel{
+  animation:am-v2-wheel-spin-final .31s linear 11 2.35s!important;
+}
+.am-boot.am-boot-exit{animation:am-cinematic-reveal .62s cubic-bezier(.2,.75,.3,1) forwards!important;pointer-events:none}
+@keyframes am-cinematic-reveal{to{opacity:0;visibility:hidden}}
+@media(prefers-reduced-motion:reduce){
+  .am-boot.am-boot-play::before,.am-boot.am-boot-play .am-v2-robot,
+  .am-boot.am-boot-play .am-v2-wheel,.am-boot.am-boot-play .am-v2-led,
+  .am-boot.am-boot-play .am-intro-loading-track span{animation:none!important}
+}
