@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=pcb-boot-20261029" />
+  <link rel="stylesheet" href="styles.css?v=rgb-boot-20261029" />
 <style id="workflow-critical-css">
 #spacelabs-workflow .spacelabs-workflow-tabs{display:grid!important;grid-template-columns:1fr 1fr;gap:6px;padding:6px;margin:0 0 18px;background:#eef4fa;border:1px solid #d8e3ef;border-radius:14px;max-width:620px}
 #spacelabs-workflow .spacelabs-workflow-tab{appearance:none!important;background:transparent!important;border:0!important;border-radius:10px!important;padding:13px 16px!important;color:#55718d!important;font:700 14px/1.3 'DM Sans',sans-serif!important;cursor:pointer!important}
@@ -54,6 +54,44 @@
 </style>
 </head>
 <body>
+  <div id="am-boot" class="am-boot" aria-hidden="true">
+    <div class="am-boot-board">
+      <div class="am-boot-topline"><span>AM // EMBEDDED SYSTEMS</span><span>POWER ON · BOOT SEQUENCE</span></div>
+      <svg class="am-boot-svg" viewBox="0 0 960 400" role="presentation" focusable="false">
+        <defs>
+          <pattern id="am-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="#295268" stroke-width=".6" opacity=".4"/></pattern>
+          <linearGradient id="am-copper" x1="0" x2="1"><stop stop-color="#277a92"/><stop offset=".5" stop-color="#58d8cb"/><stop offset="1" stop-color="#3389ae"/></linearGradient>
+        </defs>
+        <rect width="960" height="400" fill="url(#am-grid)" rx="18"/>
+        <g class="am-boot-traces" fill="none" stroke="url(#am-copper)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M0 85H135L190 140H360"/><path d="M0 315H135L205 245H360"/>
+          <path d="M960 85H820L765 140H595"/><path d="M960 315H825L760 245H595"/>
+          <path d="M480 0V75L445 110"/><path d="M550 400V305L515 280"/>
+          <path d="M65 200H245L300 170H360"/><path d="M895 200H710L655 170H595"/>
+        </g>
+        <g class="am-boot-pads" fill="#79c4d4"><circle cx="135" cy="85" r="5"/><circle cx="135" cy="315" r="5"/><circle cx="820" cy="85" r="5"/><circle cx="825" cy="315" r="5"/><circle cx="480" cy="75" r="5"/><circle cx="550" cy="305" r="5"/></g>
+        <rect class="am-boot-chip" x="358" y="109" width="240" height="174" rx="13" fill="#102e40" stroke="#67c6cc" stroke-width="3"/>
+        <g stroke="#84cbd1" stroke-width="5">
+          <path d="M375 109V91M405 109V91M435 109V91M465 109V91M495 109V91M525 109V91M555 109V91M585 109V91"/>
+          <path d="M375 283V301M405 283V301M435 283V301M465 283V301M495 283V301M525 283V301M555 283V301M585 283V301"/>
+        </g>
+        <text x="478" y="175" text-anchor="middle" fill="#bceaf0" font-size="16" font-family="monospace" letter-spacing="3">STM32</text>
+        <text x="478" y="205" text-anchor="middle" fill="#ffffff" font-size="26" font-family="monospace" font-weight="bold">AM</text>
+        <text x="478" y="236" text-anchor="middle" fill="#77b6c8" font-size="12" font-family="monospace">PCB • FIRMWARE</text>
+        <g class="am-boot-leds">
+          <circle class="am-led am-led-red" cx="190" cy="140" r="12"/><circle class="am-led am-led-green" cx="765" cy="140" r="12"/><circle class="am-led am-led-blue" cx="205" cy="245" r="12"/>
+          <circle class="am-led am-led-green" cx="760" cy="245" r="9"/><circle class="am-led am-led-blue" cx="480" cy="75" r="8"/>
+        </g>
+        <g class="am-boot-motor" transform="translate(120 355)">
+          <g class="am-boot-motor-wheel"><circle r="21" fill="#163e50" stroke="#6bd9e0" stroke-width="4"/><path d="M-15 0H15M0-15V15M-11-11L11 11M11-11L-11 11" stroke="#a3f3f2" stroke-width="3"/></g>
+          <rect x="28" y="-16" width="90" height="32" rx="9" fill="#1e5166" stroke="#7cdbdd" stroke-width="3"/>
+          <text x="73" y="5" text-anchor="middle" fill="#b9f5f2" font-family="monospace" font-size="12">MOTOR</text>
+        </g>
+      </svg>
+      <div class="am-boot-bottom"><span class="am-boot-status">INITIALIZING HARDWARE <span class="am-boot-dots">•••</span></span><span class="am-boot-progress"><i></i></span></div>
+    </div>
+  </div>
+
   
   <header class="nav-shell">
     <nav class="nav" aria-label="Primary navigation"><div class="nav-links"><a href="#top">About</a><a href="#work">Experience</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#coursework">Coursework</a><a href="#skills">Skills</a><a href="#contact">Contact</a><a href="assets/Aditya_Manivel_Resume.pdf?v=20261028" target="_blank" rel="noopener noreferrer" aria-label="Open resume PDF in a new tab">Resume</a></div></nav>
@@ -257,6 +295,19 @@ tabs.forEach(function(tab){tab.addEventListener('click',function(){activate(tab.
 activate('hardware');
 }
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);else init();
+})();
+</script>
+<script>
+(function(){
+  var el=document.getElementById('am-boot');
+  if(!el)return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var seen=false;
+  try{seen=sessionStorage.getItem('am-portfolio-boot-v1')==='1';sessionStorage.setItem('am-portfolio-boot-v1','1')}catch(e){}
+  if(seen||reduce){el.remove();return}
+  el.classList.add('am-boot-play');
+  window.setTimeout(function(){el.classList.add('am-boot-exit')},3100);
+  window.setTimeout(function(){el.remove()},3750);
 })();
 </script>
 </body>
