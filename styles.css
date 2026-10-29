@@ -938,3 +938,13 @@
 @keyframes am-v2-wheel-spin-final{to{transform:rotate(360deg)}}
 @keyframes am-v2-driveaway-final{0%{transform:translateX(0)}12%{transform:translateX(-22px)}30%{transform:translateX(100px)}100%{transform:translateX(1650px)}}
 @media(prefers-reduced-motion:reduce){.am-boot-v2 .am-v2-wheel{animation:none!important}}
+
+/* Hero legibility: clean foreground, no decorative circuit overlay over text. */
+.hero.hero-illustrated>.hero-circuit-intro{display:none!important}
+.hero.hero-illustrated .hero-copy{position:relative;z-index:2;min-width:0!important;max-width:820px!important;margin-inline:auto!important;text-align:center!important}
+.hero.hero-illustrated .hero-copy .intro{color:#34465b!important;font-weight:450;line-height:1.85!important;max-width:760px!important;margin-inline:auto!important}
+.hero.hero-illustrated .hero-copy>h1{color:#14202e!important;text-align:center!important}
+.hero.hero-illustrated .hero-copy>h2{color:#253344!important;text-align:center!important;white-space:normal!important;line-height:1.55!important}
+.hero.hero-illustrated .hero-copy>.hero-specialization{color:#17679d!important;font-weight:700!important}
+.hero.hero-illustrated .hero-art{position:relative;z-index:1}
+@media(max-width:760px){.hero.hero-illustrated .hero-copy .intro{font-size:15px!important;line-height:1.75!important}}
