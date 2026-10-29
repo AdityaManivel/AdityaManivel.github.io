@@ -709,3 +709,38 @@
   .scroll-fade.scroll-visible{opacity:1;transform:none;will-change:auto}
 }
 @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto!important}.scroll-fade{opacity:1!important;transform:none!important;transition:none!important}}
+
+/* Lightweight, interaction-only polish: compositor-friendly transform/opacity. */
+@media (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference) {
+  #projects .project, #work .exp-card {
+    transition:transform .22s ease, box-shadow .22s ease;
+  }
+  #projects .project:hover, #work .exp-card:hover {
+    transform:translate3d(0,-3px,0);
+    box-shadow:0 12px 30px rgba(27,67,102,.085);
+  }
+  .nav-links a {position:relative;}
+  .nav-links a::after {
+    content:"";position:absolute;left:0;right:0;bottom:-5px;height:2px;
+    border-radius:2px;background:currentColor;transform:scaleX(0);
+    transform-origin:center;transition:transform .22s ease;
+  }
+  .nav-links a:hover::after, .nav-links a:focus-visible::after {transform:scaleX(1);}
+  #projects .project-photo-button img, #work .husky-photo-button img {
+    transition:transform .24s ease;
+  }
+  #projects .project-photo-button:hover img, #work .husky-photo-button:hover img {
+    transform:scale(1.02);
+  }
+}
+@media (prefers-reduced-motion:no-preference) {
+  .hero-copy > h1, .hero-copy > h2, .hero-copy > .hero-specialization {
+    animation:hero-enter .55s ease-out both;
+  }
+  .hero-copy > h2 {animation-delay:.09s;}
+  .hero-copy > .hero-specialization {animation-delay:.16s;}
+  @keyframes hero-enter {
+    from {opacity:0;transform:translate3d(0,9px,0);}
+    to {opacity:1;transform:none;}
+  }
+}
