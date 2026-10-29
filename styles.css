@@ -857,3 +857,13 @@
 @keyframes am-route{to{stroke-dashoffset:0}}@keyframes am-pop{to{opacity:1}}@keyframes am-light{0%{opacity:0;transform:scale(.3)}70%{opacity:1;transform:scale(1.4)}100%{opacity:1;transform:scale(1)}}@keyframes am-motor-drive{from{transform:translate(-180px,355px);opacity:0}15%{opacity:1}to{transform:translate(660px,355px);opacity:1}}@keyframes am-wheel-spin{to{transform:rotate(360deg)}}@keyframes am-fill{to{transform:scaleX(1)}}@keyframes am-boot-dismiss{to{opacity:0;visibility:hidden}}
 @media(max-width:600px){.am-boot{padding:12px}.am-boot-topline,.am-boot-bottom{padding:12px;font-size:9px;letter-spacing:.3px}.am-boot-svg{min-height:210px}}
 @media(prefers-reduced-motion:reduce){.am-boot{display:none!important}}
+
+/* Full-viewport cinematic boot sequence: no floating card; reveal the actual website. */
+.am-boot.am-boot-play{padding:0!important;overflow:hidden;background:radial-gradient(ellipse at 50% 48%,#103e4a 0%,#092b38 43%,#061521 100%)!important}
+.am-boot.am-boot-play .am-boot-board{position:relative;display:grid;grid-template-rows:auto minmax(0,1fr) auto;width:100vw!important;height:100dvh!important;max-width:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important}
+.am-boot.am-boot-play .am-boot-svg{width:100%!important;height:100%!important;max-height:none!important;min-height:0!important;object-fit:contain}
+.am-boot.am-boot-play .am-boot-topline,.am-boot.am-boot-play .am-boot-bottom{padding:clamp(18px,3vw,42px) clamp(18px,5vw,84px)!important;z-index:1}
+.am-boot.am-boot-play .am-boot-topline{font-size:clamp(11px,1vw,15px);letter-spacing:2px;border-bottom-color:#285266}
+.am-boot.am-boot-play .am-boot-bottom{font-size:clamp(10px,1vw,14px);border-top-color:#285266}
+.am-boot.am-boot-play .am-boot-progress{width:clamp(100px,20vw,300px);max-width:none}
+@media(max-width:600px){.am-boot.am-boot-play .am-boot-topline,.am-boot.am-boot-play .am-boot-bottom{gap:8px;padding:18px!important;font-size:9px;letter-spacing:.4px}.am-boot.am-boot-play .am-boot-svg{min-height:0!important}}
