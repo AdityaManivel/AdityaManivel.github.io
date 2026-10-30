@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=cinematic-polish-20261029" />
+  <link rel="stylesheet" href="styles.css?v=boot-fix-20261029b" />
 <style id="workflow-critical-css">
 #spacelabs-workflow .spacelabs-workflow-tabs{display:grid!important;grid-template-columns:1fr 1fr;gap:6px;padding:6px;margin:0 0 18px;background:#eef4fa;border:1px solid #d8e3ef;border-radius:14px;max-width:620px}
 #spacelabs-workflow .spacelabs-workflow-tab{appearance:none!important;background:transparent!important;border:0!important;border-radius:10px!important;padding:13px 16px!important;color:#55718d!important;font:700 14px/1.3 'DM Sans',sans-serif!important;cursor:pointer!important}
@@ -322,7 +322,8 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   if(!el)return;
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   // Play on every page load, including refresh. Respect reduced-motion settings.
-  if(reduce){el.remove();return}\n  document.documentElement.classList.add("am-boot-locked");
+  if(reduce){el.remove();return}
+  document.documentElement.classList.add("am-boot-locked");
   el.classList.add('am-boot-play');
   window.setTimeout(function(){el.classList.add('am-boot-exit')},5650);
   window.setTimeout(function(){el.remove();document.documentElement.classList.remove("am-boot-locked")},6400);
