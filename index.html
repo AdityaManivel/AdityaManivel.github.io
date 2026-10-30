@@ -64,6 +64,16 @@
           <filter id="am-glow-v2" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="7"/></filter>
         </defs>
         <rect width="1200" height="560" fill="url(#am-grid-v2)"/>
+        <g class="am-circuit-sparks" fill="none" stroke-linecap="round">
+          <path d="M365 225H470L510 185H650L696 225H788" stroke="#61e9d0" stroke-width="3" stroke-dasharray="9 19"/>
+          <path d="M390 265H475L530 315H670L735 270H790" stroke="#60aaff" stroke-width="2.5" stroke-dasharray="8 16"/>
+          <path d="M450 185L480 145H625L662 180" stroke="#ff8a91" stroke-width="2" stroke-dasharray="6 17"/>
+          <circle cx="510" cy="185" r="6" fill="#61e9d0"/><circle cx="670" cy="315" r="6" fill="#60aaff"/>
+        </g>
+        <g class="am-boot-data" fill="#a6f9e5" font-family="monospace" font-size="13" letter-spacing="2">
+          <text x="440" y="115">SYSTEM INITIALIZING</text>
+          <text x="490" y="355">SIGNAL LINK ACTIVE</text>
+        </g>
         <g class="am-v2-computer">
           <rect x="96" y="167" width="265" height="180" rx="15" fill="#0c2535" stroke="#8bd9e0" stroke-width="5"/>
           <rect x="113" y="183" width="231" height="147" rx="6" fill="#123b4a"/>
@@ -312,10 +322,10 @@ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',
   if(!el)return;
   var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   // Play on every page load, including refresh. Respect reduced-motion settings.
-  if(reduce){el.remove();return}
+  if(reduce){el.remove();return}\n  document.documentElement.classList.add("am-boot-locked");
   el.classList.add('am-boot-play');
   window.setTimeout(function(){el.classList.add('am-boot-exit')},5650);
-  window.setTimeout(function(){el.remove()},6400);
+  window.setTimeout(function(){el.remove();document.documentElement.classList.remove("am-boot-locked")},6400);
 })();
 </script>
 </body>
