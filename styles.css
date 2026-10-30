@@ -1130,3 +1130,19 @@ html.am-boot-locked::-webkit-scrollbar{display:none!important}
 @keyframes am-data-reveal{to{opacity:.8}}
 @keyframes am-status-flicker{50%{opacity:.25}}
 @media(prefers-reduced-motion:reduce){.am-boot .am-circuit-sparks,.am-boot .am-boot-data{display:none!important}}
+
+
+/* Keep the data-transfer effect running throughout the rover's departure. */
+.am-boot.am-boot-play .am-circuit-sparks{opacity:1!important;visibility:visible!important}
+.am-boot.am-boot-play .am-circuit-sparks path{
+  opacity:1!important;
+  stroke-dasharray:7 17!important;
+  animation:am-continuous-transfer .55s linear infinite!important;
+  filter:drop-shadow(0 0 4px currentColor);
+}
+.am-boot.am-boot-play .am-circuit-sparks path:nth-child(2){animation-direction:reverse!important}
+.am-boot.am-boot-play .am-circuit-sparks path:nth-child(3){animation-duration:.8s!important}
+.am-boot.am-boot-play .am-circuit-sparks circle{opacity:1!important;animation:am-signal-node .7s ease-in-out infinite alternate!important}
+@keyframes am-continuous-transfer{from{stroke-dashoffset:0}to{stroke-dashoffset:-48}}
+/* No on-screen labels: hardware, light pulses and progress bar tell the story. */
+.am-boot .am-boot-data,.am-boot .am-intro-loading-caption{display:none!important}
