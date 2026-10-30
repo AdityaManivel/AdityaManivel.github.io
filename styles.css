@@ -1146,3 +1146,13 @@ html.am-boot-locked::-webkit-scrollbar{display:none!important}
 @keyframes am-continuous-transfer{from{stroke-dashoffset:0}to{stroke-dashoffset:-48}}
 /* No on-screen labels: hardware, light pulses and progress bar tell the story. */
 .am-boot .am-boot-data,.am-boot .am-intro-loading-caption{display:none!important}
+
+
+/* Signal traces power down as soon as the rover begins its drive-off. */
+.am-boot.am-boot-play .am-circuit-sparks{
+  animation:am-traces-power-down .32s ease-in 2.30s forwards!important;
+}
+@keyframes am-traces-power-down{
+  0%{opacity:1;visibility:visible}
+  100%{opacity:0;visibility:hidden}
+}
