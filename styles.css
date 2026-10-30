@@ -1156,3 +1156,25 @@ html.am-boot-locked::-webkit-scrollbar{display:none!important}
   0%{opacity:1;visibility:visible}
   100%{opacity:0;visibility:hidden}
 }
+
+
+/* Unified departure: tether and signal paths fade together as rover pulls away. */
+.am-boot.am-boot-play.am-rover-departing .am-circuit-sparks,
+.am-boot.am-boot-play.am-rover-departing .am-v2-cable{
+  opacity:0!important;
+  visibility:hidden!important;
+  animation:none!important;
+  transition:opacity .38s ease-out,visibility 0s linear .38s!important;
+}
+.am-boot.am-boot-play.am-rover-departing .am-circuit-sparks *,
+.am-boot.am-boot-play.am-rover-departing .am-v2-cable *{
+  animation:none!important;
+}
+.am-boot.am-boot-play .am-intro-loading-caption{
+  display:block!important;
+  text-align:center!important;
+  margin-top:10px!important;
+  font-size:11px!important;
+  font-weight:700!important;
+  letter-spacing:2.5px!important;
+}
