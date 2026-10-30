@@ -1178,3 +1178,10 @@ html.am-boot-locked::-webkit-scrollbar{display:none!important}
   font-weight:700!important;
   letter-spacing:2.5px!important;
 }
+
+
+/* Projects match Experience: full-width content without numeric gutter. */
+#projects .project-list .project{grid-template-columns:minmax(0,1fr)!important;gap:0!important}
+#projects .project-list .project-num{display:none!important}
+#projects .project-list .project>div:not(.project-num){min-width:0;width:100%}
+@media(max-width:760px){#projects .project-list .project{grid-template-columns:minmax(0,1fr)!important}}
